@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "the-bot"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "the_bot"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+black = "^24.4.2"
+brotlipy = "^0.7.0"
+schedule = "^1.2.1"
+backoff = "^2.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
