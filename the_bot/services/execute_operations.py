@@ -19,6 +19,7 @@ class ExecuteOperation:
         self,
         bot_session,
         expected_arbitrage_balance,
+        capital_baseline=500,
         profit_margin=0,
         margin_ratio=0.06,
     ) -> None:
@@ -27,6 +28,7 @@ class ExecuteOperation:
         self.expected_arbitrage_balance = expected_arbitrage_balance
         self.profit_margin = profit_margin
         self.margin_ratio = margin_ratio
+        self.capital_baseline = capital_baseline
 
     def validate_user(self):
         user_info = self.bot_api.user_info()
@@ -35,7 +37,7 @@ class ExecuteOperation:
     def user_can_operate(self):
         Logger.info("Checking if user can operate base on arbitrage balance")
         if (
-            self.bot_api.arbitrage_balance() > ExecuteOperation.MINIMUN_INVESTMENT_PER_COIN
+            self.bot_api.arbitrage_balance() > self.capital_baseline
             and self.bot_api.balance_in_operation() == 0
         ):
             Logger.info(
