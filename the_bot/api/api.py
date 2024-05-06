@@ -1,11 +1,8 @@
 from the_bot.constants import bot_domain, coins
 import backoff
-import logging
-import sys
+from the_bot.helpers.logging_helper import log_setup
 
-Logger = logging.getLogger(__name__)
-logging.basicConfig(level=logging.DEBUG, stream=sys.stdout)
-
+logger = log_setup(__name__)
 HTTP_PROTOCOL = "https://"
 
 
@@ -14,11 +11,15 @@ class BotApi:
         self.known_coins = coins
         self.bot_session = session
 
-    @backoff.on_exception(backoff.expo, Exception, max_tries=10, raise_on_giveup=False)
+    @backoff.on_exception(
+        backoff.expo, Exception, max_tries=10, logger=logger, raise_on_giveup=False
+    )
     def _bot_coins(self):
         return self.bot_session.get(f"{HTTP_PROTOCOL}{bot_domain}/robot/getCoins")
 
-    @backoff.on_exception(backoff.expo, Exception, max_tries=10, raise_on_giveup=False)
+    @backoff.on_exception(
+        backoff.expo, Exception, max_tries=10, logger=logger, raise_on_giveup=False
+    )
     def all_coins(self) -> list:
         bot_coins = self._bot_coins().json()
         for coin in bot_coins:
@@ -27,31 +28,41 @@ class BotApi:
                     coin.update(known_coin)
         return bot_coins
 
-    @backoff.on_exception(backoff.expo, Exception, max_tries=10, raise_on_giveup=False)
+    @backoff.on_exception(
+        backoff.expo, Exception, max_tries=10, logger=logger, raise_on_giveup=False
+    )
     def solesbot_suggestion_for_coin(self, coin_id: int) -> dict:
         response = self.bot_session.get(
             f"{HTTP_PROTOCOL}{bot_domain}/robot/suggestionManual/?coin={coin_id}"
         )
         return response.json()
 
-    @backoff.on_exception(backoff.expo, Exception, max_tries=10, raise_on_giveup=False)
+    @backoff.on_exception(
+        backoff.expo, Exception, max_tries=10, logger=logger, raise_on_giveup=False
+    )
     def user_info(self) -> dict:
         return self.bot_session.get(f"{HTTP_PROTOCOL}{bot_domain}/home/dataHome").json()
 
-    @backoff.on_exception(backoff.expo, Exception, max_tries=10, raise_on_giveup=False)
+    @backoff.on_exception(
+        backoff.expo, Exception, max_tries=10, logger=logger, raise_on_giveup=False
+    )
     def balance_in_operation(self) -> float:
         response = self.bot_session.get(
             f"{HTTP_PROTOCOL}{bot_domain}/robot/getBalanceInOperation"
         )
         return float(response.json().get("balance", 0))
 
-    @backoff.on_exception(backoff.expo, Exception, max_tries=10, raise_on_giveup=False)
+    @backoff.on_exception(
+        backoff.expo, Exception, max_tries=10, logger=logger, raise_on_giveup=False
+    )
     def date_in_operation(self):
         return self.bot_session.get(
             f"{HTTP_PROTOCOL}{bot_domain}/robot/getDateInOperation"
         ).json()
 
-    @backoff.on_exception(backoff.expo, Exception, max_tries=10, raise_on_giveup=False)
+    @backoff.on_exception(
+        backoff.expo, Exception, max_tries=10, logger=logger, raise_on_giveup=False
+    )
     def arbitrage_balance(self) -> float:
         response = self.bot_session.get(
             f"{HTTP_PROTOCOL}{bot_domain}/wallet/getbalancesopman"
@@ -68,6 +79,9 @@ class InvestOperation:
 
     def reduce_amount_to_invest(self, backoff_event):
         if backoff_event["tries"] == 4:
+            logger.info(
+                f"Reducing amount to invest by {self.decrease_amount_to_invest_ratio}..."
+            )
             self.amount = self.amount - self.decrease_amount_to_invest_ratio
 
     def submit_suggestion(self, coin_id: int, buy_id: int, sell_id: int):
@@ -78,7 +92,7 @@ class InvestOperation:
             on_backoff=self.reduce_amount_to_invest,
             interval=10,
             max_tries=5,
-            logger=Logger,
+            logger=logger,
             raise_on_giveup=False,
         )
         def submit():
@@ -96,7 +110,7 @@ class InvestOperation:
                 error = response.get("haserror")
                 if error:
                     raise Exception(response["error"])
-                Logger.info(f"Investing done successfully details: {sug_data}...")
+                logger.info(f"Investing done successfully details: {sug_data}...")
                 return response
             except Exception as e:
                 raise Exception(e)

@@ -3,19 +3,12 @@ from the_bot.api.api import BotApi, InvestOperation
 from schedule import run_pending
 import schedule
 import backoff
-import logging
-import sys
+from the_bot.helpers.logging_helper import log_setup
 import os
 import time
 
-logging.basicConfig(
-    filename="bot_logs.log",
-    filemode="a",
-    format="%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s",
-    datefmt="%H:%M:%S",
-    level=logging.DEBUG,
-)
-logger = logging.getLogger(__name__)
+
+logger = log_setup(__name__)
 
 
 class ExecuteOperation:
