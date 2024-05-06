@@ -109,9 +109,8 @@ class InvestOperation:
                     f"{HTTP_PROTOCOL}{bot_domain}/robot/submitsuggestion", data=sug_data
                 ).json()
                 error = response.get("haserror")
-                if error:
+                if error and not response["error"].startswith("You can only execute"):
                     raise Exception(response["error"])
-                logger.info(f"Investing done successfully details: {sug_data}...")
                 return response
             except Exception as e:
                 raise Exception(e)

@@ -17,9 +17,9 @@ class ExecuteOperation:
     def __init__(
         self,
         bot_session,
-        capital_baseline=500,
+        capital_baseline=520,
         profit_margin=0,
-        margin_ratio_percentage=10,
+        margin_ratio_percentage=12,
     ) -> None:
         self.bot_session = bot_session
         self.bot_api = BotApi(self.bot_session)
@@ -32,9 +32,9 @@ class ExecuteOperation:
         user_info = self.bot_api.user_info()
         logger.info(f"{user_info.get('name')} has initiate session")
 
-    def user_can_operate(self, arbitrage_balance, balance_in_operation) -> bool:
+    def user_can_operate(self, arbitrage_balance) -> bool:
         logger.info("Checking if user can operate base on arbitrage balance")
-        if arbitrage_balance > self.capital_baseline and balance_in_operation == 0:
+        if arbitrage_balance > self.capital_baseline:
             logger.info(
                 f"User balance is enough to operate, arbitrage balance: {arbitrage_balance}"
             )
@@ -45,6 +45,7 @@ class ExecuteOperation:
             coin_max_profit = self.current_coin.get("max_profit", 0)
             max_loss_accepted = (coin_max_profit * self.margin_ratio_percentage) / 100
             self.profit_margin = coin_max_profit - max_loss_accepted
+            self.margin_ratio_percentage += 1
 
     def can_invest_in_coin(self, coin) -> dict:
         self.current_coin = coin
@@ -71,17 +72,32 @@ class ExecuteOperation:
 
         return calculate_coin_profit()
 
+    def was_invenstment_error(self, resp, coin):
+        if resp:
+            if resp.get("haserror"):
+                logger.info(
+                    f"Cannot invest in {coin.get('abb')}, error: {resp.get('error')}"
+                )
+                return True
+            else:
+                logger.info(f"Investing done successfully details: {resp}...")
+        else:
+            return True
+
     def execute(self):
         arbitrage_balance = self.bot_api.arbitrage_balance()
-        balance_in_operation = self.bot_api.balance_in_operation()
-        user_can_operate = self.user_can_operate(
-            arbitrage_balance, balance_in_operation
-        )
+        user_can_operate = self.user_can_operate(arbitrage_balance)
+        coins_to_skip = []
         if user_can_operate:
-            while arbitrage_balance >= ExecuteOperation.MINIMUN_INVESTMENT_PER_COIN:
-                time.sleep(30)
+            while (
+                arbitrage_balance >= ExecuteOperation.MINIMUN_INVESTMENT_PER_COIN
+                and len(coins_to_skip) < 7
+            ):
+                time.sleep(15)
                 all_coins = self.bot_api.all_coins()
                 for coin in all_coins:
+                    if coin.get("abb") in coins_to_skip:
+                        continue
                     time.sleep(10)
                     self.profit_margin = coin.get("max_profit", 0)
                     arbitrage_balance = self.bot_api.arbitrage_balance()
@@ -98,7 +114,11 @@ class ExecuteOperation:
                                 amount=coin.get("max_to_invest", 0),
                                 bot_api=self.bot_api,
                             )
-                            invest.submit_suggestion(coin.get("id"), buy_id, sell_id)
+                            resp = invest.submit_suggestion(
+                                coin.get("id"), buy_id, sell_id
+                            )
+                            if self.was_invenstment_error(resp, coin):
+                                coins_to_skip.append(coin.get("abb"))
                         else:
                             logger.info(
                                 f"Investing {arbitrage_balance} in {coin.get('abb')}..."
@@ -106,10 +126,14 @@ class ExecuteOperation:
                             invest = InvestOperation(
                                 amount=arbitrage_balance, bot_api=self.bot_api
                             )
-                            invest.submit_suggestion(coin.get("id"), buy_id, sell_id)
+                            resp = invest.submit_suggestion(
+                                coin.get("id"), buy_id, sell_id
+                            )
+                            if self.was_invenstment_error(resp, coin):
+                                coins_to_skip.append(coin.get("abb"))
         else:
             logger.info(
-                f"User balance is not enough to operate, arbitrage balance: {arbitrage_balance}, operation balance: {balance_in_operation}"
+                f"User balance is not enough to operate, arbitrage balance: {arbitrage_balance}"
             )
 
 
