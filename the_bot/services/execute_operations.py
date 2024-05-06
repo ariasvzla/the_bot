@@ -52,6 +52,7 @@ class ExecuteOperation:
             self.profit_margin = coin_max_profit - max_loss_accepted
 
     def can_invest_in_coin(self, coin) -> dict:
+        self.current_coin = coin
 
         @backoff.on_exception(
             backoff.constant,
@@ -63,7 +64,6 @@ class ExecuteOperation:
             raise_on_giveup=False,
         )
         def calculate_coin_profit() -> dict:
-            self.current_coin = coin
             bot_suggestion = self.bot_api.solesbot_suggestion_for_coin(coin.get("id"))
             logger.info(f"Checking if {coin.get('abb')} is profitable...")
             coin_profit = float(bot_suggestion.get("profit", 0))
