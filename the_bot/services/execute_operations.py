@@ -8,8 +8,14 @@ import sys
 import os
 import time
 
-Logger = logging.getLogger(__name__)
-logging.basicConfig(level=logging.INFO, filename="bot_logs.txt")
+logging.basicConfig(
+    filename="bot_logs.log",
+    filemode="a",
+    format="%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s",
+    datefmt="%H:%M:%S",
+    level=logging.DEBUG,
+)
+logger = logging.getLogger(__name__)
 
 
 class ExecuteOperation:
@@ -24,21 +30,22 @@ class ExecuteOperation:
     ) -> None:
         self.bot_session = bot_session
         self.bot_api = BotApi(self.bot_session)
+        self.current_coin = None
         self.capital_baseline = capital_baseline
         self.profit_margin = profit_margin
         self.margin_ratio_percentage = margin_ratio_percentage
 
     def validate_user(self):
         user_info = self.bot_api.user_info()
-        Logger.info(f"{user_info.get('name')} has initiate session")
+        logger.info(f"{user_info.get('name')} has initiate session")
 
     def user_can_operate(self):
-        Logger.info("Checking if user can operate base on arbitrage balance")
+        logger.info("Checking if user can operate base on arbitrage balance")
         if (
             self.bot_api.arbitrage_balance() > self.capital_baseline
             and self.bot_api.balance_in_operation() == 0
         ):
-            Logger.info(
+            logger.info(
                 f"User balance is enough to operate, arbitrage balance: {self.bot_api.arbitrage_balance()}"
             )
             return True
@@ -57,16 +64,16 @@ class ExecuteOperation:
             on_backoff=self.increase_profit_margin,
             interval=10,
             max_tries=6,
-            logger=Logger,
+            logger=logger,
             raise_on_giveup=False,
         )
         def calculate_coin_profit() -> dict:
             self.current_coin = coin
             bot_suggestion = self.bot_api.solesbot_suggestion_for_coin(coin.get("id"))
-            Logger.info(f"Checking if {coin.get('abb')} is profitable...")
+            logger.info(f"Checking if {coin.get('abb')} is profitable...")
             coin_profit = float(bot_suggestion.get("profit", 0))
-            Logger.info(f"Profit of {coin.get('abb')} is {coin_profit}")
-            Logger.info(f"profit acceptable: {self.profit_margin}")
+            logger.info(f"Profit of {coin.get('abb')} is {coin_profit}")
+            logger.info(f"profit acceptable: {self.profit_margin}")
             if coin_profit >= self.profit_margin:
                 return bot_suggestion
             else:
@@ -81,16 +88,16 @@ class ExecuteOperation:
                 time.sleep(30)
                 all_coins = self.bot_api.all_coins()
                 for coin in all_coins:
-                    time.sleep(15)
+                    time.sleep(10)
                     self.profit_margin = 0
                     arbitrage_balance = self.bot_api.arbitrage_balance()
                     coin_to_invest: dict = self.can_invest_in_coin(coin)
                     if coin_to_invest:
-                        Logger.info(f"{coin.get('abb')} is profitable, investing...")
+                        logger.info(f"{coin.get('abb')} is profitable, investing...")
                         buy_id = int(coin_to_invest.get("buy", {}).get("id"))
                         sell_id = int(coin_to_invest.get("sell", {}).get("id"))
                         if coin.get("max_to_invest", 0) <= arbitrage_balance:
-                            Logger.info(
+                            logger.info(
                                 f"Investing {coin.get("max_to_invest", 0)} in {coin.get('abb')}..."
                             )
                             invest = InvestOperation(
@@ -99,7 +106,7 @@ class ExecuteOperation:
                             )
                             invest.submit_suggestion(coin.get("id"), buy_id, sell_id)
                         else:
-                            Logger.info(
+                            logger.info(
                                 f"Investing {arbitrage_balance} in {coin.get('abb')}..."
                             )
                             invest = InvestOperation(
@@ -107,7 +114,7 @@ class ExecuteOperation:
                             )
                             invest.submit_suggestion(coin.get("id"), buy_id, sell_id)
         else:
-            Logger.info(
+            logger.info(
                 f"User balance is not enough to operate, arbitrage balance: {self.bot_api.arbitrage_balance()}, operation balance: {self.bot_api.balance_in_operation()}"
             )
 
