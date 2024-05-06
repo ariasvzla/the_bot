@@ -116,6 +116,7 @@ def run_the_bot():
     session = BotSession(os.environ.get("ASPCOOKIE"))
     bot_session = session.bot_session()
     execute_order = ExecuteOperation(bot_session)
+    execute_order.user_info()
     execute_order.execute()
 
 
