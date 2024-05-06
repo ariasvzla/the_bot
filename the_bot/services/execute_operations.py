@@ -8,7 +8,7 @@ import os
 import time
 
 
-logger = log_setup(__name__)
+logger = log_setup(__file__)
 
 
 class ExecuteOperation:
@@ -28,7 +28,7 @@ class ExecuteOperation:
         self.profit_margin = profit_margin
         self.margin_ratio_percentage = margin_ratio_percentage
 
-    def validate_user(self):
+    def user_info(self):
         user_info = self.bot_api.user_info()
         logger.info(f"{user_info.get('name')} has initiate session")
 

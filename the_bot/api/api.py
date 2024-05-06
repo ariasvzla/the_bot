@@ -2,7 +2,7 @@ from the_bot.constants import bot_domain, coins
 import backoff
 from the_bot.helpers.logging_helper import log_setup
 
-logger = log_setup(__name__)
+logger = log_setup(__file__)
 HTTP_PROTOCOL = "https://"
 
 
