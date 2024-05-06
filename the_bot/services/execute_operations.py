@@ -32,16 +32,18 @@ class ExecuteOperation:
         user_info = self.bot_api.user_info()
         logger.info(f"{user_info.get('name')} has initiate session")
 
-    def user_can_operate(self):
+    def arbitrage_balance(self):
         logger.info("Checking if user can operate base on arbitrage balance")
+        arbitrage_balance = self.bot_api.arbitrage_balance()
+        balance_in_operation = self.bot_api.balance_in_operation()
         if (
-            self.bot_api.arbitrage_balance() > self.capital_baseline
-            and self.bot_api.balance_in_operation() == 0
+            arbitrage_balance > self.capital_baseline
+            and balance_in_operation == 0
         ):
             logger.info(
-                f"User balance is enough to operate, arbitrage balance: {self.bot_api.arbitrage_balance()}"
+                f"User balance is enough to operate, arbitrage balance: {arbitrage_balance}"
             )
-            return True
+            return arbitrage_balance
 
     def increase_profit_margin(self, backoff_event):
         if backoff_event["tries"] >= 3:
@@ -75,8 +77,8 @@ class ExecuteOperation:
         return calculate_coin_profit()
 
     def execute(self):
-        if self.user_can_operate():
-            arbitrage_balance = self.bot_api.arbitrage_balance()
+        arbitrage_balance = self.arbitrage_balance()
+        if arbitrage_balance:
             while arbitrage_balance >= ExecuteOperation.MINIMUN_INVESTMENT_PER_COIN:
                 time.sleep(30)
                 all_coins = self.bot_api.all_coins()

@@ -3,7 +3,7 @@ import logging
 
 def log_setup(name):
     logging.basicConfig(
-        filename=f"bot_logs.log",
+        filename="bot_logs.log",
         filemode="a",
         format="%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s",
         datefmt="%H:%M:%S",
