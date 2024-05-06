@@ -8,7 +8,7 @@ import os
 import time
 
 
-logger = log_setup(__file__)
+logger = log_setup(os.path.basename(__file__))
 
 
 class ExecuteOperation:
