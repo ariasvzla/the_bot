@@ -45,7 +45,7 @@ class ExecuteOperation:
             )
             return arbitrage_balance
 
-    def increase_profit_margin(self, backoff_event):
+    def decrease_profit_margin(self, backoff_event):
         if backoff_event["tries"] >= 3:
             coin_max_profit = self.current_coin.get("max_profit", 0)
             max_loss_accepted = (coin_max_profit * self.margin_ratio_percentage) / 100
@@ -57,7 +57,7 @@ class ExecuteOperation:
         @backoff.on_exception(
             backoff.constant,
             Exception,
-            on_backoff=self.increase_profit_margin,
+            on_backoff=self.decrease_profit_margin,
             interval=10,
             max_tries=6,
             logger=logger,
@@ -84,7 +84,7 @@ class ExecuteOperation:
                 all_coins = self.bot_api.all_coins()
                 for coin in all_coins:
                     time.sleep(10)
-                    self.profit_margin = 0
+                    self.profit_margin = coin.get("max_profit",0)
                     arbitrage_balance = self.bot_api.arbitrage_balance()
                     coin_to_invest: dict = self.can_invest_in_coin(coin)
                     if coin_to_invest:
