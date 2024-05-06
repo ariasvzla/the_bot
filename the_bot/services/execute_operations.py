@@ -32,18 +32,13 @@ class ExecuteOperation:
         user_info = self.bot_api.user_info()
         logger.info(f"{user_info.get('name')} has initiate session")
 
-    def arbitrage_balance(self):
+    def user_can_operate(self, arbitrage_balance, balance_in_operation) -> bool:
         logger.info("Checking if user can operate base on arbitrage balance")
-        arbitrage_balance = self.bot_api.arbitrage_balance()
-        balance_in_operation = self.bot_api.balance_in_operation()
-        if (
-            arbitrage_balance > self.capital_baseline
-            and balance_in_operation == 0
-        ):
+        if arbitrage_balance > self.capital_baseline and balance_in_operation == 0:
             logger.info(
                 f"User balance is enough to operate, arbitrage balance: {arbitrage_balance}"
             )
-            return arbitrage_balance
+            return True
 
     def decrease_profit_margin(self, backoff_event):
         if backoff_event["tries"] >= 3:
@@ -77,14 +72,18 @@ class ExecuteOperation:
         return calculate_coin_profit()
 
     def execute(self):
-        arbitrage_balance = self.arbitrage_balance()
-        if arbitrage_balance:
+        arbitrage_balance = self.bot_api.arbitrage_balance()
+        balance_in_operation = self.bot_api.balance_in_operation()
+        user_can_operate = self.user_can_operate(
+            arbitrage_balance, balance_in_operation
+        )
+        if user_can_operate:
             while arbitrage_balance >= ExecuteOperation.MINIMUN_INVESTMENT_PER_COIN:
                 time.sleep(30)
                 all_coins = self.bot_api.all_coins()
                 for coin in all_coins:
                     time.sleep(10)
-                    self.profit_margin = coin.get("max_profit",0)
+                    self.profit_margin = coin.get("max_profit", 0)
                     arbitrage_balance = self.bot_api.arbitrage_balance()
                     coin_to_invest: dict = self.can_invest_in_coin(coin)
                     if coin_to_invest:
@@ -110,7 +109,7 @@ class ExecuteOperation:
                             invest.submit_suggestion(coin.get("id"), buy_id, sell_id)
         else:
             logger.info(
-                f"User balance is not enough to operate, arbitrage balance: {self.bot_api.arbitrage_balance()}, operation balance: {self.bot_api.balance_in_operation()}"
+                f"User balance is not enough to operate, arbitrage balance: {arbitrage_balance}, operation balance: {balance_in_operation}"
             )
 
 
