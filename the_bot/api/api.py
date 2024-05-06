@@ -14,11 +14,11 @@ class BotApi:
         self.known_coins = coins
         self.bot_session = session
 
-    @backoff.on_exception(backoff.expo, Exception, max_tries=10)
+    @backoff.on_exception(backoff.expo, Exception, max_tries=10, raise_on_giveup=False)
     def _bot_coins(self):
         return self.bot_session.get(f"{HTTP_PROTOCOL}{bot_domain}/robot/getCoins")
 
-    @backoff.on_exception(backoff.expo, Exception, max_tries=10)
+    @backoff.on_exception(backoff.expo, Exception, max_tries=10, raise_on_giveup=False)
     def all_coins(self) -> list:
         bot_coins = self._bot_coins().json()
         for coin in bot_coins:
@@ -27,31 +27,31 @@ class BotApi:
                     coin.update(known_coin)
         return bot_coins
 
-    @backoff.on_exception(backoff.expo, Exception, max_tries=10)
+    @backoff.on_exception(backoff.expo, Exception, max_tries=10, raise_on_giveup=False)
     def solesbot_suggestion_for_coin(self, coin_id: int) -> dict:
         response = self.bot_session.get(
             f"{HTTP_PROTOCOL}{bot_domain}/robot/suggestionManual/?coin={coin_id}"
         )
         return response.json()
 
-    @backoff.on_exception(backoff.expo, Exception, max_tries=10)
+    @backoff.on_exception(backoff.expo, Exception, max_tries=10, raise_on_giveup=False)
     def user_info(self) -> dict:
         return self.bot_session.get(f"{HTTP_PROTOCOL}{bot_domain}/home/dataHome").json()
 
-    @backoff.on_exception(backoff.expo, Exception, max_tries=10)
+    @backoff.on_exception(backoff.expo, Exception, max_tries=10, raise_on_giveup=False)
     def balance_in_operation(self) -> float:
         response = self.bot_session.get(
             f"{HTTP_PROTOCOL}{bot_domain}/robot/getBalanceInOperation"
         )
         return float(response.json().get("balance", 0))
 
-    @backoff.on_exception(backoff.expo, Exception, max_tries=10)
+    @backoff.on_exception(backoff.expo, Exception, max_tries=10, raise_on_giveup=False)
     def date_in_operation(self):
         return self.bot_session.get(
             f"{HTTP_PROTOCOL}{bot_domain}/robot/getDateInOperation"
         ).json()
 
-    @backoff.on_exception(backoff.expo, Exception, max_tries=10)
+    @backoff.on_exception(backoff.expo, Exception, max_tries=10, raise_on_giveup=False)
     def arbitrage_balance(self) -> float:
         response = self.bot_session.get(
             f"{HTTP_PROTOCOL}{bot_domain}/wallet/getbalancesopman"
