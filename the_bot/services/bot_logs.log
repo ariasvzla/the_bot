@@ -14671,3 +14671,1332 @@
 20:37:40,353 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
 20:37:40,353 execute_operations.py INFO Checking if user can operate base on arbitrage balance
 20:37:40,354 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 439.08
+20:46:11,396 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+20:46:11,397 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+20:46:11,761 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+20:46:11,762 execute_operations.py INFO Elianny Arias has initiate session
+20:46:11,992 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+20:46:11,992 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+20:46:11,992 execute_operations.py INFO User balance is enough to operate, arbitrage balance: 439.08
+20:46:12,242 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/getCoins HTTP/1.1" 200 None
+20:46:27,476 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+20:46:27,477 execute_operations.py INFO Checking if CAKE is profitable...
+20:46:27,477 execute_operations.py INFO Profit of CAKE is 1.73
+20:46:27,477 execute_operations.py INFO profit acceptable: 1.86
+20:46:27,477 execute_operations.py INFO Backing off calculate_coin_profit(...) for 9.8s (Exception: CAKE is not profitable, trying again...)
+20:46:37,936 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+20:46:37,936 execute_operations.py INFO Checking if CAKE is profitable...
+20:46:37,937 execute_operations.py INFO Profit of CAKE is 1.73
+20:46:37,937 execute_operations.py INFO profit acceptable: 1.86
+20:46:37,937 execute_operations.py INFO Backing off calculate_coin_profit(...) for 1.0s (Exception: CAKE is not profitable, trying again...)
+20:46:39,574 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+20:46:39,575 execute_operations.py INFO Checking if CAKE is profitable...
+20:46:39,575 execute_operations.py INFO Profit of CAKE is 1.73
+20:46:39,575 execute_operations.py INFO profit acceptable: 1.86
+20:46:39,575 execute_operations.py INFO Backing off calculate_coin_profit(...) for 9.4s (Exception: CAKE is not profitable, trying again...)
+20:46:49,287 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+20:46:49,287 execute_operations.py INFO Checking if CAKE is profitable...
+20:46:49,288 execute_operations.py INFO Profit of CAKE is 1.73
+20:46:49,288 execute_operations.py INFO profit acceptable: 1.86
+20:46:49,288 execute_operations.py INFO Backing off calculate_coin_profit(...) for 5.7s (Exception: CAKE is not profitable, trying again...)
+20:46:55,238 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+20:46:55,238 execute_operations.py INFO Checking if CAKE is profitable...
+20:46:55,239 execute_operations.py INFO Profit of CAKE is 1.73
+20:46:55,239 execute_operations.py INFO profit acceptable: 1.6368
+20:46:55,486 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+20:46:55,486 execute_operations.py INFO CAKE is profitable, investing...
+20:46:55,486 api.py INFO Investment details: {'amount': '30', 'coin': 1, 'idbuy': 4, 'idsell': 1, 'sug': True}
+20:46:55,731 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+20:47:10,962 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=5 HTTP/1.1" 200 None
+20:47:10,962 execute_operations.py INFO Checking if VET is profitable...
+20:47:10,962 execute_operations.py INFO Profit of VET is 0.49
+20:47:10,962 execute_operations.py INFO profit acceptable: 0.6
+20:47:10,962 execute_operations.py INFO Backing off calculate_coin_profit(...) for 6.0s (Exception: VET is not profitable, trying again...)
+20:47:17,249 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=5 HTTP/1.1" 200 None
+20:47:17,250 execute_operations.py INFO Checking if VET is profitable...
+20:47:17,250 execute_operations.py INFO Profit of VET is 0.45
+20:47:17,250 execute_operations.py INFO profit acceptable: 0.6
+20:47:17,250 execute_operations.py INFO Backing off calculate_coin_profit(...) for 6.1s (Exception: VET is not profitable, trying again...)
+20:47:23,626 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=5 HTTP/1.1" 200 None
+20:47:23,627 execute_operations.py INFO Checking if VET is profitable...
+20:47:23,627 execute_operations.py INFO Profit of VET is 0.45
+20:47:23,627 execute_operations.py INFO profit acceptable: 0.6
+20:47:23,627 execute_operations.py INFO Backing off calculate_coin_profit(...) for 1.0s (Exception: VET is not profitable, trying again...)
+20:47:24,896 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=5 HTTP/1.1" 200 None
+20:47:24,897 execute_operations.py INFO Checking if VET is profitable...
+20:47:24,897 execute_operations.py INFO Profit of VET is 0.45
+20:47:24,897 execute_operations.py INFO profit acceptable: 0.6
+20:47:24,897 execute_operations.py INFO Backing off calculate_coin_profit(...) for 1.9s (Exception: VET is not profitable, trying again...)
+20:47:27,6 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=5 HTTP/1.1" 200 None
+20:47:27,6 execute_operations.py INFO Checking if VET is profitable...
+20:47:27,6 execute_operations.py INFO Profit of VET is 0.45
+20:47:27,6 execute_operations.py INFO profit acceptable: 0.522
+20:47:27,6 execute_operations.py INFO Backing off calculate_coin_profit(...) for 1.2s (Exception: VET is not profitable, trying again...)
+20:47:28,506 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=5 HTTP/1.1" 200 None
+20:47:28,507 execute_operations.py INFO Checking if VET is profitable...
+20:47:28,507 execute_operations.py INFO Profit of VET is 0.45
+20:47:28,507 execute_operations.py INFO profit acceptable: 0.516
+20:47:28,507 execute_operations.py ERROR Giving up calculate_coin_profit(...) after 6 tries (Exception: VET is not profitable, trying again...)
+20:47:43,985 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=6 HTTP/1.1" 200 None
+20:47:43,986 execute_operations.py INFO Checking if LDO is profitable...
+20:47:43,986 execute_operations.py INFO Profit of LDO is 0.65
+20:47:43,986 execute_operations.py INFO profit acceptable: 0.65
+20:47:44,424 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+20:47:44,424 execute_operations.py INFO LDO is profitable, investing...
+20:47:44,424 api.py INFO Investment details: {'amount': '300', 'coin': 6, 'idbuy': 2, 'idsell': 1, 'sug': True}
+20:47:44,845 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+20:48:00,103 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=9 HTTP/1.1" 200 None
+20:48:00,104 execute_operations.py INFO Checking if FIL is profitable...
+20:48:00,104 execute_operations.py INFO Profit of FIL is 0.4
+20:48:00,104 execute_operations.py INFO profit acceptable: 0.6
+20:48:00,104 execute_operations.py INFO Backing off calculate_coin_profit(...) for 8.8s (Exception: FIL is not profitable, trying again...)
+20:48:09,170 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=9 HTTP/1.1" 200 None
+20:48:09,170 execute_operations.py INFO Checking if FIL is profitable...
+20:48:09,170 execute_operations.py INFO Profit of FIL is 0.4
+20:48:09,171 execute_operations.py INFO profit acceptable: 0.6
+20:48:09,171 execute_operations.py INFO Backing off calculate_coin_profit(...) for 2.1s (Exception: FIL is not profitable, trying again...)
+20:48:11,847 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=9 HTTP/1.1" 200 None
+20:48:11,848 execute_operations.py INFO Checking if FIL is profitable...
+20:48:11,848 execute_operations.py INFO Profit of FIL is 0.4
+20:48:11,848 execute_operations.py INFO profit acceptable: 0.6
+20:48:11,848 execute_operations.py INFO Backing off calculate_coin_profit(...) for 8.8s (Exception: FIL is not profitable, trying again...)
+20:48:20,914 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=9 HTTP/1.1" 200 None
+20:48:20,915 execute_operations.py INFO Checking if FIL is profitable...
+20:48:20,915 execute_operations.py INFO Profit of FIL is 0.4
+20:48:20,915 execute_operations.py INFO profit acceptable: 0.6
+20:48:20,915 execute_operations.py INFO Backing off calculate_coin_profit(...) for 3.8s (Exception: FIL is not profitable, trying again...)
+20:48:24,955 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=9 HTTP/1.1" 200 None
+20:48:24,955 execute_operations.py INFO Checking if FIL is profitable...
+20:48:24,955 execute_operations.py INFO Profit of FIL is 0.4
+20:48:24,955 execute_operations.py INFO profit acceptable: 0.51
+20:48:24,956 execute_operations.py INFO Backing off calculate_coin_profit(...) for 4.7s (Exception: FIL is not profitable, trying again...)
+20:48:29,947 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=9 HTTP/1.1" 200 None
+20:48:29,948 execute_operations.py INFO Checking if FIL is profitable...
+20:48:29,948 execute_operations.py INFO Profit of FIL is 0.4
+20:48:29,948 execute_operations.py INFO profit acceptable: 0.504
+20:48:29,948 execute_operations.py ERROR Giving up calculate_coin_profit(...) after 6 tries (Exception: FIL is not profitable, trying again...)
+20:48:45,550 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+20:48:45,550 execute_operations.py INFO Checking if FTM is profitable...
+20:48:45,550 execute_operations.py INFO Profit of FTM is 1.16
+20:48:45,550 execute_operations.py INFO profit acceptable: 1.68
+20:48:45,551 execute_operations.py INFO Backing off calculate_coin_profit(...) for 4.4s (Exception: FTM is not profitable, trying again...)
+20:48:50,224 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+20:48:50,224 execute_operations.py INFO Checking if FTM is profitable...
+20:48:50,225 execute_operations.py INFO Profit of FTM is 1.16
+20:48:50,225 execute_operations.py INFO profit acceptable: 1.68
+20:48:50,225 execute_operations.py INFO Backing off calculate_coin_profit(...) for 1.5s (Exception: FTM is not profitable, trying again...)
+20:48:51,958 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+20:48:51,959 execute_operations.py INFO Checking if FTM is profitable...
+20:48:51,959 execute_operations.py INFO Profit of FTM is 1.16
+20:48:51,959 execute_operations.py INFO profit acceptable: 1.68
+20:48:51,959 execute_operations.py INFO Backing off calculate_coin_profit(...) for 4.7s (Exception: FTM is not profitable, trying again...)
+20:48:56,921 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+20:48:56,922 execute_operations.py INFO Checking if FTM is profitable...
+20:48:56,922 execute_operations.py INFO Profit of FTM is 1.16
+20:48:56,922 execute_operations.py INFO profit acceptable: 1.68
+20:48:56,922 execute_operations.py INFO Backing off calculate_coin_profit(...) for 2.7s (Exception: FTM is not profitable, trying again...)
+20:48:59,835 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+20:48:59,836 execute_operations.py INFO Checking if FTM is profitable...
+20:48:59,836 execute_operations.py INFO Profit of FTM is 1.16
+20:48:59,836 execute_operations.py INFO profit acceptable: 1.3944
+20:48:59,836 execute_operations.py INFO Backing off calculate_coin_profit(...) for 9.1s (Exception: FTM is not profitable, trying again...)
+20:49:09,142 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+20:49:09,143 execute_operations.py INFO Checking if FTM is profitable...
+20:49:09,143 execute_operations.py INFO Profit of FTM is 1.16
+20:49:09,143 execute_operations.py INFO profit acceptable: 1.3776
+20:49:09,143 execute_operations.py ERROR Giving up calculate_coin_profit(...) after 6 tries (Exception: FTM is not profitable, trying again...)
+20:49:24,759 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=2 HTTP/1.1" 200 None
+20:49:24,759 execute_operations.py INFO Checking if ARB is profitable...
+20:49:24,759 execute_operations.py INFO Profit of ARB is 0.86
+20:49:24,759 execute_operations.py INFO profit acceptable: 0.86
+20:49:25,178 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+20:49:25,178 execute_operations.py INFO ARB is profitable, investing...
+20:49:25,179 api.py INFO Investment details: {'amount': '300', 'coin': 2, 'idbuy': 6, 'idsell': 1, 'sug': True}
+20:49:25,576 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+20:49:40,832 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=8 HTTP/1.1" 200 None
+20:49:40,832 execute_operations.py INFO Checking if ATOM is profitable...
+20:49:40,832 execute_operations.py INFO Profit of ATOM is 0.55
+20:49:40,833 execute_operations.py INFO profit acceptable: 0.81
+20:49:40,833 execute_operations.py INFO Backing off calculate_coin_profit(...) for 2.3s (Exception: ATOM is not profitable, trying again...)
+20:49:43,358 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=8 HTTP/1.1" 200 None
+20:49:43,358 execute_operations.py INFO Checking if ATOM is profitable...
+20:49:43,358 execute_operations.py INFO Profit of ATOM is 0.55
+20:49:43,358 execute_operations.py INFO profit acceptable: 0.81
+20:49:43,358 execute_operations.py INFO Backing off calculate_coin_profit(...) for 8.1s (Exception: ATOM is not profitable, trying again...)
+20:49:51,721 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=8 HTTP/1.1" 200 None
+20:49:51,721 execute_operations.py INFO Checking if ATOM is profitable...
+20:49:51,721 execute_operations.py INFO Profit of ATOM is 0.55
+20:49:51,722 execute_operations.py INFO profit acceptable: 0.81
+20:49:51,722 execute_operations.py INFO Backing off calculate_coin_profit(...) for 9.8s (Exception: ATOM is not profitable, trying again...)
+20:50:01,789 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=8 HTTP/1.1" 200 None
+20:50:01,789 execute_operations.py INFO Checking if ATOM is profitable...
+20:50:01,789 execute_operations.py INFO Profit of ATOM is 0.55
+20:50:01,789 execute_operations.py INFO profit acceptable: 0.81
+20:50:01,789 execute_operations.py INFO Backing off calculate_coin_profit(...) for 3.2s (Exception: ATOM is not profitable, trying again...)
+20:50:05,226 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=8 HTTP/1.1" 200 None
+20:50:05,226 execute_operations.py INFO Checking if ATOM is profitable...
+20:50:05,226 execute_operations.py INFO Profit of ATOM is 0.55
+20:50:05,226 execute_operations.py INFO profit acceptable: 0.6561
+20:50:05,226 execute_operations.py INFO Backing off calculate_coin_profit(...) for 0.1s (Exception: ATOM is not profitable, trying again...)
+20:50:05,628 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=8 HTTP/1.1" 200 None
+20:50:05,629 execute_operations.py INFO Checking if ATOM is profitable...
+20:50:05,629 execute_operations.py INFO Profit of ATOM is 0.55
+20:50:05,629 execute_operations.py INFO profit acceptable: 0.648
+20:50:05,629 execute_operations.py ERROR Giving up calculate_coin_profit(...) after 6 tries (Exception: ATOM is not profitable, trying again...)
+20:50:20,872 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=9 HTTP/1.1" 200 None
+20:50:20,873 execute_operations.py INFO Checking if FIL is profitable...
+20:50:20,873 execute_operations.py INFO Profit of FIL is 0.55
+20:50:20,873 execute_operations.py INFO profit acceptable: 0.6
+20:50:20,873 execute_operations.py INFO Backing off calculate_coin_profit(...) for 2.2s (Exception: FIL is not profitable, trying again...)
+20:50:23,294 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=9 HTTP/1.1" 200 None
+20:50:23,294 execute_operations.py INFO Checking if FIL is profitable...
+20:50:23,294 execute_operations.py INFO Profit of FIL is 0.55
+20:50:23,294 execute_operations.py INFO profit acceptable: 0.6
+20:50:23,295 execute_operations.py INFO Backing off calculate_coin_profit(...) for 9.8s (Exception: FIL is not profitable, trying again...)
+20:50:33,294 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=9 HTTP/1.1" 200 None
+20:50:33,294 execute_operations.py INFO Checking if FIL is profitable...
+20:50:33,294 execute_operations.py INFO Profit of FIL is 0.55
+20:50:33,294 execute_operations.py INFO profit acceptable: 0.6
+20:50:33,294 execute_operations.py INFO Backing off calculate_coin_profit(...) for 8.1s (Exception: FIL is not profitable, trying again...)
+20:50:41,630 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=9 HTTP/1.1" 200 None
+20:50:41,631 execute_operations.py INFO Checking if FIL is profitable...
+20:50:41,631 execute_operations.py INFO Profit of FIL is 0.55
+20:50:41,631 execute_operations.py INFO profit acceptable: 0.6
+20:50:41,631 execute_operations.py INFO Backing off calculate_coin_profit(...) for 6.1s (Exception: FIL is not profitable, trying again...)
+20:50:47,999 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=9 HTTP/1.1" 200 None
+20:50:47,999 execute_operations.py INFO Checking if FIL is profitable...
+20:50:47,999 execute_operations.py INFO Profit of FIL is 0.55
+20:50:47,999 execute_operations.py INFO profit acceptable: 0.474
+20:50:48,235 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+20:50:48,235 execute_operations.py INFO FIL is profitable, investing...
+20:50:48,235 api.py INFO Investment details: {'amount': '439,08', 'coin': 9, 'idbuy': 5, 'idsell': 1, 'sug': True}
+20:50:49,95 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 29
+20:50:49,96 api.py INFO Backing off submit(...) for 0.6s (Exception)
+20:50:49,722 api.py INFO Investment details: {'amount': '439,08', 'coin': 9, 'idbuy': 5, 'idsell': 1, 'sug': True}
+20:50:49,976 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+20:51:05,229 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=5 HTTP/1.1" 200 None
+20:51:05,229 execute_operations.py INFO Checking if VET is profitable...
+20:51:05,229 execute_operations.py INFO Profit of VET is 0.55
+20:51:05,230 execute_operations.py INFO profit acceptable: 0.6
+20:51:05,230 execute_operations.py INFO Backing off calculate_coin_profit(...) for 6.6s (Exception: VET is not profitable, trying again...)
+20:51:12,32 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=5 HTTP/1.1" 200 None
+20:51:12,33 execute_operations.py INFO Checking if VET is profitable...
+20:51:12,33 execute_operations.py INFO Profit of VET is 0.55
+20:51:12,33 execute_operations.py INFO profit acceptable: 0.6
+20:51:12,33 execute_operations.py INFO Backing off calculate_coin_profit(...) for 3.7s (Exception: VET is not profitable, trying again...)
+20:51:15,935 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=5 HTTP/1.1" 200 None
+20:51:15,936 execute_operations.py INFO Checking if VET is profitable...
+20:51:15,936 execute_operations.py INFO Profit of VET is 0.3
+20:51:15,936 execute_operations.py INFO profit acceptable: 0.6
+20:51:15,936 execute_operations.py INFO Backing off calculate_coin_profit(...) for 9.6s (Exception: VET is not profitable, trying again...)
+20:51:25,745 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=5 HTTP/1.1" 200 None
+20:51:25,746 execute_operations.py INFO Checking if VET is profitable...
+20:51:25,746 execute_operations.py INFO Profit of VET is 0.3
+20:51:25,746 execute_operations.py INFO profit acceptable: 0.6
+20:51:25,746 execute_operations.py INFO Backing off calculate_coin_profit(...) for 4.8s (Exception: VET is not profitable, trying again...)
+20:51:30,755 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=5 HTTP/1.1" 200 None
+20:51:30,755 execute_operations.py INFO Checking if VET is profitable...
+20:51:30,755 execute_operations.py INFO Profit of VET is 0.3
+20:51:30,756 execute_operations.py INFO profit acceptable: 0.46799999999999997
+20:51:30,756 execute_operations.py INFO Backing off calculate_coin_profit(...) for 6.0s (Exception: VET is not profitable, trying again...)
+20:51:37,10 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=5 HTTP/1.1" 200 None
+20:51:37,11 execute_operations.py INFO Checking if VET is profitable...
+20:51:37,11 execute_operations.py INFO Profit of VET is 0.3
+20:51:37,11 execute_operations.py INFO profit acceptable: 0.46199999999999997
+20:51:37,11 execute_operations.py ERROR Giving up calculate_coin_profit(...) after 6 tries (Exception: VET is not profitable, trying again...)
+20:51:52,251 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=8 HTTP/1.1" 200 None
+20:51:52,252 execute_operations.py INFO Checking if ATOM is profitable...
+20:51:52,252 execute_operations.py INFO Profit of ATOM is 0.6
+20:51:52,252 execute_operations.py INFO profit acceptable: 0.81
+20:51:52,252 execute_operations.py INFO Backing off calculate_coin_profit(...) for 7.3s (Exception: ATOM is not profitable, trying again...)
+20:51:59,831 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=8 HTTP/1.1" 200 None
+20:51:59,831 execute_operations.py INFO Checking if ATOM is profitable...
+20:51:59,832 execute_operations.py INFO Profit of ATOM is 0.6
+20:51:59,832 execute_operations.py INFO profit acceptable: 0.81
+20:51:59,832 execute_operations.py INFO Backing off calculate_coin_profit(...) for 1.3s (Exception: ATOM is not profitable, trying again...)
+20:52:01,317 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=8 HTTP/1.1" 200 None
+20:52:01,317 execute_operations.py INFO Checking if ATOM is profitable...
+20:52:01,317 execute_operations.py INFO Profit of ATOM is 0.6
+20:52:01,317 execute_operations.py INFO profit acceptable: 0.81
+20:52:01,317 execute_operations.py INFO Backing off calculate_coin_profit(...) for 4.6s (Exception: ATOM is not profitable, trying again...)
+20:52:06,140 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=8 HTTP/1.1" 200 None
+20:52:06,141 execute_operations.py INFO Checking if ATOM is profitable...
+20:52:06,141 execute_operations.py INFO Profit of ATOM is 0.6
+20:52:06,141 execute_operations.py INFO profit acceptable: 0.81
+20:52:06,141 execute_operations.py INFO Backing off calculate_coin_profit(...) for 5.9s (Exception: ATOM is not profitable, trying again...)
+20:52:12,260 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=8 HTTP/1.1" 200 None
+20:52:12,260 execute_operations.py INFO Checking if ATOM is profitable...
+20:52:12,260 execute_operations.py INFO Profit of ATOM is 0.6
+20:52:12,260 execute_operations.py INFO profit acceptable: 0.6156
+20:52:12,260 execute_operations.py INFO Backing off calculate_coin_profit(...) for 4.4s (Exception: ATOM is not profitable, trying again...)
+20:52:16,903 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=8 HTTP/1.1" 200 None
+20:52:16,904 execute_operations.py INFO Checking if ATOM is profitable...
+20:52:16,904 execute_operations.py INFO Profit of ATOM is 0.76
+20:52:16,904 execute_operations.py INFO profit acceptable: 0.6075
+20:52:17,142 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+20:52:17,142 execute_operations.py INFO ATOM is profitable, investing...
+20:52:17,142 api.py INFO Investment details: {'amount': '0,0', 'coin': 8, 'idbuy': 6, 'idsell': 1, 'sug': True}
+20:52:17,372 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+20:52:17,372 api.py INFO Backing off submit(...) for 10.0s (Exception: Minimum to operation is 10 USDT)
+20:52:27,359 api.py INFO Investment details: {'amount': '0,0', 'coin': 8, 'idbuy': 6, 'idsell': 1, 'sug': True}
+20:52:27,604 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+20:52:27,604 api.py INFO Backing off submit(...) for 2.5s (Exception: Minimum to operation is 10 USDT)
+20:52:30,58 api.py INFO Investment details: {'amount': '0,0', 'coin': 8, 'idbuy': 6, 'idsell': 1, 'sug': True}
+20:52:30,306 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+20:52:30,307 api.py INFO Backing off submit(...) for 7.4s (Exception: Minimum to operation is 10 USDT)
+20:52:30,307 api.py INFO Reducing amount to invest by 0.1...
+20:52:37,719 api.py INFO Investment details: {'amount': '-0,1', 'coin': 8, 'idbuy': 6, 'idsell': 1, 'sug': True}
+20:52:37,951 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+20:52:37,952 api.py INFO Backing off submit(...) for 7.5s (Exception: Minimum to operation is 10 USDT)
+20:52:45,420 api.py INFO Investment details: {'amount': '-0,1', 'coin': 8, 'idbuy': 6, 'idsell': 1, 'sug': True}
+20:52:45,666 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+20:52:45,667 api.py ERROR Giving up submit(...) after 5 tries (Exception: Minimum to operation is 10 USDT)
+20:54:45,691 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+20:54:45,692 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+20:54:46,38 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+20:54:46,38 execute_operations.py INFO Elianny Arias has initiate session
+20:54:46,269 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+20:54:46,269 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+20:54:46,269 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+20:56:46,295 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+20:56:46,296 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+20:56:46,880 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+20:56:46,881 execute_operations.py INFO Elianny Arias has initiate session
+20:56:47,152 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+20:56:47,152 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+20:56:47,152 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+20:58:47,176 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+20:58:47,177 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+20:58:48,164 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+20:58:48,165 execute_operations.py INFO Elianny Arias has initiate session
+20:58:48,453 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+20:58:48,453 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+20:58:48,453 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+21:00:48,478 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+21:00:48,480 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+21:00:48,934 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+21:00:48,935 execute_operations.py INFO Elianny Arias has initiate session
+21:00:49,213 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+21:00:49,213 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+21:00:49,213 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+21:02:49,239 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+21:02:49,240 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+21:02:49,559 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+21:02:49,559 execute_operations.py INFO Elianny Arias has initiate session
+21:02:49,791 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+21:02:49,791 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+21:02:49,791 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+21:04:49,818 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+21:04:49,820 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+21:04:50,562 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+21:04:50,562 execute_operations.py INFO Elianny Arias has initiate session
+21:04:50,840 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+21:04:50,840 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+21:04:50,840 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+21:06:50,865 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+21:06:50,866 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+21:06:51,276 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+21:06:51,276 execute_operations.py INFO Elianny Arias has initiate session
+21:06:51,541 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+21:06:51,542 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+21:06:51,542 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+21:08:51,567 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+21:08:51,568 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+21:08:51,916 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+21:08:51,916 execute_operations.py INFO Elianny Arias has initiate session
+21:08:52,155 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+21:08:52,155 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+21:08:52,156 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+21:10:52,181 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+21:10:52,182 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+21:10:52,490 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+21:10:52,490 execute_operations.py INFO Elianny Arias has initiate session
+21:10:52,734 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+21:10:52,734 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+21:10:52,734 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+21:12:52,761 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+21:12:52,762 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+21:12:53,90 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+21:12:53,91 execute_operations.py INFO Elianny Arias has initiate session
+21:12:53,316 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+21:12:53,316 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+21:12:53,317 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+21:14:53,344 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+21:14:53,345 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+21:14:53,981 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+21:14:53,982 execute_operations.py INFO Elianny Arias has initiate session
+21:14:54,257 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+21:14:54,258 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+21:14:54,258 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+21:16:54,283 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+21:16:54,284 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+21:16:56,252 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+21:16:56,252 execute_operations.py INFO Elianny Arias has initiate session
+21:16:56,579 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+21:16:56,580 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+21:16:56,580 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+21:18:56,606 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+21:18:56,607 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+21:18:58,197 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+21:18:58,198 execute_operations.py INFO Elianny Arias has initiate session
+21:18:58,471 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+21:18:58,471 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+21:18:58,471 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+21:20:58,492 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+21:20:58,494 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+21:21:00,823 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+21:21:00,823 execute_operations.py INFO Elianny Arias has initiate session
+21:21:01,202 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+21:21:01,203 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+21:21:01,203 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+21:23:01,229 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+21:23:01,230 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+21:23:01,635 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+21:23:01,635 execute_operations.py INFO Elianny Arias has initiate session
+21:23:01,875 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+21:23:01,875 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+21:23:01,875 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+21:25:01,899 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+21:25:01,900 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+21:25:02,825 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+21:25:02,826 execute_operations.py INFO Elianny Arias has initiate session
+21:25:03,254 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+21:25:03,254 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+21:25:03,254 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+21:27:03,281 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+21:27:03,282 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+21:27:05,595 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+21:27:05,595 execute_operations.py INFO Elianny Arias has initiate session
+21:27:06,13 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+21:27:06,13 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+21:27:06,13 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+21:29:06,39 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+21:29:06,40 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+21:29:06,757 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+21:29:06,758 execute_operations.py INFO Elianny Arias has initiate session
+21:29:07,31 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+21:29:07,31 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+21:29:07,31 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+21:31:07,57 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+21:31:07,58 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+21:31:08,2 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+21:31:08,2 execute_operations.py INFO Elianny Arias has initiate session
+21:31:09,86 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+21:31:09,86 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+21:31:09,86 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+21:33:09,111 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+21:33:09,112 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+21:33:09,690 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+21:33:09,690 execute_operations.py INFO Elianny Arias has initiate session
+21:33:09,967 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+21:33:09,967 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+21:33:09,968 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+21:35:09,995 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+21:35:09,996 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+21:35:10,334 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+21:35:10,334 execute_operations.py INFO Elianny Arias has initiate session
+21:35:10,579 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+21:35:10,580 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+21:35:10,580 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+21:37:10,604 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+21:37:10,605 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+21:37:11,46 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+21:37:11,46 execute_operations.py INFO Elianny Arias has initiate session
+21:37:11,330 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+21:37:11,331 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+21:37:11,331 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+21:39:11,356 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+21:39:11,357 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+21:39:13,356 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+21:39:13,357 execute_operations.py INFO Elianny Arias has initiate session
+21:39:13,684 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+21:39:13,684 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+21:39:13,685 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+21:41:13,711 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+21:41:13,712 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+21:41:14,179 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+21:41:14,179 execute_operations.py INFO Elianny Arias has initiate session
+21:41:14,573 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+21:41:14,574 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+21:41:14,574 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+21:43:14,599 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+21:43:14,601 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+21:43:15,43 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+21:43:15,43 execute_operations.py INFO Elianny Arias has initiate session
+21:43:15,321 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+21:43:15,322 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+21:43:15,322 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+21:45:15,348 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+21:45:15,349 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+21:45:15,772 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+21:45:15,773 execute_operations.py INFO Elianny Arias has initiate session
+21:45:16,370 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+21:45:16,370 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+21:45:16,370 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+21:47:16,397 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+21:47:16,399 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+21:47:17,465 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+21:47:17,466 execute_operations.py INFO Elianny Arias has initiate session
+21:47:17,709 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+21:47:17,709 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+21:47:17,709 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+21:49:17,735 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+21:49:17,736 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+21:49:18,128 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+21:49:18,128 execute_operations.py INFO Elianny Arias has initiate session
+21:49:18,396 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+21:49:18,396 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+21:49:18,396 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+21:51:18,422 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+21:51:18,423 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+21:51:18,882 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+21:51:18,883 execute_operations.py INFO Elianny Arias has initiate session
+21:51:19,147 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+21:51:19,147 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+21:51:19,148 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+21:53:19,171 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+21:53:19,173 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+21:53:19,608 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+21:53:19,608 execute_operations.py INFO Elianny Arias has initiate session
+21:53:19,885 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+21:53:19,885 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+21:53:19,885 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+21:55:19,910 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+21:55:19,911 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+21:55:22,99 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+21:55:22,100 execute_operations.py INFO Elianny Arias has initiate session
+21:55:23,356 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+21:55:23,356 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+21:55:23,356 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+21:57:23,380 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+21:57:23,381 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+21:57:24,354 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+21:57:24,355 execute_operations.py INFO Elianny Arias has initiate session
+21:57:24,964 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+21:57:24,965 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+21:57:24,965 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+21:59:24,991 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+21:59:24,993 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+21:59:25,974 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+21:59:25,975 execute_operations.py INFO Elianny Arias has initiate session
+21:59:26,394 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+21:59:26,395 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+21:59:26,395 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+22:01:26,421 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+22:01:26,422 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+22:01:42,581 api.py INFO Backing off user_info(...) for 0.3s (requests.exceptions.SSLError: HTTPSConnectionPool(host='bot.solesbot.ai', port=443): Max retries exceeded with url: /home/dataHome (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)'))))
+22:01:42,908 urllib3.connectionpool DEBUG Starting new HTTPS connection (2): bot.solesbot.ai:443
+22:01:43,477 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+22:01:43,477 execute_operations.py INFO Elianny Arias has initiate session
+22:01:43,747 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+22:01:43,747 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+22:01:43,747 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+22:03:43,771 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+22:03:43,773 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+22:03:44,341 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+22:03:44,341 execute_operations.py INFO Elianny Arias has initiate session
+22:03:44,603 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+22:03:44,604 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+22:03:44,604 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+22:05:44,631 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+22:05:44,632 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+22:05:45,17 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+22:05:45,17 execute_operations.py INFO Elianny Arias has initiate session
+22:05:45,306 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+22:05:45,306 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+22:05:45,306 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+22:07:45,331 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+22:07:45,333 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+22:07:45,884 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+22:07:45,884 execute_operations.py INFO Elianny Arias has initiate session
+22:07:46,136 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+22:07:46,136 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+22:07:46,136 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+22:09:46,162 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+22:09:46,163 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+22:09:46,536 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+22:09:46,536 execute_operations.py INFO Elianny Arias has initiate session
+22:09:46,795 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+22:09:46,796 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+22:09:46,796 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+22:11:46,823 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+22:11:46,824 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+22:11:47,318 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+22:11:47,318 execute_operations.py INFO Elianny Arias has initiate session
+22:11:47,617 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+22:11:47,617 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+22:11:47,617 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+22:13:47,643 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+22:13:47,644 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+22:13:48,33 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+22:13:48,34 execute_operations.py INFO Elianny Arias has initiate session
+22:13:48,298 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+22:13:48,299 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+22:13:48,299 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+22:15:48,326 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+22:15:48,327 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+22:15:48,736 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+22:15:48,736 execute_operations.py INFO Elianny Arias has initiate session
+22:15:49,139 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+22:15:49,139 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+22:15:49,140 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+22:17:49,165 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+22:17:49,167 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+22:17:49,612 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+22:17:49,612 execute_operations.py INFO Elianny Arias has initiate session
+22:17:49,875 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+22:17:49,875 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+22:17:49,875 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+22:19:49,902 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+22:19:49,903 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+22:19:50,455 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+22:19:50,455 execute_operations.py INFO Elianny Arias has initiate session
+22:19:50,710 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+22:19:50,710 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+22:19:50,710 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+22:21:50,735 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+22:21:50,737 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+22:22:05,939 api.py INFO Backing off user_info(...) for 0.7s (requests.exceptions.SSLError: HTTPSConnectionPool(host='bot.solesbot.ai', port=443): Max retries exceeded with url: /home/dataHome (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)'))))
+22:22:06,606 urllib3.connectionpool DEBUG Starting new HTTPS connection (2): bot.solesbot.ai:443
+22:22:06,995 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+22:22:06,996 execute_operations.py INFO Elianny Arias has initiate session
+22:22:07,252 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+22:22:07,252 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+22:22:07,252 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+22:24:07,278 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+22:24:07,279 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+22:24:07,713 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+22:24:07,713 execute_operations.py INFO Elianny Arias has initiate session
+22:24:08,16 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+22:24:08,16 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+22:24:08,16 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+22:26:08,41 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+22:26:08,42 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+22:26:09,476 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+22:26:09,476 execute_operations.py INFO Elianny Arias has initiate session
+22:26:09,746 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+22:26:09,746 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+22:26:09,746 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+22:28:09,772 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+22:28:09,773 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+22:28:10,112 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+22:28:10,112 execute_operations.py INFO Elianny Arias has initiate session
+22:28:10,341 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+22:28:10,342 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+22:28:10,342 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+22:30:10,369 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+22:30:10,370 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+22:30:11,900 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+22:30:11,901 execute_operations.py INFO Elianny Arias has initiate session
+22:30:12,513 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+22:30:12,513 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+22:30:12,513 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+22:32:12,540 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+22:32:12,541 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+22:32:12,954 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+22:32:12,955 execute_operations.py INFO Elianny Arias has initiate session
+22:32:13,228 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+22:32:13,228 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+22:32:13,228 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+22:34:13,254 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+22:34:13,255 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+22:34:13,724 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+22:34:13,724 execute_operations.py INFO Elianny Arias has initiate session
+22:34:14,577 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+22:34:14,578 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+22:34:14,578 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+22:36:14,603 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+22:36:14,605 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+22:36:15,571 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+22:36:15,571 execute_operations.py INFO Elianny Arias has initiate session
+22:36:15,990 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+22:36:15,990 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+22:36:15,990 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+22:38:16,15 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+22:38:16,16 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+22:38:16,659 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+22:38:16,659 execute_operations.py INFO Elianny Arias has initiate session
+22:38:16,985 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+22:38:16,986 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+22:38:16,986 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+22:40:17,12 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+22:40:17,13 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+22:40:17,344 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+22:40:17,344 execute_operations.py INFO Elianny Arias has initiate session
+22:40:17,586 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+22:40:17,587 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+22:40:17,587 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+22:42:17,613 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+22:42:17,614 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+22:42:18,220 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+22:42:18,220 execute_operations.py INFO Elianny Arias has initiate session
+22:42:18,637 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+22:42:18,637 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+22:42:18,637 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+22:44:18,662 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+22:44:18,664 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+22:44:19,623 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+22:44:19,623 execute_operations.py INFO Elianny Arias has initiate session
+22:44:19,899 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+22:44:19,900 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+22:44:19,900 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+22:46:19,926 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+22:46:19,927 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+22:46:20,416 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+22:46:20,417 execute_operations.py INFO Elianny Arias has initiate session
+22:46:20,680 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+22:46:20,681 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+22:46:20,681 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+22:48:20,707 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+22:48:20,708 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+22:48:21,353 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+22:48:21,353 execute_operations.py INFO Elianny Arias has initiate session
+22:48:21,646 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+22:48:21,646 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+22:48:21,646 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+22:50:21,670 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+22:50:21,671 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+22:50:22,150 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+22:50:22,150 execute_operations.py INFO Elianny Arias has initiate session
+22:50:22,420 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+22:50:22,420 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+22:50:22,421 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+22:52:22,447 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+22:52:22,448 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+22:52:23,90 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+22:52:23,91 execute_operations.py INFO Elianny Arias has initiate session
+22:52:23,362 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+22:52:23,363 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+22:52:23,363 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+22:54:23,390 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+22:54:23,391 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+22:54:23,809 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+22:54:23,809 execute_operations.py INFO Elianny Arias has initiate session
+22:54:24,76 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+22:54:24,76 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+22:54:24,76 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+22:56:24,102 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+22:56:24,103 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+22:56:24,500 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+22:56:24,501 execute_operations.py INFO Elianny Arias has initiate session
+22:56:24,834 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+22:56:24,834 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+22:56:24,834 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+22:58:24,859 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+22:58:24,860 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+22:58:25,366 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+22:58:25,366 execute_operations.py INFO Elianny Arias has initiate session
+22:58:25,648 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+22:58:25,649 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+22:58:25,649 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+23:00:25,672 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+23:00:25,673 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+23:00:42,20 api.py INFO Backing off user_info(...) for 0.8s (requests.exceptions.SSLError: HTTPSConnectionPool(host='bot.solesbot.ai', port=443): Max retries exceeded with url: /home/dataHome (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)'))))
+23:00:42,795 urllib3.connectionpool DEBUG Starting new HTTPS connection (2): bot.solesbot.ai:443
+23:00:43,228 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+23:00:43,229 execute_operations.py INFO Elianny Arias has initiate session
+23:00:43,495 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+23:00:43,496 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+23:00:43,496 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+23:02:43,522 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+23:02:43,523 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+23:02:43,849 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+23:02:43,850 execute_operations.py INFO Elianny Arias has initiate session
+23:02:44,83 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+23:02:44,83 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+23:02:44,83 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+23:04:44,110 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+23:04:44,111 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+23:04:44,564 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+23:04:44,564 execute_operations.py INFO Elianny Arias has initiate session
+23:04:44,838 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 16
+23:04:44,838 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+23:04:44,838 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 30.32
+23:06:44,864 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+23:06:44,865 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+23:06:45,293 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+23:06:45,293 execute_operations.py INFO Elianny Arias has initiate session
+23:06:45,577 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+23:06:45,577 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+23:06:45,577 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 131.14
+23:08:45,603 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+23:08:45,604 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+23:08:45,964 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+23:08:45,965 execute_operations.py INFO Elianny Arias has initiate session
+23:08:46,217 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+23:08:46,218 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+23:08:46,218 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 131.14
+23:10:46,244 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+23:10:46,245 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+23:10:46,697 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+23:10:46,698 execute_operations.py INFO Elianny Arias has initiate session
+23:10:46,979 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+23:10:46,979 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+23:10:46,979 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 131.14
+23:12:47,5 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+23:12:47,6 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+23:12:47,917 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+23:12:47,918 execute_operations.py INFO Elianny Arias has initiate session
+23:12:48,182 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+23:12:48,182 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+23:12:48,183 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 131.14
+23:14:48,208 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+23:14:48,209 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+23:14:48,619 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+23:14:48,619 execute_operations.py INFO Elianny Arias has initiate session
+23:14:48,879 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+23:14:48,879 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+23:14:48,879 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 131.14
+23:16:48,905 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+23:16:48,906 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+23:16:49,298 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+23:16:49,298 execute_operations.py INFO Elianny Arias has initiate session
+23:16:49,560 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+23:16:49,560 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+23:16:49,560 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 131.14
+23:19:15,347 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+23:19:15,349 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+23:19:15,793 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+23:19:15,794 execute_operations.py INFO Elianny Arias has initiate session
+23:19:16,50 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+23:19:16,50 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+23:19:16,50 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 131.14
+23:21:16,76 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+23:21:16,77 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+23:21:16,488 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+23:21:16,489 execute_operations.py INFO Elianny Arias has initiate session
+23:21:16,761 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+23:21:16,762 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+23:21:16,762 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 131.14
+23:23:16,785 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+23:23:16,787 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+23:23:17,185 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+23:23:17,186 execute_operations.py INFO Elianny Arias has initiate session
+23:23:17,450 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+23:23:17,451 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+23:23:17,451 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 131.14
+23:25:17,476 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+23:25:17,478 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+23:25:32,782 api.py INFO Backing off user_info(...) for 0.6s (requests.exceptions.SSLError: HTTPSConnectionPool(host='bot.solesbot.ai', port=443): Max retries exceeded with url: /home/dataHome (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)'))))
+23:25:33,333 urllib3.connectionpool DEBUG Starting new HTTPS connection (2): bot.solesbot.ai:443
+23:25:33,654 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+23:25:33,654 execute_operations.py INFO Elianny Arias has initiate session
+23:25:33,893 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+23:25:33,894 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+23:25:33,894 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 131.14
+23:27:33,918 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+23:27:33,919 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+23:27:34,601 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+23:27:34,601 execute_operations.py INFO Elianny Arias has initiate session
+23:27:35,30 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+23:27:35,31 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+23:27:35,31 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 131.14
+23:29:35,58 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+23:29:35,59 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+23:29:35,440 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+23:29:35,441 execute_operations.py INFO Elianny Arias has initiate session
+23:29:35,715 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+23:29:35,715 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+23:29:35,715 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 131.14
+23:31:35,741 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+23:31:35,742 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+23:31:36,261 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+23:31:36,261 execute_operations.py INFO Elianny Arias has initiate session
+23:31:36,526 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+23:31:36,526 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+23:31:36,526 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 131.14
+23:33:36,551 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+23:33:36,553 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+23:33:36,824 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+23:33:36,824 execute_operations.py INFO Elianny Arias has initiate session
+23:33:37,63 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+23:33:37,63 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+23:33:37,63 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 131.14
+23:35:37,88 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+23:35:37,89 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+23:35:37,511 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+23:35:37,512 execute_operations.py INFO Elianny Arias has initiate session
+23:35:37,783 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+23:35:37,784 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+23:35:37,784 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 131.14
+23:37:37,811 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+23:37:37,812 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+23:37:53,955 api.py INFO Backing off user_info(...) for 1.0s (requests.exceptions.SSLError: HTTPSConnectionPool(host='bot.solesbot.ai', port=443): Max retries exceeded with url: /home/dataHome (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)'))))
+23:37:54,922 urllib3.connectionpool DEBUG Starting new HTTPS connection (2): bot.solesbot.ai:443
+23:37:55,203 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+23:37:55,203 execute_operations.py INFO Elianny Arias has initiate session
+23:37:55,426 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+23:37:55,426 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+23:37:55,426 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 131.14
+23:39:55,452 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+23:39:55,453 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+23:39:55,791 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+23:39:55,792 execute_operations.py INFO Elianny Arias has initiate session
+23:39:56,386 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+23:39:56,386 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+23:39:56,386 execute_operations.py INFO User balance is enough to operate, arbitrage balance: 571.67
+23:39:56,661 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/getCoins HTTP/1.1" 200 None
+23:40:11,908 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+23:40:12,152 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+23:40:12,152 execute_operations.py INFO Checking if CAKE is profitable...
+23:40:12,152 execute_operations.py INFO Profit of CAKE is 1.42
+23:40:12,153 execute_operations.py INFO profit acceptable: 1.86
+23:40:12,153 execute_operations.py INFO Backing off calculate_coin_profit(...) for 5.4s (Exception: CAKE is not profitable, trying again...)
+23:40:17,743 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+23:40:17,743 execute_operations.py INFO Checking if CAKE is profitable...
+23:40:17,744 execute_operations.py INFO Profit of CAKE is 1.42
+23:40:17,744 execute_operations.py INFO profit acceptable: 1.86
+23:40:17,744 execute_operations.py INFO Backing off calculate_coin_profit(...) for 9.2s (Exception: CAKE is not profitable, trying again...)
+23:40:27,146 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+23:40:27,146 execute_operations.py INFO Checking if CAKE is profitable...
+23:40:27,146 execute_operations.py INFO Profit of CAKE is 1.42
+23:40:27,146 execute_operations.py INFO profit acceptable: 1.86
+23:40:27,146 execute_operations.py INFO Backing off calculate_coin_profit(...) for 7.9s (Exception: CAKE is not profitable, trying again...)
+23:40:35,307 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+23:40:35,307 execute_operations.py INFO Checking if CAKE is profitable...
+23:40:35,307 execute_operations.py INFO Profit of CAKE is 1.42
+23:40:35,307 execute_operations.py INFO profit acceptable: 1.86
+23:40:35,307 execute_operations.py INFO Backing off calculate_coin_profit(...) for 3.7s (Exception: CAKE is not profitable, trying again...)
+23:40:39,639 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+23:40:39,640 execute_operations.py INFO Checking if CAKE is profitable...
+23:40:39,640 execute_operations.py INFO Profit of CAKE is 1.42
+23:40:39,640 execute_operations.py INFO profit acceptable: 1.6368
+23:40:39,640 execute_operations.py INFO Backing off calculate_coin_profit(...) for 3.2s (Exception: CAKE is not profitable, trying again...)
+23:40:43,148 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+23:40:43,149 execute_operations.py INFO Checking if CAKE is profitable...
+23:40:43,149 execute_operations.py INFO Profit of CAKE is 1.42
+23:40:43,149 execute_operations.py INFO profit acceptable: 1.6182
+23:40:43,149 execute_operations.py ERROR Giving up calculate_coin_profit(...) after 6 tries (Exception: CAKE is not profitable, trying again...)
+23:40:58,421 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+23:40:58,831 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=2 HTTP/1.1" 200 None
+23:40:58,831 execute_operations.py INFO Checking if ARB is profitable...
+23:40:58,831 execute_operations.py INFO Profit of ARB is 0.5
+23:40:58,831 execute_operations.py INFO profit acceptable: 0.86
+23:40:58,831 execute_operations.py INFO Backing off calculate_coin_profit(...) for 1.9s (Exception: ARB is not profitable, trying again...)
+23:41:00,933 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=2 HTTP/1.1" 200 None
+23:41:00,933 execute_operations.py INFO Checking if ARB is profitable...
+23:41:00,933 execute_operations.py INFO Profit of ARB is 0.51
+23:41:00,934 execute_operations.py INFO profit acceptable: 0.86
+23:41:00,934 execute_operations.py INFO Backing off calculate_coin_profit(...) for 1.1s (Exception: ARB is not profitable, trying again...)
+23:41:03,313 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=2 HTTP/1.1" 200 None
+23:41:03,313 execute_operations.py INFO Checking if ARB is profitable...
+23:41:03,313 execute_operations.py INFO Profit of ARB is 0.51
+23:41:03,313 execute_operations.py INFO profit acceptable: 0.86
+23:41:03,313 execute_operations.py INFO Backing off calculate_coin_profit(...) for 0.9s (Exception: ARB is not profitable, trying again...)
+23:41:04,445 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=2 HTTP/1.1" 200 None
+23:41:04,445 execute_operations.py INFO Checking if ARB is profitable...
+23:41:04,445 execute_operations.py INFO Profit of ARB is 0.51
+23:41:04,445 execute_operations.py INFO profit acceptable: 0.86
+23:41:04,445 execute_operations.py INFO Backing off calculate_coin_profit(...) for 0.5s (Exception: ARB is not profitable, trying again...)
+23:41:05,202 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=2 HTTP/1.1" 200 None
+23:41:05,202 execute_operations.py INFO Checking if ARB is profitable...
+23:41:05,202 execute_operations.py INFO Profit of ARB is 0.51
+23:41:05,202 execute_operations.py INFO profit acceptable: 0.7396
+23:41:05,202 execute_operations.py INFO Backing off calculate_coin_profit(...) for 7.5s (Exception: ARB is not profitable, trying again...)
+23:41:12,966 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=2 HTTP/1.1" 200 None
+23:41:12,967 execute_operations.py INFO Checking if ARB is profitable...
+23:41:12,967 execute_operations.py INFO Profit of ARB is 0.4
+23:41:12,967 execute_operations.py INFO profit acceptable: 0.731
+23:41:12,967 execute_operations.py ERROR Giving up calculate_coin_profit(...) after 6 tries (Exception: ARB is not profitable, trying again...)
+23:41:28,371 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+23:41:28,649 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=5 HTTP/1.1" 200 None
+23:41:28,649 execute_operations.py INFO Checking if VET is profitable...
+23:41:28,649 execute_operations.py INFO Profit of VET is 0.5
+23:41:28,649 execute_operations.py INFO profit acceptable: 0.6
+23:41:28,650 execute_operations.py INFO Backing off calculate_coin_profit(...) for 5.8s (Exception: VET is not profitable, trying again...)
+23:41:34,691 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=5 HTTP/1.1" 200 None
+23:41:34,691 execute_operations.py INFO Checking if VET is profitable...
+23:41:34,692 execute_operations.py INFO Profit of VET is 0.5
+23:41:34,692 execute_operations.py INFO profit acceptable: 0.6
+23:41:34,692 execute_operations.py INFO Backing off calculate_coin_profit(...) for 4.2s (Exception: VET is not profitable, trying again...)
+23:41:39,155 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=5 HTTP/1.1" 200 None
+23:41:39,156 execute_operations.py INFO Checking if VET is profitable...
+23:41:39,156 execute_operations.py INFO Profit of VET is 0.5
+23:41:39,156 execute_operations.py INFO profit acceptable: 0.6
+23:41:39,156 execute_operations.py INFO Backing off calculate_coin_profit(...) for 6.9s (Exception: VET is not profitable, trying again...)
+23:41:46,253 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=5 HTTP/1.1" 200 None
+23:41:46,253 execute_operations.py INFO Checking if VET is profitable...
+23:41:46,254 execute_operations.py INFO Profit of VET is 0.5
+23:41:46,254 execute_operations.py INFO profit acceptable: 0.6
+23:41:46,254 execute_operations.py INFO Backing off calculate_coin_profit(...) for 3.0s (Exception: VET is not profitable, trying again...)
+23:41:49,494 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=5 HTTP/1.1" 200 None
+23:41:49,495 execute_operations.py INFO Checking if VET is profitable...
+23:41:49,495 execute_operations.py INFO Profit of VET is 0.5
+23:41:49,495 execute_operations.py INFO profit acceptable: 0.504
+23:41:49,495 execute_operations.py INFO Backing off calculate_coin_profit(...) for 2.6s (Exception: VET is not profitable, trying again...)
+23:41:52,294 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=5 HTTP/1.1" 200 None
+23:41:52,295 execute_operations.py INFO Checking if VET is profitable...
+23:41:52,295 execute_operations.py INFO Profit of VET is 0.5
+23:41:52,295 execute_operations.py INFO profit acceptable: 0.498
+23:41:52,295 execute_operations.py INFO VET is profitable, investing...
+23:41:52,295 api.py INFO Investment details: {'amount': '300', 'coin': 5, 'idbuy': 4, 'idsell': 1, 'sug': True}
+23:41:54,110 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 29
+23:41:54,110 api.py INFO Backing off submit(...) for 4.5s (Exception)
+23:41:58,564 api.py INFO Investment details: {'amount': '300', 'coin': 5, 'idbuy': 4, 'idsell': 1, 'sug': True}
+23:41:58,803 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+23:42:14,52 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+23:42:14,652 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=8 HTTP/1.1" 200 None
+23:42:14,652 execute_operations.py INFO Checking if ATOM is profitable...
+23:42:14,652 execute_operations.py INFO Profit of ATOM is 0.7
+23:42:14,652 execute_operations.py INFO profit acceptable: 0.81
+23:42:14,652 execute_operations.py INFO Backing off calculate_coin_profit(...) for 8.5s (Exception: ATOM is not profitable, trying again...)
+23:42:23,414 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=8 HTTP/1.1" 200 None
+23:42:23,415 execute_operations.py INFO Checking if ATOM is profitable...
+23:42:23,415 execute_operations.py INFO Profit of ATOM is 0.7
+23:42:23,415 execute_operations.py INFO profit acceptable: 0.81
+23:42:23,415 execute_operations.py INFO Backing off calculate_coin_profit(...) for 3.5s (Exception: ATOM is not profitable, trying again...)
+23:42:27,115 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=8 HTTP/1.1" 200 None
+23:42:27,115 execute_operations.py INFO Checking if ATOM is profitable...
+23:42:27,115 execute_operations.py INFO Profit of ATOM is 0.7
+23:42:27,116 execute_operations.py INFO profit acceptable: 0.81
+23:42:27,116 execute_operations.py INFO Backing off calculate_coin_profit(...) for 0.3s (Exception: ATOM is not profitable, trying again...)
+23:42:27,669 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=8 HTTP/1.1" 200 None
+23:42:27,669 execute_operations.py INFO Checking if ATOM is profitable...
+23:42:27,670 execute_operations.py INFO Profit of ATOM is 0.7
+23:42:27,670 execute_operations.py INFO profit acceptable: 0.81
+23:42:27,670 execute_operations.py INFO Backing off calculate_coin_profit(...) for 6.8s (Exception: ATOM is not profitable, trying again...)
+23:42:34,716 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=8 HTTP/1.1" 200 None
+23:42:34,717 execute_operations.py INFO Checking if ATOM is profitable...
+23:42:34,717 execute_operations.py INFO Profit of ATOM is 0.7
+23:42:34,717 execute_operations.py INFO profit acceptable: 0.6642
+23:42:34,717 execute_operations.py INFO ATOM is profitable, investing...
+23:42:34,717 api.py INFO Investment details: {'amount': '271,67', 'coin': 8, 'idbuy': 5, 'idsell': 1, 'sug': True}
+23:42:34,960 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+23:42:50,797 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+23:42:51,55 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+23:42:51,55 execute_operations.py INFO Checking if FTM is profitable...
+23:42:51,55 execute_operations.py INFO Profit of FTM is 1.37
+23:42:51,55 execute_operations.py INFO profit acceptable: 1.68
+23:42:51,55 execute_operations.py INFO Backing off calculate_coin_profit(...) for 9.1s (Exception: FTM is not profitable, trying again...)
+23:43:00,429 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+23:43:00,430 execute_operations.py INFO Checking if FTM is profitable...
+23:43:00,430 execute_operations.py INFO Profit of FTM is 1.37
+23:43:00,430 execute_operations.py INFO profit acceptable: 1.68
+23:43:00,430 execute_operations.py INFO Backing off calculate_coin_profit(...) for 2.0s (Exception: FTM is not profitable, trying again...)
+23:43:02,690 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+23:43:02,690 execute_operations.py INFO Checking if FTM is profitable...
+23:43:02,690 execute_operations.py INFO Profit of FTM is 1.37
+23:43:02,690 execute_operations.py INFO profit acceptable: 1.68
+23:43:02,691 execute_operations.py INFO Backing off calculate_coin_profit(...) for 1.3s (Exception: FTM is not profitable, trying again...)
+23:43:04,247 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+23:43:04,247 execute_operations.py INFO Checking if FTM is profitable...
+23:43:04,247 execute_operations.py INFO Profit of FTM is 1.37
+23:43:04,247 execute_operations.py INFO profit acceptable: 1.68
+23:43:04,247 execute_operations.py INFO Backing off calculate_coin_profit(...) for 5.5s (Exception: FTM is not profitable, trying again...)
+23:43:09,961 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+23:43:09,962 execute_operations.py INFO Checking if FTM is profitable...
+23:43:09,962 execute_operations.py INFO Profit of FTM is 1.21
+23:43:09,962 execute_operations.py INFO profit acceptable: 1.3608
+23:43:09,962 execute_operations.py INFO Backing off calculate_coin_profit(...) for 3.2s (Exception: FTM is not profitable, trying again...)
+23:43:13,391 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+23:43:13,392 execute_operations.py INFO Checking if FTM is profitable...
+23:43:13,392 execute_operations.py INFO Profit of FTM is 1.21
+23:43:13,392 execute_operations.py INFO profit acceptable: 1.3439999999999999
+23:43:13,392 execute_operations.py ERROR Giving up calculate_coin_profit(...) after 6 tries (Exception: FTM is not profitable, trying again...)
+23:43:28,629 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+23:43:28,887 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+23:43:28,888 execute_operations.py INFO Checking if CAKE is profitable...
+23:43:28,888 execute_operations.py INFO Profit of CAKE is 1.83
+23:43:28,888 execute_operations.py INFO profit acceptable: 1.86
+23:43:28,888 execute_operations.py INFO Backing off calculate_coin_profit(...) for 5.2s (Exception: CAKE is not profitable, trying again...)
+23:43:34,290 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+23:43:34,290 execute_operations.py INFO Checking if CAKE is profitable...
+23:43:34,290 execute_operations.py INFO Profit of CAKE is 1.83
+23:43:34,291 execute_operations.py INFO profit acceptable: 1.86
+23:43:34,291 execute_operations.py INFO Backing off calculate_coin_profit(...) for 3.8s (Exception: CAKE is not profitable, trying again...)
+23:43:38,399 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+23:43:38,400 execute_operations.py INFO Checking if CAKE is profitable...
+23:43:38,400 execute_operations.py INFO Profit of CAKE is 1.83
+23:43:38,400 execute_operations.py INFO profit acceptable: 1.86
+23:43:38,400 execute_operations.py INFO Backing off calculate_coin_profit(...) for 7.3s (Exception: CAKE is not profitable, trying again...)
+23:43:45,990 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+23:43:45,990 execute_operations.py INFO Checking if CAKE is profitable...
+23:43:45,991 execute_operations.py INFO Profit of CAKE is 1.83
+23:43:45,991 execute_operations.py INFO profit acceptable: 1.86
+23:43:45,991 execute_operations.py INFO Backing off calculate_coin_profit(...) for 8.6s (Exception: CAKE is not profitable, trying again...)
+23:43:54,863 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+23:43:54,863 execute_operations.py INFO Checking if CAKE is profitable...
+23:43:54,864 execute_operations.py INFO Profit of CAKE is 1.83
+23:43:54,864 execute_operations.py INFO profit acceptable: 1.4694
+23:43:54,864 execute_operations.py INFO CAKE is profitable, investing...
+23:43:54,864 api.py INFO Investment details: {'amount': '30', 'coin': 1, 'idbuy': 6, 'idsell': 1, 'sug': True}
+23:43:55,107 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+23:44:10,361 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+23:44:10,602 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=6 HTTP/1.1" 200 None
+23:44:10,603 execute_operations.py INFO Checking if LDO is profitable...
+23:44:10,603 execute_operations.py INFO Profit of LDO is 0.55
+23:44:10,603 execute_operations.py INFO profit acceptable: 0.65
+23:44:10,603 execute_operations.py INFO Backing off calculate_coin_profit(...) for 8.6s (Exception: LDO is not profitable, trying again...)
+23:44:19,427 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=6 HTTP/1.1" 200 None
+23:44:19,427 execute_operations.py INFO Checking if LDO is profitable...
+23:44:19,427 execute_operations.py INFO Profit of LDO is 0.55
+23:44:19,427 execute_operations.py INFO profit acceptable: 0.65
+23:44:19,428 execute_operations.py INFO Backing off calculate_coin_profit(...) for 5.6s (Exception: LDO is not profitable, trying again...)
+23:44:25,300 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=6 HTTP/1.1" 200 None
+23:44:25,301 execute_operations.py INFO Checking if LDO is profitable...
+23:44:25,301 execute_operations.py INFO Profit of LDO is 0.55
+23:44:25,301 execute_operations.py INFO profit acceptable: 0.65
+23:44:25,301 execute_operations.py INFO Backing off calculate_coin_profit(...) for 8.3s (Exception: LDO is not profitable, trying again...)
+23:44:33,896 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=6 HTTP/1.1" 200 None
+23:44:33,897 execute_operations.py INFO Checking if LDO is profitable...
+23:44:33,897 execute_operations.py INFO Profit of LDO is 0.55
+23:44:33,897 execute_operations.py INFO profit acceptable: 0.65
+23:44:33,897 execute_operations.py INFO Backing off calculate_coin_profit(...) for 4.7s (Exception: LDO is not profitable, trying again...)
+23:44:38,876 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=6 HTTP/1.1" 200 None
+23:44:38,876 execute_operations.py INFO Checking if LDO is profitable...
+23:44:38,876 execute_operations.py INFO Profit of LDO is 0.55
+23:44:38,876 execute_operations.py INFO profit acceptable: 0.507
+23:44:38,876 execute_operations.py INFO LDO is profitable, investing...
+23:44:38,877 api.py INFO Investment details: {'amount': '271,67', 'coin': 6, 'idbuy': 4, 'idsell': 1, 'sug': True}
+23:44:39,569 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 29
+23:44:39,570 api.py INFO Backing off submit(...) for 1.4s (Exception)
+23:44:40,997 api.py INFO Investment details: {'amount': '271,67', 'coin': 6, 'idbuy': 4, 'idsell': 1, 'sug': True}
+23:44:41,243 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+23:44:56,487 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+23:46:56,513 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+23:46:56,515 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+23:46:56,934 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+23:46:56,935 execute_operations.py INFO Elianny Arias has initiate session
+23:46:57,169 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+23:46:57,169 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+23:46:57,169 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+23:48:57,193 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+23:48:57,194 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+23:48:58,687 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+23:48:58,688 execute_operations.py INFO Elianny Arias has initiate session
+23:48:58,945 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+23:48:58,946 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+23:48:58,946 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+23:50:58,970 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+23:50:58,971 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+23:50:59,356 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+23:50:59,357 execute_operations.py INFO Elianny Arias has initiate session
+23:50:59,610 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+23:50:59,610 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+23:50:59,610 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+23:52:59,636 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+23:52:59,637 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+23:52:59,959 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+23:52:59,960 execute_operations.py INFO Elianny Arias has initiate session
+23:53:00,188 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+23:53:00,188 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+23:53:00,188 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+23:55:00,214 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+23:55:00,215 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+23:55:00,861 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+23:55:00,862 execute_operations.py INFO Elianny Arias has initiate session
+23:55:01,276 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+23:55:01,277 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+23:55:01,277 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+23:57:01,302 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+23:57:01,303 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+23:57:01,623 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+23:57:01,623 execute_operations.py INFO Elianny Arias has initiate session
+23:57:01,870 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+23:57:01,870 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+23:57:01,870 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+23:59:01,897 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+23:59:01,898 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+23:59:02,416 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+23:59:02,416 execute_operations.py INFO Elianny Arias has initiate session
+23:59:02,983 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+23:59:02,984 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+23:59:02,984 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+00:01:03,10 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+00:01:03,11 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+00:01:03,287 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+00:01:03,288 execute_operations.py INFO Elianny Arias has initiate session
+00:01:03,511 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+00:01:03,512 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+00:01:03,512 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+00:03:03,538 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+00:03:03,539 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+00:03:03,860 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+00:03:03,860 execute_operations.py INFO Elianny Arias has initiate session
+00:03:04,93 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+00:03:04,94 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+00:03:04,94 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+00:05:04,119 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+00:05:04,120 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+00:05:05,159 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+00:05:05,160 execute_operations.py INFO Elianny Arias has initiate session
+00:05:05,413 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+00:05:05,413 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+00:05:05,413 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+00:07:05,438 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+00:07:05,439 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+00:07:05,793 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+00:07:05,793 execute_operations.py INFO Elianny Arias has initiate session
+00:07:06,20 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+00:07:06,21 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+00:07:06,21 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+00:09:06,47 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+00:09:06,48 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+00:09:06,357 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+00:09:06,358 execute_operations.py INFO Elianny Arias has initiate session
+00:09:06,589 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+00:09:06,589 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+00:09:06,589 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+00:11:06,615 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+00:11:06,616 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+00:11:06,968 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+00:11:06,969 execute_operations.py INFO Elianny Arias has initiate session
+00:11:07,219 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+00:11:07,219 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+00:11:07,219 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+00:13:07,246 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+00:13:07,247 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+00:13:07,540 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+00:13:07,541 execute_operations.py INFO Elianny Arias has initiate session
+00:13:07,780 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+00:13:07,781 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+00:13:07,781 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+00:15:07,806 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+00:15:07,807 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+00:15:09,202 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+00:15:09,202 execute_operations.py INFO Elianny Arias has initiate session
+00:15:09,462 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+00:15:09,463 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+00:15:09,463 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+00:17:09,488 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+00:17:09,489 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+00:17:09,827 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+00:17:09,828 execute_operations.py INFO Elianny Arias has initiate session
+00:17:10,69 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+00:17:10,69 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+00:17:10,69 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+00:19:10,95 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+00:19:10,96 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+00:19:10,378 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+00:19:10,378 execute_operations.py INFO Elianny Arias has initiate session
+00:19:10,609 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+00:19:10,610 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+00:19:10,610 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+00:21:10,635 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+00:21:10,636 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+00:21:10,923 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+00:21:10,923 execute_operations.py INFO Elianny Arias has initiate session
+00:21:11,153 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+00:21:11,154 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+00:21:11,154 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+00:23:11,179 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+00:23:11,181 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+00:23:11,668 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+00:23:11,669 execute_operations.py INFO Elianny Arias has initiate session
+00:23:11,898 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+00:23:11,898 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+00:23:11,898 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+00:25:11,924 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+00:25:11,925 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+00:25:12,263 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+00:25:12,263 execute_operations.py INFO Elianny Arias has initiate session
+00:25:12,506 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+00:25:12,506 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+00:25:12,506 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+00:27:12,533 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+00:27:12,534 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+00:27:12,831 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+00:27:12,832 execute_operations.py INFO Elianny Arias has initiate session
+00:27:13,57 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+00:27:13,58 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+00:27:13,58 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+00:29:13,84 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+00:29:13,85 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+00:29:13,852 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+00:29:13,853 execute_operations.py INFO Elianny Arias has initiate session
+00:29:14,263 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+00:29:14,264 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+00:29:14,264 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+00:31:14,289 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+00:31:14,290 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+00:31:29,358 api.py INFO Backing off user_info(...) for 0.6s (requests.exceptions.SSLError: HTTPSConnectionPool(host='bot.solesbot.ai', port=443): Max retries exceeded with url: /home/dataHome (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)'))))
+00:31:29,948 urllib3.connectionpool DEBUG Starting new HTTPS connection (2): bot.solesbot.ai:443
+00:31:30,232 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+00:31:30,233 execute_operations.py INFO Elianny Arias has initiate session
+00:31:30,451 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+00:31:30,452 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+00:31:30,452 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+00:33:30,477 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+00:33:30,478 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+00:33:30,777 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+00:33:30,777 execute_operations.py INFO Elianny Arias has initiate session
+00:33:31,9 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+00:33:31,10 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+00:33:31,10 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+00:35:31,37 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+00:35:31,38 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+00:35:31,387 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+00:35:31,387 execute_operations.py INFO Elianny Arias has initiate session
+00:35:31,638 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+00:35:31,638 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+00:35:31,638 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+00:37:31,662 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+00:37:31,663 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+00:37:31,994 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+00:37:31,994 execute_operations.py INFO Elianny Arias has initiate session
+00:37:32,254 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+00:37:32,254 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+00:37:32,254 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+00:39:32,279 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+00:39:32,280 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+00:39:32,587 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+00:39:32,588 execute_operations.py INFO Elianny Arias has initiate session
+00:39:32,826 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+00:39:32,827 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+00:39:32,827 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+00:41:32,853 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+00:41:32,854 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+00:41:33,441 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+00:41:33,442 execute_operations.py INFO Elianny Arias has initiate session
+00:41:33,852 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+00:41:33,852 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+00:41:33,852 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+00:43:33,876 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+00:43:33,877 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+00:43:34,283 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+00:43:34,283 execute_operations.py INFO Elianny Arias has initiate session
+00:43:34,514 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+00:43:34,514 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+00:43:34,514 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+00:45:34,539 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+00:45:34,540 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+00:45:34,819 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+00:45:34,819 execute_operations.py INFO Elianny Arias has initiate session
+00:45:35,59 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+00:45:35,59 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+00:45:35,59 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+00:47:35,82 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+00:47:35,83 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+00:47:35,663 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+00:47:35,664 execute_operations.py INFO Elianny Arias has initiate session
+00:47:36,34 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+00:47:36,34 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+00:47:36,34 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+00:49:36,59 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+00:49:36,61 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+00:49:36,422 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+00:49:36,422 execute_operations.py INFO Elianny Arias has initiate session
+00:49:36,674 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+00:49:36,674 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+00:49:36,674 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+00:51:36,700 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+00:51:36,701 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+00:51:37,100 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+00:51:37,100 execute_operations.py INFO Elianny Arias has initiate session
+00:51:37,338 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+00:51:37,338 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+00:51:37,338 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+00:53:37,362 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+00:53:37,363 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+00:53:37,676 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+00:53:37,676 execute_operations.py INFO Elianny Arias has initiate session
+00:53:37,905 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+00:53:37,905 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+00:53:37,905 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+00:55:37,928 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+00:55:37,930 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+00:55:38,265 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+00:55:38,265 execute_operations.py INFO Elianny Arias has initiate session
+00:55:38,503 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+00:55:38,504 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+00:55:38,504 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0

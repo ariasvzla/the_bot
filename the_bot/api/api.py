@@ -130,7 +130,7 @@ class InvestOperation:
                 if error:
                     if not error["error"].startswith("You can only execute"):
                         raise Exception(response["error"])
-                    if not error.get("haserror"):
+                    if not error.get("error"):
                         logger.info(f"Investment submitted successfully")
                         return error
             except Exception as e:

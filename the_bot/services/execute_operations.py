@@ -17,9 +17,9 @@ class ExecuteOperation:
     def __init__(
         self,
         bot_session,
-        capital_baseline=435,
+        capital_baseline=565,
         profit_margin=0,
-        margin_ratio_percentage=12,
+        margin_ratio_percentage=11,
     ) -> None:
         self.bot_session = bot_session
         self.bot_api = BotApi(self.bot_session)
@@ -79,16 +79,20 @@ class ExecuteOperation:
         if user_can_operate:
             all_coins = self.bot_api.all_coins()
             i = 0
-            while (
-                arbitrage_balance >= ExecuteOperation.MINIMUN_INVESTMENT_PER_COIN
-                and len(all_coins) > 0
-            ):
-                time.sleep(15)
+            while True:
+                time.sleep(10)
                 self.profit_margin = all_coins[i].get("max_profit", 0)
+                arbitrage_balance = self.bot_api.arbitrage_balance()
+                if (
+                    arbitrage_balance < ExecuteOperation.MINIMUN_INVESTMENT_PER_COIN
+                    or len(all_coins) == 0
+                ):
+                    logger.info(
+                        "End of the cycle, bot will go to sleep for 2 minutes..."
+                    )
+                    break
                 coin_to_invest: dict = self.can_invest_in_coin(all_coins[i])
-
                 if coin_to_invest:
-                    arbitrage_balance = self.bot_api.arbitrage_balance()
                     logger.info(
                         f"{all_coins[i].get('abb')} is profitable, investing..."
                     )
