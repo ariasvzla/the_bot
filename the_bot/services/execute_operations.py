@@ -51,7 +51,6 @@ class ExecuteOperation:
         self.current_coin = coin
         self.profit_margin = coin.get("max_profit", 0)
 
-
         @backoff.on_exception(
             backoff.constant,
             Exception,
@@ -90,22 +89,23 @@ class ExecuteOperation:
                     coin_to_invest: dict = self.can_invest_in_coin(coin)
                     if coin_to_invest:
                         arbitrage_balance = self.bot_api.arbitrage_balance()
-                        if arbitrage_balance < ExecuteOperation.MINIMUN_INVESTMENT_PER_COIN:
+                        if (
+                            arbitrage_balance
+                            < ExecuteOperation.MINIMUN_INVESTMENT_PER_COIN
+                        ):
                             break
                         logger.info(f"{coin.get('abb')} is profitable, investing...")
-                        
+
                         invest = InvestOperation(
-                                arbitrage_balance=arbitrage_balance,
-                                coin_max_investment=coin.get("max_to_invest", 0),
-                                bot_api=self.bot_api,
-                            )
-                        
+                            arbitrage_balance=arbitrage_balance,
+                            coin_max_investment=coin.get("max_to_invest", 0),
+                            bot_api=self.bot_api,
+                        )
+
                         buy_id = int(coin_to_invest.get("buy", {}).get("id"))
                         sell_id = int(coin_to_invest.get("sell", {}).get("id"))
-                        
-                        invest.submit_suggestion(
-                                coin.get("id"), buy_id, sell_id
-                            )
+
+                        invest.submit_suggestion(coin.get("id"), buy_id, sell_id)
                         del all_coins[i]
         else:
             logger.info(

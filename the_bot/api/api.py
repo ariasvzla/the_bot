@@ -78,11 +78,11 @@ class InvestOperation:
         self.coin_max_investment = coin_max_investment
         self.decrease_amount_to_invest_ratio = 0.1
         self.money_to_invest = arbitrage_balance
-    
+
     @property
     def money_to_invest(self):
         return self._money_to_invest
-    
+
     @money_to_invest.setter
     def money_to_invest(self, arbitrage_balance):
         if self.coin_max_investment <= arbitrage_balance:
@@ -95,7 +95,9 @@ class InvestOperation:
             logger.info(
                 f"Reducing amount to invest by {self.decrease_amount_to_invest_ratio}..."
             )
-            self.money_to_invest = self.money_to_invest - self.decrease_amount_to_invest_ratio
+            self.money_to_invest = (
+                self.money_to_invest - self.decrease_amount_to_invest_ratio
+            )
 
     def submit_suggestion(self, coin_id: int, buy_id: int, sell_id: int):
 
@@ -118,10 +120,13 @@ class InvestOperation:
                     "sug": True,
                 }
                 logger.info(f"Investment details: {sug_data}")
+
                 response = self.bot_session.post(
                     f"{HTTP_PROTOCOL}{bot_domain}/robot/submitsuggestion", data=sug_data
                 ).json()
+
                 error = response if "haserror" in response else False
+
                 if error:
                     if not error["error"].startswith("You can only execute"):
                         raise Exception(response["error"])
