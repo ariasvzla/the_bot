@@ -89,7 +89,9 @@ class ExecuteOperation:
 
                 if coin_to_invest:
                     arbitrage_balance = self.bot_api.arbitrage_balance()
-                    logger.info(f"{all_coins[i].get('abb')} is profitable, investing...")
+                    logger.info(
+                        f"{all_coins[i].get('abb')} is profitable, investing..."
+                    )
                     invest = InvestOperation(
                         arbitrage_balance=arbitrage_balance,
                         coin_max_investment=all_coins[i].get("max_to_invest", 100),
@@ -100,7 +102,7 @@ class ExecuteOperation:
                     invest.submit_suggestion(all_coins[i].get("id"), buy_id, sell_id)
                     del all_coins[i]
 
-                #we want to reset the iterator to 0 if we reach the end of the list of coins.
+                # we want to reset the iterator to 0 if we reach the end of the list of coins.
                 if len(all_coins) - 1 == i:
                     i = 0
                     continue
