@@ -17,7 +17,7 @@ class ExecuteOperation:
     def __init__(
         self,
         bot_session,
-        capital_baseline=520,
+        capital_baseline=530,
         profit_margin=0,
         margin_ratio_percentage=12,
     ) -> None:
@@ -49,6 +49,8 @@ class ExecuteOperation:
 
     def can_invest_in_coin(self, coin) -> dict:
         self.current_coin = coin
+        self.profit_margin = coin.get("max_profit", 0)
+
 
         @backoff.on_exception(
             backoff.constant,
@@ -72,65 +74,39 @@ class ExecuteOperation:
 
         return calculate_coin_profit()
 
-    def was_invenstment_error(self, resp, coin):
-        if resp:
-            if resp.get("haserror"):
-                logger.info(
-                    f"Cannot invest in {coin.get('abb')}, error: {resp.get('error')}"
-                )
-                return True
-            else:
-                logger.info(f"Investing done successfully details: {resp}...")
-        else:
-            return True
-
     def execute(self):
         arbitrage_balance = self.bot_api.arbitrage_balance()
         user_can_operate = self.user_can_operate(arbitrage_balance)
-        coins_to_skip = []
         if user_can_operate:
+            all_coins = self.bot_api.all_coins()
             while (
                 arbitrage_balance >= ExecuteOperation.MINIMUN_INVESTMENT_PER_COIN
-                and len(coins_to_skip) < 7
+                and len(all_coins) > 0
             ):
                 time.sleep(15)
-                all_coins = self.bot_api.all_coins()
-                for coin in all_coins:
-                    if coin.get("abb") in coins_to_skip:
-                        continue
-                    time.sleep(10)
+                for i, coin in enumerate(all_coins):
+                    time.sleep(5)
                     self.profit_margin = coin.get("max_profit", 0)
-                    arbitrage_balance = self.bot_api.arbitrage_balance()
                     coin_to_invest: dict = self.can_invest_in_coin(coin)
                     if coin_to_invest:
+                        arbitrage_balance = self.bot_api.arbitrage_balance()
+                        if arbitrage_balance < ExecuteOperation.MINIMUN_INVESTMENT_PER_COIN:
+                            break
                         logger.info(f"{coin.get('abb')} is profitable, investing...")
-                        buy_id = int(coin_to_invest.get("buy", {}).get("id"))
-                        sell_id = int(coin_to_invest.get("sell", {}).get("id"))
-                        if coin.get("max_to_invest", 0) <= arbitrage_balance:
-                            logger.info(
-                                f"Investing {coin.get("max_to_invest", 0)} in {coin.get('abb')}..."
-                            )
-                            invest = InvestOperation(
-                                amount=coin.get("max_to_invest", 0),
+                        
+                        invest = InvestOperation(
+                                arbitrage_balance=arbitrage_balance,
+                                coin_max_investment=coin.get("max_to_invest", 0),
                                 bot_api=self.bot_api,
                             )
-                            resp = invest.submit_suggestion(
+                        
+                        buy_id = int(coin_to_invest.get("buy", {}).get("id"))
+                        sell_id = int(coin_to_invest.get("sell", {}).get("id"))
+                        
+                        invest.submit_suggestion(
                                 coin.get("id"), buy_id, sell_id
                             )
-                            if self.was_invenstment_error(resp, coin):
-                                coins_to_skip.append(coin.get("abb"))
-                        else:
-                            logger.info(
-                                f"Investing {arbitrage_balance} in {coin.get('abb')}..."
-                            )
-                            invest = InvestOperation(
-                                amount=arbitrage_balance, bot_api=self.bot_api
-                            )
-                            resp = invest.submit_suggestion(
-                                coin.get("id"), buy_id, sell_id
-                            )
-                            if self.was_invenstment_error(resp, coin):
-                                coins_to_skip.append(coin.get("abb"))
+                        del all_coins[i]
         else:
             logger.info(
                 f"User balance is not enough to operate, arbitrage balance: {arbitrage_balance}"

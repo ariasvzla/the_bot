@@ -72,18 +72,30 @@ class BotApi:
 
 
 class InvestOperation:
-    def __init__(self, amount, bot_api: BotApi) -> None:
-        self.amount = amount
-        self.bot_session = bot_api.bot_session
+    def __init__(self, arbitrage_balance, coin_max_investment, bot_api: BotApi) -> None:
         self.bot_api = bot_api
+        self.bot_session = bot_api.bot_session
+        self.coin_max_investment = coin_max_investment
         self.decrease_amount_to_invest_ratio = 0.1
+        self.money_to_invest = arbitrage_balance
+    
+    @property
+    def money_to_invest(self):
+        return self._money_to_invest
+    
+    @money_to_invest.setter
+    def money_to_invest(self, arbitrage_balance):
+        if self.coin_max_investment <= arbitrage_balance:
+            self._money_to_invest = self.coin_max_investment
+        else:
+            self._money_to_invest = arbitrage_balance
 
     def reduce_amount_to_invest(self, backoff_event):
-        if backoff_event["tries"] == 4:
+        if backoff_event["tries"] == 3:
             logger.info(
                 f"Reducing amount to invest by {self.decrease_amount_to_invest_ratio}..."
             )
-            self.amount = self.amount - self.decrease_amount_to_invest_ratio
+            self.money_to_invest = self.money_to_invest - self.decrease_amount_to_invest_ratio
 
     def submit_suggestion(self, coin_id: int, buy_id: int, sell_id: int):
 
@@ -99,19 +111,23 @@ class InvestOperation:
         def submit():
             try:
                 sug_data = {
-                    "amount": str(self.amount).replace(".", ","),
+                    "amount": str(self.money_to_invest).replace(".", ","),
                     "coin": coin_id,
                     "idbuy": buy_id,
                     "idsell": sell_id,
                     "sug": True,
                 }
+                logger.info(f"Investment details: {sug_data}")
                 response = self.bot_session.post(
                     f"{HTTP_PROTOCOL}{bot_domain}/robot/submitsuggestion", data=sug_data
                 ).json()
-                error = response.get("haserror")
-                if error and not response["error"].startswith("You can only execute"):
-                    raise Exception(response["error"])
-                return response
+                error = response if "haserror" in response else False
+                if error:
+                    if not error["error"].startswith("You can only execute"):
+                        raise Exception(response["error"])
+                    if not error.get("haserror"):
+                        logger.info(f"Investment submitted successfully")
+                        return error
             except Exception as e:
                 raise Exception(e)
 
