@@ -14425,3 +14425,249 @@
 19:53:14,659 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
 19:53:14,659 execute_operations.py INFO Checking if user can operate base on arbitrage balance
 19:53:14,659 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+20:04:28,20 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+20:04:28,22 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+20:04:28,372 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+20:04:28,373 execute_operations.py INFO Elianny Arias has initiate session
+20:04:28,618 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+20:04:28,619 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+20:04:28,619 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+20:06:28,645 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+20:06:28,646 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+20:06:29,98 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+20:06:29,98 execute_operations.py INFO Elianny Arias has initiate session
+20:06:29,350 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+20:06:29,351 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+20:06:29,351 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+20:08:29,377 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+20:08:29,378 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+20:08:29,725 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+20:08:29,725 execute_operations.py INFO Elianny Arias has initiate session
+20:08:30,60 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+20:08:30,60 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+20:08:30,60 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+20:10:30,87 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+20:10:30,88 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+20:10:30,916 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+20:10:30,917 execute_operations.py INFO Elianny Arias has initiate session
+20:10:31,199 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+20:10:31,200 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+20:10:31,200 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+20:12:31,226 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+20:12:31,227 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+20:12:31,688 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+20:12:31,689 execute_operations.py INFO Elianny Arias has initiate session
+20:12:32,98 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+20:12:32,99 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+20:12:32,99 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 0.0
+20:14:32,125 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+20:14:32,126 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+20:14:32,464 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+20:14:32,465 execute_operations.py INFO Elianny Arias has initiate session
+20:14:32,727 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+20:14:32,727 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+20:14:32,727 execute_operations.py INFO User balance is enough to operate, arbitrage balance: 569.08
+20:14:32,976 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/getCoins HTTP/1.1" 200 None
+20:14:48,220 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+20:14:48,220 execute_operations.py INFO Checking if CAKE is profitable...
+20:14:48,220 execute_operations.py INFO Profit of CAKE is 1.21
+20:14:48,220 execute_operations.py INFO profit acceptable: 1.86
+20:14:48,221 execute_operations.py INFO Backing off calculate_coin_profit(...) for 1.2s (Exception: CAKE is not profitable, trying again...)
+20:14:49,600 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+20:14:49,601 execute_operations.py INFO Checking if CAKE is profitable...
+20:14:49,601 execute_operations.py INFO Profit of CAKE is 1.21
+20:14:49,601 execute_operations.py INFO profit acceptable: 1.86
+20:14:49,601 execute_operations.py INFO Backing off calculate_coin_profit(...) for 3.5s (Exception: CAKE is not profitable, trying again...)
+20:14:53,361 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+20:14:53,362 execute_operations.py INFO Checking if CAKE is profitable...
+20:14:53,362 execute_operations.py INFO Profit of CAKE is 1.21
+20:14:53,362 execute_operations.py INFO profit acceptable: 1.86
+20:14:53,362 execute_operations.py INFO Backing off calculate_coin_profit(...) for 2.6s (Exception: CAKE is not profitable, trying again...)
+20:14:56,212 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+20:14:56,212 execute_operations.py INFO Checking if CAKE is profitable...
+20:14:56,212 execute_operations.py INFO Profit of CAKE is 1.21
+20:14:56,212 execute_operations.py INFO profit acceptable: 1.86
+20:14:56,212 execute_operations.py INFO Backing off calculate_coin_profit(...) for 0.7s (Exception: CAKE is not profitable, trying again...)
+20:14:57,236 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+20:14:57,236 execute_operations.py INFO Checking if CAKE is profitable...
+20:14:57,236 execute_operations.py INFO Profit of CAKE is 1.21
+20:14:57,236 execute_operations.py INFO profit acceptable: 1.6368
+20:14:57,236 execute_operations.py INFO Backing off calculate_coin_profit(...) for 6.9s (Exception: CAKE is not profitable, trying again...)
+20:15:04,719 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+20:15:04,719 execute_operations.py INFO Checking if CAKE is profitable...
+20:15:04,720 execute_operations.py INFO Profit of CAKE is 1.21
+20:15:04,720 execute_operations.py INFO profit acceptable: 1.6182
+20:15:04,720 execute_operations.py ERROR Giving up calculate_coin_profit(...) after 6 tries (Exception: CAKE is not profitable, trying again...)
+20:15:19,994 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=2 HTTP/1.1" 200 None
+20:15:19,994 execute_operations.py INFO Checking if ARB is profitable...
+20:15:19,994 execute_operations.py INFO Profit of ARB is 0.86
+20:15:19,994 execute_operations.py INFO profit acceptable: 0.86
+20:15:20,444 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+20:15:20,445 execute_operations.py INFO ARB is profitable, investing...
+20:15:20,445 api.py INFO Investment details: {'amount': '300', 'coin': 2, 'idbuy': 4, 'idsell': 1, 'sug': True}
+20:15:20,894 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+20:15:36,143 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=6 HTTP/1.1" 200 None
+20:15:36,143 execute_operations.py INFO Checking if LDO is profitable...
+20:15:36,143 execute_operations.py INFO Profit of LDO is 0.55
+20:15:36,143 execute_operations.py INFO profit acceptable: 0.65
+20:15:36,143 execute_operations.py INFO Backing off calculate_coin_profit(...) for 0.3s (Exception: LDO is not profitable, trying again...)
+20:15:36,723 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=6 HTTP/1.1" 200 None
+20:15:36,724 execute_operations.py INFO Checking if LDO is profitable...
+20:15:36,724 execute_operations.py INFO Profit of LDO is 0.55
+20:15:36,724 execute_operations.py INFO profit acceptable: 0.65
+20:15:36,724 execute_operations.py INFO Backing off calculate_coin_profit(...) for 7.9s (Exception: LDO is not profitable, trying again...)
+20:15:44,914 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=6 HTTP/1.1" 200 None
+20:15:44,914 execute_operations.py INFO Checking if LDO is profitable...
+20:15:44,914 execute_operations.py INFO Profit of LDO is 0.5
+20:15:44,914 execute_operations.py INFO profit acceptable: 0.65
+20:15:44,914 execute_operations.py INFO Backing off calculate_coin_profit(...) for 7.8s (Exception: LDO is not profitable, trying again...)
+20:15:52,944 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=6 HTTP/1.1" 200 None
+20:15:52,944 execute_operations.py INFO Checking if LDO is profitable...
+20:15:52,944 execute_operations.py INFO Profit of LDO is 0.5
+20:15:52,944 execute_operations.py INFO profit acceptable: 0.65
+20:15:52,944 execute_operations.py INFO Backing off calculate_coin_profit(...) for 6.6s (Exception: LDO is not profitable, trying again...)
+20:15:59,804 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=6 HTTP/1.1" 200 None
+20:15:59,805 execute_operations.py INFO Checking if LDO is profitable...
+20:15:59,805 execute_operations.py INFO Profit of LDO is 0.5
+20:15:59,805 execute_operations.py INFO profit acceptable: 0.559
+20:15:59,805 execute_operations.py INFO Backing off calculate_coin_profit(...) for 2.4s (Exception: LDO is not profitable, trying again...)
+20:16:02,460 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=6 HTTP/1.1" 200 None
+20:16:02,460 execute_operations.py INFO Checking if LDO is profitable...
+20:16:02,460 execute_operations.py INFO Profit of LDO is 0.5
+20:16:02,460 execute_operations.py INFO profit acceptable: 0.5525
+20:16:02,461 execute_operations.py ERROR Giving up calculate_coin_profit(...) after 6 tries (Exception: LDO is not profitable, trying again...)
+20:16:17,730 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=8 HTTP/1.1" 200 None
+20:16:17,730 execute_operations.py INFO Checking if ATOM is profitable...
+20:16:17,730 execute_operations.py INFO Profit of ATOM is 0.81
+20:16:17,730 execute_operations.py INFO profit acceptable: 0.81
+20:16:17,961 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+20:16:17,961 execute_operations.py INFO ATOM is profitable, investing...
+20:16:17,961 api.py INFO Investment details: {'amount': '569,08', 'coin': 8, 'idbuy': 5, 'idsell': 1, 'sug': True}
+20:16:18,218 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+20:16:33,456 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+20:16:33,456 execute_operations.py INFO Checking if FTM is profitable...
+20:16:33,456 execute_operations.py INFO Profit of FTM is 1.52
+20:16:33,456 execute_operations.py INFO profit acceptable: 1.68
+20:16:33,457 execute_operations.py INFO Backing off calculate_coin_profit(...) for 1.4s (Exception: FTM is not profitable, trying again...)
+20:16:35,63 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+20:16:35,64 execute_operations.py INFO Checking if FTM is profitable...
+20:16:35,64 execute_operations.py INFO Profit of FTM is 1.52
+20:16:35,64 execute_operations.py INFO profit acceptable: 1.68
+20:16:35,64 execute_operations.py INFO Backing off calculate_coin_profit(...) for 8.8s (Exception: FTM is not profitable, trying again...)
+20:16:44,106 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+20:16:44,106 execute_operations.py INFO Checking if FTM is profitable...
+20:16:44,106 execute_operations.py INFO Profit of FTM is 1.21
+20:16:44,107 execute_operations.py INFO profit acceptable: 1.68
+20:16:44,107 execute_operations.py INFO Backing off calculate_coin_profit(...) for 1.6s (Exception: FTM is not profitable, trying again...)
+20:16:45,971 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+20:16:45,971 execute_operations.py INFO Checking if FTM is profitable...
+20:16:45,971 execute_operations.py INFO Profit of FTM is 1.21
+20:16:45,971 execute_operations.py INFO profit acceptable: 1.68
+20:16:45,972 execute_operations.py INFO Backing off calculate_coin_profit(...) for 1.0s (Exception: FTM is not profitable, trying again...)
+20:16:47,173 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+20:16:47,174 execute_operations.py INFO Checking if FTM is profitable...
+20:16:47,174 execute_operations.py INFO Profit of FTM is 1.21
+20:16:47,174 execute_operations.py INFO profit acceptable: 1.4112
+20:16:47,174 execute_operations.py INFO Backing off calculate_coin_profit(...) for 3.3s (Exception: FTM is not profitable, trying again...)
+20:16:50,691 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+20:16:50,692 execute_operations.py INFO Checking if FTM is profitable...
+20:16:50,692 execute_operations.py INFO Profit of FTM is 1.21
+20:16:50,692 execute_operations.py INFO profit acceptable: 1.3944
+20:16:50,692 execute_operations.py ERROR Giving up calculate_coin_profit(...) after 6 tries (Exception: FTM is not profitable, trying again...)
+20:17:06,19 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+20:17:06,19 execute_operations.py INFO Checking if CAKE is profitable...
+20:17:06,19 execute_operations.py INFO Profit of CAKE is 1.78
+20:17:06,19 execute_operations.py INFO profit acceptable: 1.86
+20:17:06,19 execute_operations.py INFO Backing off calculate_coin_profit(...) for 3.2s (Exception: CAKE is not profitable, trying again...)
+20:17:09,442 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+20:17:09,442 execute_operations.py INFO Checking if CAKE is profitable...
+20:17:09,442 execute_operations.py INFO Profit of CAKE is 1.78
+20:17:09,442 execute_operations.py INFO profit acceptable: 1.86
+20:17:09,442 execute_operations.py INFO Backing off calculate_coin_profit(...) for 9.1s (Exception: CAKE is not profitable, trying again...)
+20:17:18,856 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+20:17:18,857 execute_operations.py INFO Checking if CAKE is profitable...
+20:17:18,857 execute_operations.py INFO Profit of CAKE is 1.78
+20:17:18,857 execute_operations.py INFO profit acceptable: 1.86
+20:17:18,857 execute_operations.py INFO Backing off calculate_coin_profit(...) for 7.2s (Exception: CAKE is not profitable, trying again...)
+20:17:26,255 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+20:17:26,255 execute_operations.py INFO Checking if CAKE is profitable...
+20:17:26,256 execute_operations.py INFO Profit of CAKE is 1.78
+20:17:26,256 execute_operations.py INFO profit acceptable: 1.86
+20:17:26,256 execute_operations.py INFO Backing off calculate_coin_profit(...) for 0.9s (Exception: CAKE is not profitable, trying again...)
+20:17:27,427 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+20:17:27,427 execute_operations.py INFO Checking if CAKE is profitable...
+20:17:27,427 execute_operations.py INFO Profit of CAKE is 1.78
+20:17:27,428 execute_operations.py INFO profit acceptable: 1.5252000000000001
+20:17:27,725 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+20:17:27,725 execute_operations.py INFO CAKE is profitable, investing...
+20:17:27,725 api.py INFO Investment details: {'amount': '30', 'coin': 1, 'idbuy': 2, 'idsell': 1, 'sug': True}
+20:17:27,978 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 29
+20:17:27,978 api.py INFO Backing off submit(...) for 9.2s (Exception)
+20:17:37,165 api.py INFO Investment details: {'amount': '30', 'coin': 1, 'idbuy': 2, 'idsell': 1, 'sug': True}
+20:17:37,397 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+20:17:52,916 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=6 HTTP/1.1" 200 None
+20:17:52,916 execute_operations.py INFO Checking if LDO is profitable...
+20:17:52,916 execute_operations.py INFO Profit of LDO is 0.55
+20:17:52,916 execute_operations.py INFO profit acceptable: 0.65
+20:17:52,916 execute_operations.py INFO Backing off calculate_coin_profit(...) for 7.8s (Exception: LDO is not profitable, trying again...)
+20:18:01,8 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=6 HTTP/1.1" 200 None
+20:18:01,9 execute_operations.py INFO Checking if LDO is profitable...
+20:18:01,9 execute_operations.py INFO Profit of LDO is 0.55
+20:18:01,9 execute_operations.py INFO profit acceptable: 0.65
+20:18:01,9 execute_operations.py INFO Backing off calculate_coin_profit(...) for 5.3s (Exception: LDO is not profitable, trying again...)
+20:18:06,601 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=6 HTTP/1.1" 200 None
+20:18:06,601 execute_operations.py INFO Checking if LDO is profitable...
+20:18:06,601 execute_operations.py INFO Profit of LDO is 0.55
+20:18:06,601 execute_operations.py INFO profit acceptable: 0.65
+20:18:06,602 execute_operations.py INFO Backing off calculate_coin_profit(...) for 0.5s (Exception: LDO is not profitable, trying again...)
+20:18:07,299 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=6 HTTP/1.1" 200 None
+20:18:07,300 execute_operations.py INFO Checking if LDO is profitable...
+20:18:07,300 execute_operations.py INFO Profit of LDO is 0.55
+20:18:07,300 execute_operations.py INFO profit acceptable: 0.65
+20:18:07,300 execute_operations.py INFO Backing off calculate_coin_profit(...) for 6.3s (Exception: LDO is not profitable, trying again...)
+20:18:13,888 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=6 HTTP/1.1" 200 None
+20:18:13,888 execute_operations.py INFO Checking if LDO is profitable...
+20:18:13,888 execute_operations.py INFO Profit of LDO is 0.55
+20:18:13,888 execute_operations.py INFO profit acceptable: 0.5265
+20:18:14,139 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+20:18:14,139 execute_operations.py INFO LDO is profitable, investing...
+20:18:14,139 api.py INFO Investment details: {'amount': '300', 'coin': 6, 'idbuy': 4, 'idsell': 1, 'sug': True}
+20:18:14,392 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+20:18:29,626 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+20:18:29,627 execute_operations.py INFO Checking if FTM is profitable...
+20:18:29,627 execute_operations.py INFO Profit of FTM is 1.11
+20:18:29,627 execute_operations.py INFO profit acceptable: 1.68
+20:18:29,627 execute_operations.py INFO Backing off calculate_coin_profit(...) for 7.4s (Exception: FTM is not profitable, trying again...)
+20:18:37,276 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+20:18:37,276 execute_operations.py INFO Checking if FTM is profitable...
+20:18:37,277 execute_operations.py INFO Profit of FTM is 1.11
+20:18:37,277 execute_operations.py INFO profit acceptable: 1.68
+20:18:37,277 execute_operations.py INFO Backing off calculate_coin_profit(...) for 1.6s (Exception: FTM is not profitable, trying again...)
+20:18:39,120 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+20:18:39,120 execute_operations.py INFO Checking if FTM is profitable...
+20:18:39,120 execute_operations.py INFO Profit of FTM is 1.11
+20:18:39,120 execute_operations.py INFO profit acceptable: 1.68
+20:18:39,121 execute_operations.py INFO Backing off calculate_coin_profit(...) for 8.0s (Exception: FTM is not profitable, trying again...)
+20:18:47,393 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+20:18:47,394 execute_operations.py INFO Checking if FTM is profitable...
+20:18:47,394 execute_operations.py INFO Profit of FTM is 1.37
+20:18:47,394 execute_operations.py INFO profit acceptable: 1.68
+20:18:47,394 execute_operations.py INFO Backing off calculate_coin_profit(...) for 5.1s (Exception: FTM is not profitable, trying again...)
+20:18:52,784 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+20:18:52,785 execute_operations.py INFO Checking if FTM is profitable...
+20:18:52,785 execute_operations.py INFO Profit of FTM is 1.37
+20:18:52,785 execute_operations.py INFO profit acceptable: 1.3439999999999999
+20:18:53,41 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+20:18:53,42 execute_operations.py INFO FTM is profitable, investing...
+20:18:53,42 api.py INFO Investment details: {'amount': '100', 'coin': 10, 'idbuy': 6, 'idsell': 1, 'sug': True}
+20:18:53,294 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 29
+20:18:53,294 api.py INFO Backing off submit(...) for 8.9s (Exception)
+20:19:02,156 api.py INFO Investment details: {'amount': '100', 'coin': 10, 'idbuy': 6, 'idsell': 1, 'sug': True}
+20:19:02,398 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+20:37:39,442 schedule DEBUG Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+20:37:39,443 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+20:37:40,71 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+20:37:40,72 execute_operations.py INFO Elianny Arias has initiate session
+20:37:40,353 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+20:37:40,353 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+20:37:40,354 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 439.08

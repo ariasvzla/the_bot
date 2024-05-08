@@ -521,3 +521,9 @@
 02:38:30,936 api.py INFO Investment details: {'amount': '-0,1', 'coin': 8, 'idbuy': 5, 'idsell': 1, 'sug': True}
 02:38:31,164 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
 02:38:31,165 api.py ERROR Giving up submit(...) after 5 tries (Exception: Minimum to operation is 10 USDT)
+20:23:21,537 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): bot.solesbot.ai:443
+20:23:21,947 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+20:23:21,950 execute_operations.py INFO Elianny Arias has initiate session
+20:23:22,201 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+20:23:22,202 execute_operations.py INFO Checking if user can operate base on arbitrage balance
+20:23:22,203 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 439.08

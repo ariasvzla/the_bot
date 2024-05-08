@@ -17,7 +17,7 @@ class ExecuteOperation:
     def __init__(
         self,
         bot_session,
-        capital_baseline=530,
+        capital_baseline=435,
         profit_margin=0,
         margin_ratio_percentage=12,
     ) -> None:
@@ -101,12 +101,10 @@ class ExecuteOperation:
                     sell_id = int(coin_to_invest.get("sell", {}).get("id"))
                     invest.submit_suggestion(all_coins[i].get("id"), buy_id, sell_id)
                     del all_coins[i]
-
-                # we want to reset the iterator to 0 if we reach the end of the list of coins.
-                if len(all_coins) - 1 == i:
+                if i < len(all_coins) - 1:
+                    i += 1
+                else:
                     i = 0
-                    continue
-                i += 1
         else:
             logger.info(
                 f"User balance is not enough to operate, arbitrage balance: {arbitrage_balance}"
