@@ -41,7 +41,7 @@ class ExecuteOperation:
             return True
 
     def decrease_profit_margin(self, backoff_event):
-        if backoff_event["tries"] >= 3:
+        if backoff_event["tries"] >= 4:
             coin_max_profit = self.current_coin.get("max_profit", 0)
             max_loss_accepted = (coin_max_profit * self.margin_ratio_percentage) / 100
             self.profit_margin = coin_max_profit - max_loss_accepted
@@ -78,35 +78,33 @@ class ExecuteOperation:
         user_can_operate = self.user_can_operate(arbitrage_balance)
         if user_can_operate:
             all_coins = self.bot_api.all_coins()
+            i = 0
             while (
                 arbitrage_balance >= ExecuteOperation.MINIMUN_INVESTMENT_PER_COIN
                 and len(all_coins) > 0
             ):
                 time.sleep(15)
-                for i, coin in enumerate(all_coins):
-                    time.sleep(5)
-                    self.profit_margin = coin.get("max_profit", 0)
-                    coin_to_invest: dict = self.can_invest_in_coin(coin)
-                    if coin_to_invest:
-                        arbitrage_balance = self.bot_api.arbitrage_balance()
-                        if (
-                            arbitrage_balance
-                            < ExecuteOperation.MINIMUN_INVESTMENT_PER_COIN
-                        ):
-                            break
-                        logger.info(f"{coin.get('abb')} is profitable, investing...")
+                self.profit_margin = all_coins[i].get("max_profit", 0)
+                coin_to_invest: dict = self.can_invest_in_coin(all_coins[i])
 
-                        invest = InvestOperation(
-                            arbitrage_balance=arbitrage_balance,
-                            coin_max_investment=coin.get("max_to_invest", 0),
-                            bot_api=self.bot_api,
-                        )
+                if coin_to_invest:
+                    arbitrage_balance = self.bot_api.arbitrage_balance()
+                    logger.info(f"{all_coins[i].get('abb')} is profitable, investing...")
+                    invest = InvestOperation(
+                        arbitrage_balance=arbitrage_balance,
+                        coin_max_investment=all_coins[i].get("max_to_invest", 100),
+                        bot_api=self.bot_api,
+                    )
+                    buy_id = int(coin_to_invest.get("buy", {}).get("id"))
+                    sell_id = int(coin_to_invest.get("sell", {}).get("id"))
+                    invest.submit_suggestion(all_coins[i].get("id"), buy_id, sell_id)
+                    del all_coins[i]
 
-                        buy_id = int(coin_to_invest.get("buy", {}).get("id"))
-                        sell_id = int(coin_to_invest.get("sell", {}).get("id"))
-
-                        invest.submit_suggestion(coin.get("id"), buy_id, sell_id)
-                        del all_coins[i]
+                #we want to reset the iterator to 0 if we reach the end of the list of coins.
+                if len(all_coins) - 1 == i:
+                    i = 0
+                    continue
+                i += 1
         else:
             logger.info(
                 f"User balance is not enough to operate, arbitrage balance: {arbitrage_balance}"
