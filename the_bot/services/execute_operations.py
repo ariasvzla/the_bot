@@ -112,7 +112,8 @@ class ExecuteOperation:
                     del all_coins[i]
                     i = 0
                     continue
-                i += 1
+                if i < len(all_coins) - 1:
+                    i += 1
         else:
             logger.info(
                 f"{user} balance is not enough to operate, arbitrage balance: {arbitrage_balance}"
