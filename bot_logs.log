@@ -568,3 +568,746 @@ INFO:execute_operations.py:Checking if user can operate base on arbitrage balanc
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
 DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
 INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:Resetting dropped connection: bot.solesbot.ai
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=15, unit=seconds, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is enough to operate, arbitrage balance: 0.0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Previous coins waited: []
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/getCoins HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Bot coins: [{'id': 1, 'title': 'CAKE', 'abb': 'CAKE', 'max_profit': 1.86, 'max_to_invest': 30}, {'id': 2, 'title': 'Arbitrum', 'abb': 'ARB', 'max_profit': 0.86, 'max_to_invest': 300}, {'id': 5, 'title': 'VeChain', 'abb': 'VET', 'max_profit': 0.6, 'max_to_invest': 300}, {'id': 6, 'title': 'Lido', 'abb': 'LDO', 'max_profit': 0.65, 'max_to_invest': 300}, {'id': 8, 'title': 'Cosmos', 'abb': 'ATOM', 'max_profit': 0.81, 'max_to_invest': 1000}, {'id': 9, 'title': 'Filecoin', 'abb': 'FIL', 'max_profit': 0.6, 'max_to_invest': 1000}, {'id': 10, 'title': 'Fantom', 'abb': 'FTM', 'max_profit': 1.68, 'max_to_invest': 100}]
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if CAKE is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of CAKE is 1.52
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 1.86
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 1.4s (Exception: CAKE is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if CAKE is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of CAKE is 1.52
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 1.86
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 1.8s (Exception: CAKE is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if CAKE is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of CAKE is 1.52
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 1.86
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 2.3s (Exception: CAKE is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if CAKE is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of CAKE is 1.52
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 1.86
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 3.5s (Exception: CAKE is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if CAKE is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of CAKE is 1.52
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 1.6554000000000002
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 3.7s (Exception: CAKE is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if CAKE is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of CAKE is 1.52
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 1.6368
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+ERROR:execute_operations.py:Giving up calculate_coin_profit(...) after 6 tries (Exception: CAKE is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=2 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if ARB is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of ARB is 0.81
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 0.86
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 2.9s (Exception: ARB is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=2 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if ARB is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of ARB is 0.81
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 0.86
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 8.6s (Exception: ARB is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=2 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if ARB is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of ARB is 0.81
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 0.86
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 1.5s (Exception: ARB is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=2 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if ARB is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of ARB is 0.86
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 0.86
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:ARB is profitable, investing...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Elianny Arias is about to invest in, investment details: {'amount': '0,0', 'coin': 2, 'idbuy': 2, 'idsell': 1, 'sug': True}
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Elianny Arias, investment results: {'haserror': True, 'error': 'Minimum to operation is 10 USDT'}
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Backing off submit(...) for 6.0s (Exception: Minimum to operation is 10 USDT)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Elianny Arias is about to invest in, investment details: {'amount': '0,0', 'coin': 2, 'idbuy': 2, 'idsell': 1, 'sug': True}
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Elianny Arias, investment results: {'haserror': True, 'error': 'Minimum to operation is 10 USDT'}
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Backing off submit(...) for 6.8s (Exception: Minimum to operation is 10 USDT)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Elianny Arias is about to invest in, investment details: {'amount': '0,0', 'coin': 2, 'idbuy': 2, 'idsell': 1, 'sug': True}
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Elianny Arias, investment results: {'haserror': True, 'error': 'Minimum to operation is 10 USDT'}
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Backing off submit(...) for 5.8s (Exception: Minimum to operation is 10 USDT)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Reducing amount to invest by 0.1...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Elianny Arias is about to invest in, investment details: {'amount': '-0,1', 'coin': 2, 'idbuy': 2, 'idsell': 1, 'sug': True}
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Elianny Arias, investment results: {'haserror': True, 'error': 'Minimum to operation is 10 USDT'}
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Backing off submit(...) for 4.1s (Exception: Minimum to operation is 10 USDT)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Elianny Arias is about to invest in, investment details: {'amount': '-0,1', 'coin': 2, 'idbuy': 2, 'idsell': 1, 'sug': True}
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Elianny Arias, investment results: {'haserror': True, 'error': 'Minimum to operation is 10 USDT'}
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+ERROR:api.py:Giving up submit(...) after 5 tries (Exception: Minimum to operation is 10 USDT)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=5 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if VET is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of VET is 0.6
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 0.6
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:VET is profitable, investing...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Elianny Arias is about to invest in, investment details: {'amount': '0,0', 'coin': 5, 'idbuy': 2, 'idsell': 1, 'sug': True}
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Elianny Arias, investment results: {'haserror': True, 'error': 'Minimum to operation is 10 USDT'}
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Backing off submit(...) for 1.4s (Exception: Minimum to operation is 10 USDT)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Elianny Arias is about to invest in, investment details: {'amount': '0,0', 'coin': 5, 'idbuy': 2, 'idsell': 1, 'sug': True}
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Elianny Arias, investment results: {'haserror': True, 'error': 'Minimum to operation is 10 USDT'}
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Backing off submit(...) for 2.1s (Exception: Minimum to operation is 10 USDT)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Elianny Arias is about to invest in, investment details: {'amount': '0,0', 'coin': 5, 'idbuy': 2, 'idsell': 1, 'sug': True}
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Elianny Arias, investment results: {'haserror': True, 'error': 'Minimum to operation is 10 USDT'}
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Backing off submit(...) for 0.7s (Exception: Minimum to operation is 10 USDT)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Reducing amount to invest by 0.1...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Elianny Arias is about to invest in, investment details: {'amount': '-0,1', 'coin': 5, 'idbuy': 2, 'idsell': 1, 'sug': True}
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Elianny Arias, investment results: {'haserror': True, 'error': 'Minimum to operation is 10 USDT'}
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Backing off submit(...) for 0.7s (Exception: Minimum to operation is 10 USDT)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Elianny Arias is about to invest in, investment details: {'amount': '-0,1', 'coin': 5, 'idbuy': 2, 'idsell': 1, 'sug': True}
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Elianny Arias, investment results: {'haserror': True, 'error': 'Minimum to operation is 10 USDT'}
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+ERROR:api.py:Giving up submit(...) after 5 tries (Exception: Minimum to operation is 10 USDT)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=6 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if LDO is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of LDO is 0.35
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 0.65
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 1.2s (Exception: LDO is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=6 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if LDO is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of LDO is 0.35
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 0.65
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 0.7s (Exception: LDO is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=6 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if LDO is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of LDO is 0.35
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 0.65
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 7.6s (Exception: LDO is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=6 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if LDO is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of LDO is 0.35
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 0.65
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 0.0s (Exception: LDO is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=6 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if LDO is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of LDO is 0.35
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 0.5655
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 0.2s (Exception: LDO is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=6 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if LDO is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of LDO is 0.35
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 0.559
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+ERROR:execute_operations.py:Giving up calculate_coin_profit(...) after 6 tries (Exception: LDO is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=8 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if ATOM is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of ATOM is 0.76
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 0.81
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 6.7s (Exception: ATOM is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=8 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if ATOM is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of ATOM is 0.76
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 0.81
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 5.5s (Exception: ATOM is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=8 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if ATOM is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of ATOM is 0.76
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 0.81
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 7.5s (Exception: ATOM is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=8 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if ATOM is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of ATOM is 0.76
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 0.81
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 1.9s (Exception: ATOM is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=8 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if ATOM is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of ATOM is 0.76
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 0.6885000000000001
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:ATOM is profitable, investing...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Elianny Arias is about to invest in, investment details: {'amount': '0,0', 'coin': 8, 'idbuy': 4, 'idsell': 1, 'sug': True}
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Elianny Arias, investment results: {'haserror': True, 'error': 'Minimum to operation is 10 USDT'}
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Backing off submit(...) for 3.4s (Exception: Minimum to operation is 10 USDT)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Elianny Arias is about to invest in, investment details: {'amount': '0,0', 'coin': 8, 'idbuy': 4, 'idsell': 1, 'sug': True}
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Elianny Arias, investment results: {'haserror': True, 'error': 'Minimum to operation is 10 USDT'}
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Backing off submit(...) for 1.6s (Exception: Minimum to operation is 10 USDT)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Elianny Arias is about to invest in, investment details: {'amount': '0,0', 'coin': 8, 'idbuy': 4, 'idsell': 1, 'sug': True}
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Elianny Arias, investment results: {'haserror': True, 'error': 'Minimum to operation is 10 USDT'}
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Backing off submit(...) for 7.5s (Exception: Minimum to operation is 10 USDT)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Reducing amount to invest by 0.1...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Elianny Arias is about to invest in, investment details: {'amount': '-0,1', 'coin': 8, 'idbuy': 4, 'idsell': 1, 'sug': True}
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Elianny Arias, investment results: {'haserror': True, 'error': 'Minimum to operation is 10 USDT'}
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Backing off submit(...) for 4.2s (Exception: Minimum to operation is 10 USDT)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Elianny Arias is about to invest in, investment details: {'amount': '-0,1', 'coin': 8, 'idbuy': 4, 'idsell': 1, 'sug': True}
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "POST /robot/submitsuggestion HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Elianny Arias, investment results: {'haserror': True, 'error': 'Minimum to operation is 10 USDT'}
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+ERROR:api.py:Giving up submit(...) after 5 tries (Exception: Minimum to operation is 10 USDT)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=9 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if FIL is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of FIL is 0.35
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 0.6
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 3.8s (Exception: FIL is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=9 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if FIL is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of FIL is 0.35
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 0.6
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 5.5s (Exception: FIL is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=9 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if FIL is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of FIL is 0.35
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 0.6
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 4.0s (Exception: FIL is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=9 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if FIL is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of FIL is 0.35
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 0.6
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 7.7s (Exception: FIL is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=9 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if FIL is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of FIL is 0.35
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 0.504
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 1.6s (Exception: FIL is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=9 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if FIL is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of FIL is 0.35
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 0.498
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+ERROR:execute_operations.py:Giving up calculate_coin_profit(...) after 6 tries (Exception: FIL is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if FTM is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of FTM is 1.52
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 1.68
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 9.2s (Exception: FTM is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if FTM is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of FTM is 0.86
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 1.68
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 0.4s (Exception: FTM is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if FTM is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of FTM is 0.86
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 1.68
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 7.5s (Exception: FTM is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if FTM is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of FTM is 0.86
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 1.68
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 6.2s (Exception: FTM is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if FTM is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of FTM is 0.86
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 1.3776
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 8.5s (Exception: FTM is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if FTM is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of FTM is 0.86
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 1.3608
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+ERROR:execute_operations.py:Giving up calculate_coin_profit(...) after 6 tries (Exception: FTM is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if FTM is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of FTM is 0.86
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 1.68
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 1.7s (Exception: FTM is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if FTM is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of FTM is 0.86
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 1.68
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 2.4s (Exception: FTM is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if FTM is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of FTM is 0.86
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 1.68
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 7.5s (Exception: FTM is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if FTM is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of FTM is 1.11
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 1.68
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 1.3s (Exception: FTM is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if FTM is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of FTM is 1.11
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 1.3439999999999999
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 4.4s (Exception: FTM is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if FTM is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of FTM is 1.11
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 1.3272
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+ERROR:execute_operations.py:Giving up calculate_coin_profit(...) after 6 tries (Exception: FTM is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if FTM is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of FTM is 1.11
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 1.68
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 2.1s (Exception: FTM is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=10 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if FTM is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of FTM is 1.11
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443

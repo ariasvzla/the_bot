@@ -2,6 +2,7 @@ from the_bot.constants import bot_domain, coins
 import backoff
 from the_bot.helpers.logging_helper import log_setup
 import os
+import re
 
 logger = log_setup(os.path.basename(__file__))
 HTTP_PROTOCOL = "https://"
@@ -136,11 +137,16 @@ class InvestOperation:
                 if 200 <= response.status_code < 300:
                     response = response.json()
                     logger.info(f"{user}, investment results: {response}")
-                    error = response if "haserror" in response else False
+
+                    error = response.get("error")
 
                     if error:
-                        if not error["error"].startswith("You can only execute"):
-                            raise Exception(response["error"])
+                        match_error = re.match(
+                            "You can only execute another transaction in.*",
+                            error,
+                        )
+                        if not match_error:
+                            raise Exception(error)
                     return response
                 else:
                     response.raise_for_status()

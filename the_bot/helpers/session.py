@@ -29,7 +29,6 @@ class BotSession:
 
     def send_msg_to_webhook(self, url, data):
         result = requests.post(url, json=data)
-        print(result)
         if 200 <= result.status_code < 300:
             return f"Webhook sent {result.status_code}"
         else:

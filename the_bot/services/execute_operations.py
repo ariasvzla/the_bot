@@ -6,8 +6,6 @@ import backoff
 from the_bot.helpers.logging_helper import log_setup
 import os
 import time
-from the_bot.services.notification_services import send_msg
-
 
 logger = log_setup(os.path.basename(__file__))
 
@@ -84,7 +82,6 @@ class ExecuteOperation:
             while True:
                 time.sleep(10)
                 arbitrage_balance = self.bot_api.arbitrage_balance()
-
                 if (
                     arbitrage_balance < ExecuteOperation.MINIMUN_INVESTMENT_PER_COIN
                     or len(all_coins) == 0
@@ -93,9 +90,7 @@ class ExecuteOperation:
                         f"End of the cycle for {user}, bot will go to sleep for 2 minutes..."
                     )
                     break
-
                 self.profit_margin = all_coins[i].get("max_profit", 0)
-
                 coin_to_invest: dict = self.can_invest_in_coin(all_coins[i])
                 if coin_to_invest:
                     logger.info(
@@ -132,7 +127,7 @@ def run_the_bot():
 
 
 if __name__ == "__main__":
-    schedule.every(2).minutes.do(run_the_bot)
+    schedule.every(3).minutes.do(run_the_bot)
     while True:
         run_pending()
         time.sleep(1)
