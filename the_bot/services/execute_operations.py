@@ -37,9 +37,6 @@ class ExecuteOperation:
     def user_can_operate(self, arbitrage_balance) -> bool:
         logger.info("Checking if user can operate base on arbitrage balance")
         if arbitrage_balance > self.capital_baseline:
-            logger.info(
-                f"User balance is enough to operate, arbitrage balance: {arbitrage_balance}"
-            )
             return True
 
     def decrease_profit_margin(self, backoff_event):
@@ -79,6 +76,9 @@ class ExecuteOperation:
         arbitrage_balance = self.bot_api.arbitrage_balance()
         user_can_operate = self.user_can_operate(arbitrage_balance)
         if user_can_operate:
+            logger.info(
+                f"{user} balance is enough to operate, arbitrage balance: {arbitrage_balance}"
+            )
             all_coins = self.bot_api.all_coins()
             i = 0
             while True:
@@ -115,7 +115,7 @@ class ExecuteOperation:
                 i += 1
         else:
             logger.info(
-                f"User balance is not enough to operate, arbitrage balance: {arbitrage_balance}"
+                f"{user} balance is not enough to operate, arbitrage balance: {arbitrage_balance}"
             )
 
 
