@@ -27,6 +27,7 @@ class BotApi:
             for known_coin in self.known_coins:
                 if coin.get("abb") == known_coin.get("abb"):
                     coin.update(known_coin)
+        logger.info(f"Bot coins: {bot_coins}")
         return bot_coins
 
     @backoff.on_exception(
@@ -99,7 +100,7 @@ class InvestOperation:
                 self.money_to_invest - self.decrease_amount_to_invest_ratio
             )
 
-    def submit_suggestion(self, coin_id: int, buy_id: int, sell_id: int):
+    def submit_suggestion(self, coin_id: int, buy_id: int, sell_id: int, user: str):
 
         @backoff.on_exception(
             backoff.constant,
@@ -119,20 +120,21 @@ class InvestOperation:
                     "idsell": sell_id,
                     "sug": True,
                 }
-                logger.info(f"Investment details: {sug_data}")
+                logger.info(
+                    f"{user} is about to invest in, investment details: {sug_data}"
+                )
 
                 response = self.bot_session.post(
                     f"{HTTP_PROTOCOL}{bot_domain}/robot/submitsuggestion", data=sug_data
                 ).json()
+
+                logger.info(f"{user}, investment results: {response}")
 
                 error = response if "haserror" in response else False
 
                 if error:
                     if not error["error"].startswith("You can only execute"):
                         raise Exception(response["error"])
-                    if not error.get("error"):
-                        logger.info(f"Investment submitted successfully")
-                        return error
             except Exception as e:
                 raise Exception(e)
 

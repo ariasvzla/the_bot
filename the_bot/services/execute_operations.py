@@ -6,6 +6,7 @@ import backoff
 from the_bot.helpers.logging_helper import log_setup
 import os
 import time
+from the_bot.services.notification_services import send_msg
 
 
 logger = log_setup(os.path.basename(__file__))
@@ -17,7 +18,7 @@ class ExecuteOperation:
     def __init__(
         self,
         bot_session,
-        capital_baseline=565,
+        capital_baseline=270,
         profit_margin=0,
         margin_ratio_percentage=11,
     ) -> None:
@@ -31,6 +32,7 @@ class ExecuteOperation:
     def user_info(self):
         user_info = self.bot_api.user_info()
         logger.info(f"{user_info.get('name')} has initiate session")
+        return user_info.get("name")
 
     def user_can_operate(self, arbitrage_balance) -> bool:
         logger.info("Checking if user can operate base on arbitrage balance")
@@ -73,7 +75,7 @@ class ExecuteOperation:
 
         return calculate_coin_profit()
 
-    def execute(self):
+    def execute(self, user):
         arbitrage_balance = self.bot_api.arbitrage_balance()
         user_can_operate = self.user_can_operate(arbitrage_balance)
         if user_can_operate:
@@ -81,16 +83,19 @@ class ExecuteOperation:
             i = 0
             while True:
                 time.sleep(10)
-                self.profit_margin = all_coins[i].get("max_profit", 0)
                 arbitrage_balance = self.bot_api.arbitrage_balance()
+
                 if (
                     arbitrage_balance < ExecuteOperation.MINIMUN_INVESTMENT_PER_COIN
                     or len(all_coins) == 0
                 ):
                     logger.info(
-                        "End of the cycle, bot will go to sleep for 2 minutes..."
+                        f"End of the cycle for {user}, bot will go to sleep for 2 minutes..."
                     )
                     break
+
+                self.profit_margin = all_coins[i].get("max_profit", 0)
+
                 coin_to_invest: dict = self.can_invest_in_coin(all_coins[i])
                 if coin_to_invest:
                     logger.info(
@@ -105,10 +110,9 @@ class ExecuteOperation:
                     sell_id = int(coin_to_invest.get("sell", {}).get("id"))
                     invest.submit_suggestion(all_coins[i].get("id"), buy_id, sell_id)
                     del all_coins[i]
-                if i < len(all_coins) - 1:
-                    i += 1
-                else:
                     i = 0
+                    continue
+                i += 1
         else:
             logger.info(
                 f"User balance is not enough to operate, arbitrage balance: {arbitrage_balance}"
@@ -119,8 +123,8 @@ def run_the_bot():
     session = BotSession(os.environ.get("ASPCOOKIE"))
     bot_session = session.bot_session()
     execute_order = ExecuteOperation(bot_session)
-    execute_order.user_info()
-    execute_order.execute()
+    user = execute_order.user_info()
+    execute_order.execute(user)
 
 
 if __name__ == "__main__":

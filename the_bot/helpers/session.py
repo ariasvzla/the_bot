@@ -5,7 +5,7 @@ HTTP_PROTOCOL = "https://"
 
 
 class BotSession:
-    def __init__(self, auth_cookie) -> None:
+    def __init__(self, auth_cookie=None) -> None:
         self.auth_cookie = {".ASPXAUTH": auth_cookie}
 
     def bot_session(self):
@@ -26,3 +26,6 @@ class BotSession:
         my_cookies = {**self.auth_cookie}
         requests.utils.add_dict_to_cookiejar(session.cookies, my_cookies)
         return session
+
+    def webhook_session(self):
+        return requests.Session()
