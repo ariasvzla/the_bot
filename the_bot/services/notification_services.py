@@ -1,12 +1,22 @@
 from the_bot.helpers.session import BotSession
 import os
 
+from the_bot.helpers.logging_helper import log_setup
+
+logger = log_setup(os.path.basename(__file__))
+
 
 def send_msg(msg):
     webhook_session = BotSession().webhook_session()
     discord_webhook = os.environ.get("DISCORD_WEBHOOK")
     if discord_webhook:
         webhook = os.environ.get("DISCORD_WEBHOOK")
-        webhook_session.post(webhook, data={"content": msg, "username": "TheTrader"})
+        try:
+            webhook_session.post(
+                webhook, data={"content": msg, "username": "TheTrader"}
+            )
+        except Exception as e:
+            logger.error("The message could not be sent.")
+            pass
     else:
         raise Exception("Discord webhook is not configured")

@@ -18,7 +18,7 @@ class ExecuteOperation:
     def __init__(
         self,
         bot_session,
-        capital_baseline=270,
+        capital_baseline=570,
         profit_margin=0,
         margin_ratio_percentage=11,
     ) -> None:
