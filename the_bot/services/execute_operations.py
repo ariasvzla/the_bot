@@ -108,7 +108,7 @@ class ExecuteOperation:
                     )
                     buy_id = int(coin_to_invest.get("buy", {}).get("id"))
                     sell_id = int(coin_to_invest.get("sell", {}).get("id"))
-                    invest.submit_suggestion(all_coins[i].get("id"), buy_id, sell_id)
+                    invest.submit_suggestion(all_coins[i].get("id"), buy_id, sell_id, user)
                     del all_coins[i]
                     i = 0
                     continue

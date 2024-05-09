@@ -20833,3 +20833,866 @@ INFO:execute_operations.py:Checking if user can operate base on arbitrage balanc
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
 DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
 INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 301.17
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 301.17
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 301.17
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 301.17
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 301.17
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 301.17
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 301.17
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 301.17
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 301.17
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 301.17
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 301.17
+DEBUG:schedule:Running job Job(interval=2, unit=minutes, do=run_the_bot, args=(), kwargs={})
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is enough to operate, arbitrage balance: 581.42
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/getCoins HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Bot coins: [{'id': 1, 'title': 'CAKE', 'abb': 'CAKE', 'max_profit': 1.86, 'max_to_invest': 30}, {'id': 2, 'title': 'Arbitrum', 'abb': 'ARB', 'max_profit': 0.86, 'max_to_invest': 300}, {'id': 5, 'title': 'VeChain', 'abb': 'VET', 'max_profit': 0.6, 'max_to_invest': 300}, {'id': 6, 'title': 'Lido', 'abb': 'LDO', 'max_profit': 0.65, 'max_to_invest': 300}, {'id': 8, 'title': 'Cosmos', 'abb': 'ATOM', 'max_profit': 0.81, 'max_to_invest': 1000}, {'id': 9, 'title': 'Filecoin', 'abb': 'FIL', 'max_profit': 0.6, 'max_to_invest': 1000}, {'id': 10, 'title': 'Fantom', 'abb': 'FTM', 'max_profit': 1.68, 'max_to_invest': 100}]
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if CAKE is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of CAKE is 1.42
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 1.86
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 5.0s (Exception: CAKE is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if CAKE is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of CAKE is 1.42
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 1.86
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 4.9s (Exception: CAKE is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if CAKE is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of CAKE is 1.42
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 1.86
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 3.0s (Exception: CAKE is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if CAKE is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of CAKE is 1.43
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 1.86
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Backing off calculate_coin_profit(...) for 1.6s (Exception: CAKE is not profitable, trying again...)
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /robot/suggestionManual/?coin=1 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if CAKE is profitable...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Profit of CAKE is 1.83
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:profit acceptable: 1.6554000000000002
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:CAKE is profitable, investing...
