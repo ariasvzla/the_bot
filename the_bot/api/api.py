@@ -43,7 +43,12 @@ class BotApi:
         backoff.expo, Exception, max_tries=10, logger=logger, raise_on_giveup=False
     )
     def user_info(self) -> dict:
-        return self.bot_session.get(f"{HTTP_PROTOCOL}{bot_domain}/home/dataHome").json()
+        response = self.bot_session.get(f"{HTTP_PROTOCOL}{bot_domain}/home/dataHome")
+        if 200 <= response.status_code < 300:
+            return response.json()
+        else:
+            logger.error(f"User info failed {response.status_code}, {response.reason}")
+            response.raise_for_status()
 
     @backoff.on_exception(
         backoff.expo, Exception, max_tries=10, logger=logger, raise_on_giveup=False
@@ -125,16 +130,20 @@ class InvestOperation:
                 )
 
                 response = self.bot_session.post(
-                    f"{HTTP_PROTOCOL}{bot_domain}/robot/submitsuggestion", data=sug_data
-                ).json()
+                    f"{HTTP_PROTOCOL}{bot_domain}/robot/submitsuggestion", json=sug_data
+                )
 
-                logger.info(f"{user}, investment results: {response}")
+                if 200 <= response.status_code < 300:
+                    response = response.json()
+                    logger.info(f"{user}, investment results: {response}")
+                    error = response if "haserror" in response else False
 
-                error = response if "haserror" in response else False
-
-                if error:
-                    if not error["error"].startswith("You can only execute"):
-                        raise Exception(response["error"])
+                    if error:
+                        if not error["error"].startswith("You can only execute"):
+                            raise Exception(response["error"])
+                    return response
+                else:
+                    response.raise_for_status()
             except Exception as e:
                 raise Exception(e)
 

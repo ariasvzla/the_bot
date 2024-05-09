@@ -527,3 +527,44 @@
 20:23:22,201 urllib3.connectionpool DEBUG https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 17
 20:23:22,202 execute_operations.py INFO Checking if user can operate base on arbitrage balance
 20:23:22,203 execute_operations.py INFO User balance is not enough to operate, arbitrage balance: 439.08
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+DEBUG:charset_normalizer:Encoding detection on empty bytes, assuming utf_8 intention.
+DEBUG:charset_normalizer:Encoding detection on empty bytes, assuming utf_8 intention.
+INFO:api.py:Backing off user_info(...) for 0.2s (AttributeError: 'dict' object has no attribute 'status_code')
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Backing off user_info(...) for 1.5s (AttributeError: 'dict' object has no attribute 'status_code')
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Backing off user_info(...) for 2.1s (AttributeError: 'dict' object has no attribute 'status_code')
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:api.py:Backing off user_info(...) for 6.5s (AttributeError: 'dict' object has no attribute 'status_code')
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:charset_normalizer:Encoding detection: utf_8 is most likely the one.
+DEBUG:charset_normalizer:Encoding detection: utf_8 is most likely the one.
+DEBUG:charset_normalizer:Encoding detection: utf_8 is most likely the one.
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias has initiate session
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /wallet/getbalancesopman HTTP/1.1" 200 15
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Checking if user can operate base on arbitrage balance
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Elianny Arias balance is not enough to operate, arbitrage balance: 0.0

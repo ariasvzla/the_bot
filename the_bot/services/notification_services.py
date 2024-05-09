@@ -3,16 +3,13 @@ import os
 
 
 def send_msg(msg):
-    webhook_session = BotSession().webhook_session()
+    data = {"content": msg, "username": "TheTrader"}
     discord_webhook = os.environ.get("DISCORD_WEBHOOK")
+    bot_session = BotSession()
     if discord_webhook:
-        webhook = os.environ.get("DISCORD_WEBHOOK")
         try:
-            webhook_session.post(
-                webhook, data={"content": msg, "username": "TheTrader"}
-            )
+            bot_session.send_msg_to_webhook(discord_webhook, data)
         except Exception as e:
-            print("The message could not be sent.")
-            pass
+            print(e)
     else:
         raise Exception("Discord webhook is not configured")
