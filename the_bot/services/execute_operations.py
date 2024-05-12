@@ -12,6 +12,7 @@ logger = log_setup(os.path.basename(__file__))
 
 class ExecuteOperation:
     MINIMUN_INVESTMENT_PER_COIN = 10
+    CYCLE_DURATION_IN_SECONDS = (18 * 100) * 4.5
 
     def __init__(
         self,
@@ -78,6 +79,7 @@ class ExecuteOperation:
                 f"{user} balance is enough to operate, arbitrage balance: {arbitrage_balance}"
             )
             all_coins = self.bot_api.all_coins()
+            logger.info(f"We has found {len(all_coins)} coins to invest.")
             i = 0
             while True:
                 time.sleep(10)
@@ -87,8 +89,10 @@ class ExecuteOperation:
                     or len(all_coins) == 0
                 ):
                     logger.info(
-                        f"End of the cycle for {user}, bot will go to sleep for 2 minutes..."
+                        f"End of the cycle for {user}, bot will go to sleep for {ExecuteOperation.CYCLE_DURATION_IN_SECONDS} seconds..."
                     )
+                    self.bot_api.reduce_coin_lock()
+                    time.sleep(ExecuteOperation.CYCLE_DURATION_IN_SECONDS)
                     break
                 self.profit_margin = all_coins[i].get("max_profit", 0)
                 coin_to_invest: dict = self.can_invest_in_coin(all_coins[i])
@@ -104,7 +108,7 @@ class ExecuteOperation:
                     buy_id = int(coin_to_invest.get("buy", {}).get("id"))
                     sell_id = int(coin_to_invest.get("sell", {}).get("id"))
                     response = invest.submit_suggestion(
-                        all_coins[i].get("id"), buy_id, sell_id, user
+                        all_coins[i], buy_id, sell_id, user
                     )
                     if response:
                         all_coins.pop(i)

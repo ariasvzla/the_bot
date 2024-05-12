@@ -3,6 +3,7 @@ import backoff
 from the_bot.helpers.logging_helper import log_setup
 import os
 import re
+import json
 
 logger = log_setup(os.path.basename(__file__))
 HTTP_PROTOCOL = "https://"
@@ -12,18 +13,30 @@ class BotApi:
     def __init__(self, session) -> None:
         self.known_coins = coins
         self.bot_session = session
+        self.coins_lock_container = json.loads(os.environ.get("COINS_LOCKED", "{}"))
 
     @backoff.on_exception(
         backoff.expo, Exception, max_tries=10, logger=logger, raise_on_giveup=False
     )
     def _bot_coins(self):
-        return self.bot_session.get(f"{HTTP_PROTOCOL}{bot_domain}/robot/getCoins")
+        response = self.bot_session.get(f"{HTTP_PROTOCOL}{bot_domain}/robot/getCoins")
+        filtered_coins = []
+        if 200 <= response.status_code < 300:
+            bot_coins = response.json()
+            filtered_coins = [
+                coin
+                for coin in bot_coins
+                if not self.coins_lock_container.get(
+                    coin.get("abb", "no_coin_found"), 0
+                )
+            ]
+        return filtered_coins
 
     @backoff.on_exception(
         backoff.expo, Exception, max_tries=10, logger=logger, raise_on_giveup=False
     )
     def all_coins(self) -> list:
-        bot_coins = self._bot_coins().json()
+        bot_coins = self._bot_coins()
         for coin in bot_coins:
             for known_coin in self.known_coins:
                 if coin.get("abb") == known_coin.get("abb"):
@@ -77,6 +90,18 @@ class BotApi:
         )
         return float(response.json().get("usdt", 0))
 
+    def add_coin_lock(self, coin):
+        logger.info(f"Adding coin lock for {coin.get('abb')}")
+        self.coins_lock_container[coin.get("abb")] = 3
+        os.environ["COINS_LOCKED"] = json.dumps(self.coins_lock_container)
+
+    def reduce_coin_lock(self):
+        for k, v in self.coins_lock_container.items():
+            if v > 0:
+                logger.info(f"Reducing coin lock for {k} by 1")
+                self.coins_lock_container[k] = v - 1
+        os.environ["COINS_LOCKED"] = json.dumps(self.coins_lock_container)
+
 
 class InvestOperation:
     def __init__(self, arbitrage_balance, coin_max_investment, bot_api: BotApi) -> None:
@@ -106,7 +131,7 @@ class InvestOperation:
                 self.money_to_invest - self.decrease_amount_to_invest_ratio
             )
 
-    def submit_suggestion(self, coin_id: int, buy_id: int, sell_id: int, user: str):
+    def submit_suggestion(self, coin: int, buy_id: int, sell_id: int, user: str):
 
         @backoff.on_exception(
             backoff.constant,
@@ -121,7 +146,7 @@ class InvestOperation:
             try:
                 sug_data = {
                     "amount": str(self.money_to_invest).replace(".", ","),
-                    "coin": coin_id,
+                    "coin": coin.get("id"),
                     "idbuy": buy_id,
                     "idsell": sell_id,
                     "sug": True,
@@ -136,7 +161,6 @@ class InvestOperation:
 
                 if 200 <= response.status_code < 300:
                     response = response.json()
-                    logger.info(f"{user}, investment results: {response}")
 
                     error = response.get("error")
 
@@ -147,6 +171,11 @@ class InvestOperation:
                         )
                         if not match_error:
                             raise Exception(error)
+                    else:
+                        logger.info(
+                            f"{user} investment done successfully, results: {response}"
+                        )
+                        self.bot_api.add_coin_lock(coin)
                     return response
                 else:
                     response.raise_for_status()
