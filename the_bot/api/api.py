@@ -20,6 +20,7 @@ class BotApi:
     )
     def _bot_coins(self):
         response = self.bot_session.get(f"{HTTP_PROTOCOL}{bot_domain}/robot/getCoins")
+        logger.info(f"current coins in the lock container: {self.coins_lock_container}")
         filtered_coins = []
         if 200 <= response.status_code < 300:
             bot_coins = response.json()
