@@ -1311,3 +1311,13 @@ DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:4
 DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
 INFO:execute_operations.py:Profit of FTM is 1.11
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Arias Elianny Jose has initiate session
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bot.solesbot.ai:443
+DEBUG:urllib3.connectionpool:https://bot.solesbot.ai:443 "GET /home/dataHome HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): discordapp.com:443
+DEBUG:urllib3.connectionpool:https://discordapp.com:443 "POST /api/webhooks/1238043208684933140/w581BrY1KckAT2jkEldi7H3qt6LVfQemHD9l6qAcRT4Dd1OCZR4gTOblijRQ8BAb60jL HTTP/1.1" 204 0
+INFO:execute_operations.py:Arias Elianny Jose has initiate session

@@ -12,12 +12,12 @@ logger = log_setup(os.path.basename(__file__))
 
 class ExecuteOperation:
     MINIMUN_INVESTMENT_PER_COIN = 10
-    CYCLE_DURATION_IN_SECONDS = (18 * 100) * 4.5
+    CYCLE_DURATION_IN_SECONDS = 100 * 100
 
     def __init__(
         self,
         bot_session,
-        capital_baseline=570,
+        capital_baseline=500,
         profit_margin=0,
         margin_ratio_percentage=11,
     ) -> None:
@@ -88,10 +88,10 @@ class ExecuteOperation:
                     arbitrage_balance < ExecuteOperation.MINIMUN_INVESTMENT_PER_COIN
                     or len(all_coins) == 0
                 ):
+                    self.bot_api.reduce_coin_lock()
                     logger.info(
                         f"End of the cycle for {user}, bot will go to sleep for {ExecuteOperation.CYCLE_DURATION_IN_SECONDS} seconds..."
                     )
-                    self.bot_api.reduce_coin_lock()
                     time.sleep(ExecuteOperation.CYCLE_DURATION_IN_SECONDS)
                     break
                 self.profit_margin = all_coins[i].get("max_profit", 0)
