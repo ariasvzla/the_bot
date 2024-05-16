@@ -6,6 +6,7 @@ import backoff
 from the_bot.helpers.logging_helper import log_setup
 import os
 import time
+from random import randrange
 
 logger = log_setup(os.path.basename(__file__))
 
@@ -82,7 +83,7 @@ class ExecuteOperation:
             logger.info(f"We has found {len(all_coins)} coins to invest.")
             i = 0
             while True:
-                time.sleep(10)
+                time.sleep(randrange(5, 10))
                 arbitrage_balance = self.bot_api.arbitrage_balance()
                 if (
                     arbitrage_balance < ExecuteOperation.MINIMUN_INVESTMENT_PER_COIN
@@ -131,7 +132,7 @@ def run_the_bot():
 
 
 if __name__ == "__main__":
-    schedule.every(3).minutes.do(run_the_bot)
+    schedule.every(randrange(2, 5)).minutes.do(run_the_bot)
     while True:
         run_pending()
         time.sleep(1)
