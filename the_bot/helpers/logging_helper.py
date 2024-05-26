@@ -4,8 +4,6 @@ from the_bot.services.notification_services import send_msg
 
 def log_setup(name):
     logging.basicConfig(
-        filename="bot_logs.log",
-        filemode="a",
         level=logging.DEBUG,
     )
     logger = logging.getLogger(name)
@@ -29,5 +27,5 @@ class FormatterLogger(logging.Formatter):
         super(FormatterLogger, self).__init__()
 
     def format(self, record):
-        data = f"{record.msg}, funcName: {record.funcName}, lineno: {record.lineno}."
+        data = f"{record.msg}."
         return data

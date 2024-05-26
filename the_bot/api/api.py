@@ -1,19 +1,18 @@
 from the_bot.constants import bot_domain, coins
 import backoff
-from the_bot.helpers.logging_helper import log_setup
-import os
 import re
-import json
+import re
+from aws_lambda_powertools import Logger
 
-logger = log_setup(os.path.basename(__file__))
+logger = Logger(service="Bot API")
 HTTP_PROTOCOL = "https://"
 
 
 class BotApi:
-    def __init__(self, session) -> None:
+    def __init__(self, session, coins_lock_container={}) -> None:
         self.known_coins = coins
         self.bot_session = session
-        self.coins_lock_container = json.loads(os.environ.get("COINS_LOCKED", "{}"))
+        self.coins_lock_container = coins_lock_container
 
     @backoff.on_exception(
         backoff.expo, Exception, max_tries=10, logger=logger, raise_on_giveup=False
@@ -54,16 +53,19 @@ class BotApi:
         )
         return response.json()
 
-    @backoff.on_exception(
-        backoff.expo, Exception, max_tries=10, logger=logger, raise_on_giveup=False
-    )
+    @backoff.on_exception(backoff.expo, Exception, max_tries=3, logger=logger)
     def user_info(self) -> dict:
         response = self.bot_session.get(f"{HTTP_PROTOCOL}{bot_domain}/home/dataHome")
         if 200 <= response.status_code < 300:
-            return response.json()
+            try:
+                return response.json()
+            except Exception as e:
+                logger.error(f"Response is not a JSON response, actual response: {e}")
+                if re.search(r"Waiting Room", response.text):
+                    raise Exception("Waiting Room")
         else:
-            logger.error(f"User info failed {response.status_code}, {response.reason}")
             response.raise_for_status()
+            logger.error(f"User info failed {response.status_code}, {response.reason}")
 
     @backoff.on_exception(
         backoff.expo, Exception, max_tries=10, logger=logger, raise_on_giveup=False
@@ -94,14 +96,12 @@ class BotApi:
     def add_coin_lock(self, coin):
         logger.info(f"Adding coin lock for {coin.get('abb')}")
         self.coins_lock_container[coin.get("abb")] = 3
-        os.environ["COINS_LOCKED"] = json.dumps(self.coins_lock_container)
 
     def reduce_coin_lock(self):
         for k, v in self.coins_lock_container.items():
             if v > 0:
                 logger.info(f"Reducing coin lock for {k} by 1")
                 self.coins_lock_container[k] = v - 1
-        os.environ["COINS_LOCKED"] = json.dumps(self.coins_lock_container)
 
 
 class InvestOperation:
@@ -172,11 +172,6 @@ class InvestOperation:
                         )
                         if not match_error:
                             raise Exception(error)
-                    else:
-                        logger.info(
-                            f"{user} investment done successfully, results: {response}"
-                        )
-                        self.bot_api.add_coin_lock(coin)
                     return response
                 else:
                     response.raise_for_status()

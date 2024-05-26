@@ -7,4 +7,5 @@ coins = [
     {"abb": "CAKE", "max_profit": 1.86, "max_to_invest": 30},
     {"abb": "ATOM", "max_profit": 0.81, "max_to_invest": 1000},
     {"abb": "FIL", "max_profit": 0.60, "max_to_invest": 1000},
+    {"abb": "DOT", "max_profit": 0.91, "max_to_invest": 500},
 ]

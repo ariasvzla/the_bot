@@ -1,5 +1,8 @@
 from the_bot.helpers.session import BotSession
 import os
+from aws_lambda_powertools import Logger
+
+logger = Logger(service="Notifications")
 
 
 def send_msg(msg):
