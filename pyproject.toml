@@ -17,6 +17,8 @@ curl-cffi = "^0.6.4"
 [tool.poetry.group.dev.dependencies]
 aws-lambda-powertools = {extras = ["all"], version = "^2.38.1"}
 aws-cdk-lib = "^2.143.0"
+pytest = "^8.2.1"
+pytest-mock = "^3.14.0"
 
 [build-system]
 requires = ["poetry-core"]

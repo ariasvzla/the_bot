@@ -41,7 +41,7 @@ class ExecuteOperation:
 
     def user_can_operate(self, arbitrage_balance) -> bool:
         logger.info("Checking if user can operate base on arbitrage balance")
-        if arbitrage_balance > self.capital_baseline:
+        if arbitrage_balance >= self.capital_baseline:
             return True
 
     def decrease_profit_margin(self, backoff_event):
@@ -96,9 +96,9 @@ class ExecuteOperation:
                 ):
                     self.bot_api.reduce_coin_lock()
                     event["coins_lock_container"] = self.bot_api.coins_lock_container
-                    next_execution = datetime.now() + timedelta(
+                    next_execution = (datetime.now() + timedelta(
                         seconds=ExecuteOperation.CYCLE_DURATION_IN_SECONDS
-                    ).strftime("%Y-%m-%dT%H:%M:%S")
+                    )).strftime("%Y-%m-%dT%H:%M:%S")
                     update_schedule(
                         context.invoked_function_arn,
                         schedule_name,
