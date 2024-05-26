@@ -20,22 +20,24 @@ class ExecuteOperation:
         self,
         bot_session,
         capital_baseline=os.environ.get("CAPITAL_BASELINE"),
-        current_lock_container={},
+        coins_lock_container={},
         profit_margin=0,
         margin_ratio_percentage=15,
     ) -> None:
         self.bot_session = bot_session
-        self.bot_api = BotApi(self.bot_session, current_lock_container)
+        self.bot_api = BotApi(self.bot_session, coins_lock_container)
         self.current_coin = None
         self.capital_baseline = int(capital_baseline)
         self.profit_margin = profit_margin
         self.margin_ratio_percentage = margin_ratio_percentage
 
-    def user_name(self):
+    def user_name(self, schedule_name):
         user_info = self.bot_api.user_info()
         if isinstance(user_info, dict):
             logger.info(f"{user_info.get('name')} has initiate session")
             return user_info.get("name")
+        else:
+            send_msg(f"The user for schedule {schedule_name} could not be fetch, please take action.")
 
     def user_can_operate(self, arbitrage_balance) -> bool:
         logger.info("Checking if user can operate base on arbitrage balance")
@@ -94,12 +96,11 @@ class ExecuteOperation:
                 ):
                     self.bot_api.reduce_coin_lock()
                     event["coins_lock_container"] = self.bot_api.coins_lock_container
-
                     next_execution = datetime.now() + timedelta(
                         seconds=ExecuteOperation.CYCLE_DURATION_IN_SECONDS
                     ).strftime("%Y-%m-%dT%H:%M:%S")
                     update_schedule(
-                        context.get("invokedFunctionArn"),
+                        context.invoked_function_arn,
                         schedule_name,
                         event,
                         f"at({next_execution})",
@@ -143,9 +144,9 @@ class ExecuteOperation:
                 f"{user_name} balance is not enough to operate, arbitrage balance: {arbitrage_balance}"
             )
             logger.info(f"Updating schedule {schedule_name}")
-            next_execution = randrange(5, 10)
+            next_execution = randrange(8, 15)
             update_schedule(
-                context.get("invokedFunctionArn"),
+                context.invoked_function_arn,
                 schedule_name,
                 event,
                 f"rate({next_execution} minutes)",
@@ -160,8 +161,8 @@ def run_the_bot(event, context):
     coins_lock_container = event.get("coins_lock_container", {})
     bot_session = session.bot_session()
     execute_order = ExecuteOperation(
-        bot_session, capital_baseline, current_lock_container
+        bot_session, capital_baseline, coins_lock_container
     )
-    user_name = execute_order.user_name()
+    user_name = execute_order.user_name(schedule_name)
     if user_name:
         execute_order.execute(user_name, context, event, schedule_name)
