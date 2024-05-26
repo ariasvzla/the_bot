@@ -5,15 +5,7 @@ import os
 
 os.environ["DISCORD_WEBHOOK"] = "test_discord_webhook"
 
-test_coins = [
-    {"abb": "ARB", "max_profit": 0.86, "max_to_invest": 300},
-    {"abb": "VET", "max_profit": 0.60, "max_to_invest": 300},
-    {"abb": "VET1", "max_profit": 0.60, "max_to_invest": 300},
-    {"abb": "LDO", "max_profit": 0.65, "max_to_invest": 300},
-    {"abb": "FTM", "max_profit": 1.68, "max_to_invest": 100},
-    {"abb": "CAKE", "max_profit": 1.86, "max_to_invest": 30},
-    {"abb": "FIL", "max_profit": 0.60, "max_to_invest": 1000},
-]
+test_coins = [{"id":1,"title":"CAKE","abb":"CAKE"},{"id":2,"title":"Arbitrum","abb":"ARB"},{"id":5,"title":"VeChain","abb":"VET"},{"id":6,"title":"Lido","abb":"LDO"},{"id":8,"title":"Cosmos","abb":"ATOM"},{"id":9,"title":"Filecoin","abb":"FIL"},{"id":10,"title":"Fantom","abb":"FTM"},{"id":11,"title":"Polkadot","abb":"DOT"}]
 
 def test_execution_order(mocker):
     mocker.patch("the_bot.services.execute_operations.ExecuteOperation.user_name", return_value="test_user")
