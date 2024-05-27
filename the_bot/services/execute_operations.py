@@ -36,10 +36,13 @@ class ExecuteOperation:
         user_info = self.bot_api.user_info()
         if isinstance(user_info, dict):
             logger.info(f"{user_info.get('name')} has initiate session")
+            send_msg(
+                f"Helath check for user schedule: {schedule_name} passed."
+            )
             return user_info.get("name")
         else:
             send_msg(
-                f"The user for schedule {schedule_name} could not be fetch, please take action."
+                f"The user for schedule {schedule_name} could not be fetch, the schedule will retry in 5 minutes, if the health check does not pass please check further."
             )
 
     def user_can_operate(self, arbitrage_balance) -> bool:
@@ -172,3 +175,10 @@ def run_the_bot(event, context):
     user_name = execute_order.user_name(schedule_name)
     if user_name:
         execute_order.execute(user_name, context, event, schedule_name)
+    else:
+        update_schedule(
+                context.invoked_function_arn,
+                schedule_name,
+                event,
+                "rate(5 minutes)",
+            )
