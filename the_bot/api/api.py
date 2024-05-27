@@ -17,7 +17,7 @@ class BotApi:
 
     @backoff.on_exception(backoff.expo, Exception, max_tries=5, logger=logger, raise_on_giveup=False)
     def all_current_operations(self):
-        response = self.bot_session.get(f"{HTTP_PROTOCOL}{bot_domain}/getManualOperation?p=0&period=7")
+        response = self.bot_session.post(f"{HTTP_PROTOCOL}{bot_domain}/getManualOperation?p=0&period=7")
         if 200 <= response.status_code < 300:
             return response.json()
 

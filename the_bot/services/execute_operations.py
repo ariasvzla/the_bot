@@ -36,9 +36,6 @@ class ExecuteOperation:
         user_info = self.bot_api.user_info()
         if isinstance(user_info, dict):
             logger.info(f"{user_info.get('name')} has initiate session")
-            send_msg(
-                f"Helath check for user schedule: {schedule_name} passed."
-            )
             return user_info.get("name")
 
     def user_can_operate(self, arbitrage_balance) -> bool:
@@ -177,7 +174,4 @@ def run_the_bot(event, context):
                 schedule_name,
                 event,
                 "rate(5 minutes)",
-            )
-        send_msg(
-                f"The schedule {schedule_name} failed, it will retry in 5 minutes, if the health check does not pass please check further."
             )
