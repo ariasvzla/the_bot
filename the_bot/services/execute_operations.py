@@ -40,10 +40,6 @@ class ExecuteOperation:
                 f"Helath check for user schedule: {schedule_name} passed."
             )
             return user_info.get("name")
-        else:
-            send_msg(
-                f"The user for schedule {schedule_name} could not be fetch, the schedule will retry in 5 minutes, if the health check does not pass please check further."
-            )
 
     def user_can_operate(self, arbitrage_balance) -> bool:
         logger.info("Checking if user can operate base on arbitrage balance")
@@ -181,4 +177,7 @@ def run_the_bot(event, context):
                 schedule_name,
                 event,
                 "rate(5 minutes)",
+            )
+        send_msg(
+                f"The schedule {schedule_name} failed, it will retry in 5 minutes, if the health check does not pass please check further."
             )
