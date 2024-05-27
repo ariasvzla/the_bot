@@ -37,6 +37,8 @@ class ExecuteOperation:
         if isinstance(user_info, dict):
             logger.info(f"{user_info.get('name')} has initiate session")
             return user_info.get("name")
+        if user_info == "Access Denied":
+            send_msg(f"The user schedule: {schedule_name}, needs new credentials!!!!")
 
     def user_can_operate(self, arbitrage_balance) -> bool:
         logger.info("Checking if user can operate base on arbitrage balance")
@@ -170,8 +172,8 @@ def run_the_bot(event, context):
         execute_order.execute(user_name, context, event, schedule_name)
     else:
         update_schedule(
-                context.invoked_function_arn,
-                schedule_name,
-                event,
-                "rate(5 minutes)",
-            )
+            context.invoked_function_arn,
+            schedule_name,
+            event,
+            "rate(5 minutes)",
+        )

@@ -14,27 +14,36 @@ class BotApi:
         self.bot_session = session
         self.coins_lock_container = coins_lock_container
 
-
-    @backoff.on_exception(backoff.expo, Exception, max_tries=5, logger=logger, raise_on_giveup=False)
+    @backoff.on_exception(
+        backoff.expo, Exception, max_tries=5, logger=logger, raise_on_giveup=False
+    )
     def all_current_operations(self):
-        response = self.bot_session.post(f"{HTTP_PROTOCOL}{bot_domain}/getManualOperation?p=0&period=7")
+        response = self.bot_session.post(
+            f"{HTTP_PROTOCOL}{bot_domain}/robot/getManualOperation?p=0&period=7"
+        )
         if 200 <= response.status_code < 300:
             return response.json()
 
     def pending_operations(self):
         all_current_operations = self.all_current_operations()
-        results = all_current_operations.get("result")
-        return [{"Amount": operation.get("Amount"), "Coin":operation.get("Coin"), "NetROI": operation.get("percentwin")} for operation in results if operation.get("Situation") == "Pending"]
+        if all_current_operations:
+            results = all_current_operations.get("result")
+            return [
+                {
+                    "Amount": operation.get("Amount"),
+                    "Coin": operation.get("Coin"),
+                    "NetROI": operation.get("percentwin"),
+                }
+                for operation in results
+                if operation.get("Situation") == "Pending"
+            ]
 
-    @backoff.on_exception(backoff.expo, Exception, max_tries=10, logger=logger)
+    @backoff.on_exception(backoff.expo, Exception, max_tries=5, logger=logger)
     def get_coins(self):
         response = self.bot_session.get(f"{HTTP_PROTOCOL}{bot_domain}/robot/getCoins")
         if 200 <= response.status_code < 300:
             return response.json()
 
-    @backoff.on_exception(
-        backoff.expo, Exception, max_tries=10, logger=logger, raise_on_giveup=False
-    )
     def _bot_coins(self):
         coins = self.get_coins()
         logger.info(f"current coins in the lock container: {self.coins_lock_container}")
@@ -46,9 +55,6 @@ class BotApi:
         ]
         return filtered_coins
 
-    @backoff.on_exception(
-        backoff.expo, Exception, max_tries=10, logger=logger, raise_on_giveup=False
-    )
     def all_coins(self) -> list:
         bot_coins = self._bot_coins()
         for coin in bot_coins:
@@ -59,7 +65,7 @@ class BotApi:
         return bot_coins
 
     @backoff.on_exception(
-        backoff.expo, Exception, max_tries=10, logger=logger, raise_on_giveup=False
+        backoff.expo, Exception, max_tries=5, logger=logger, raise_on_giveup=False
     )
     def solesbot_suggestion_for_coin(self, coin_id: int) -> dict:
         response = self.bot_session.get(
@@ -67,7 +73,9 @@ class BotApi:
         )
         return response.json()
 
-    @backoff.on_exception(backoff.expo, Exception, max_tries=3, logger=logger, raise_on_giveup=False)
+    @backoff.on_exception(
+        backoff.expo, Exception, max_tries=3, logger=logger, raise_on_giveup=False
+    )
     def user_info(self) -> dict:
         response = self.bot_session.get(f"{HTTP_PROTOCOL}{bot_domain}/home/dataHome")
         if 200 <= response.status_code < 300:
@@ -77,12 +85,12 @@ class BotApi:
                 logger.error(f"Response is not a JSON response, actual response: {e}")
                 if re.search(r"Waiting Room", response.text):
                     raise Exception("Waiting Room")
-        else:
-            response.raise_for_status()
+        if response.status_code == 403:
             logger.error(f"User info failed {response.status_code}, {response.reason}")
+            return "Access Denied"
 
     @backoff.on_exception(
-        backoff.expo, Exception, max_tries=10, logger=logger, raise_on_giveup=False
+        backoff.expo, Exception, max_tries=5, logger=logger, raise_on_giveup=False
     )
     def balance_in_operation(self) -> float:
         response = self.bot_session.get(
@@ -91,7 +99,7 @@ class BotApi:
         return float(response.json().get("balance", 0))
 
     @backoff.on_exception(
-        backoff.expo, Exception, max_tries=10, logger=logger, raise_on_giveup=False
+        backoff.expo, Exception, max_tries=5, logger=logger, raise_on_giveup=False
     )
     def date_in_operation(self):
         return self.bot_session.get(
@@ -99,7 +107,7 @@ class BotApi:
         ).json()
 
     @backoff.on_exception(
-        backoff.expo, Exception, max_tries=10, logger=logger, raise_on_giveup=False
+        backoff.expo, Exception, max_tries=5, logger=logger, raise_on_giveup=False
     )
     def arbitrage_balance(self) -> float:
         response = self.bot_session.get(
