@@ -14,6 +14,18 @@ class BotApi:
         self.bot_session = session
         self.coins_lock_container = coins_lock_container
 
+
+    @backoff.on_exception(backoff.expo, Exception, max_tries=5, logger=logger, raise_on_giveup=False)
+    def all_current_operations(self):
+        response = self.bot_session.get(f"{HTTP_PROTOCOL}{bot_domain}/getManualOperation?p=0&period=7")
+        if 200 <= response.status_code < 300:
+            return response.json()
+
+    def pending_operations(self):
+        all_current_operations = all_current_operations()
+        results = all_current_operations.get("result")
+        return [{"Amount": operation.get("Amount"), "Coin":operation.get("Coin"), "NetROI": operation.get("percentwin")} for operation in results if operation.get("Situation") == "Pending"]
+
     @backoff.on_exception(backoff.expo, Exception, max_tries=10, logger=logger)
     def get_coins(self):
         response = self.bot_session.get(f"{HTTP_PROTOCOL}{bot_domain}/robot/getCoins")
@@ -55,7 +67,7 @@ class BotApi:
         )
         return response.json()
 
-    @backoff.on_exception(backoff.expo, Exception, max_tries=3, logger=logger)
+    @backoff.on_exception(backoff.expo, Exception, max_tries=3, logger=logger, raise_on_giveup=False)
     def user_info(self) -> dict:
         response = self.bot_session.get(f"{HTTP_PROTOCOL}{bot_domain}/home/dataHome")
         if 200 <= response.status_code < 300:

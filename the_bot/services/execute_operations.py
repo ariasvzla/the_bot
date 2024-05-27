@@ -114,7 +114,7 @@ class ExecuteOperation:
                         f"End of the cycle for {user_name}, bot will go to sleep for {ExecuteOperation.CYCLE_DURATION_IN_SECONDS} seconds..."
                     )
                     send_msg(
-                        f"The arbritage operation for user: {user_name} has finished, details: {event}"
+                        f"The arbritage operation for user: {user_name} has finished, coins in operation: {self.bot_api.pending_operations()}"
                     )
                     break
                 self.profit_margin = all_coins[i].get("max_profit", 0)
