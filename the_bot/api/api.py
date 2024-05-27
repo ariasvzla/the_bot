@@ -22,7 +22,7 @@ class BotApi:
             return response.json()
 
     def pending_operations(self):
-        all_current_operations = all_current_operations()
+        all_current_operations = self.all_current_operations()
         results = all_current_operations.get("result")
         return [{"Amount": operation.get("Amount"), "Coin":operation.get("Coin"), "NetROI": operation.get("percentwin")} for operation in results if operation.get("Situation") == "Pending"]
 
