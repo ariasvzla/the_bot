@@ -14,13 +14,13 @@ logger = Logger(service="Execute oeprations")
 
 class ExecuteOperation:
     MINIMUN_INVESTMENT_PER_COIN = 10
-    CYCLE_DURATION_IN_SECONDS = 100 * 100
 
     def __init__(
         self,
         bot_session,
         capital_baseline=os.environ.get("CAPITAL_BASELINE"),
         coins_lock_container={},
+        cycle_duration_in_seconds=100 * 100,
         profit_margin=0,
         margin_ratio_percentage=15,
     ) -> None:
@@ -28,6 +28,7 @@ class ExecuteOperation:
         self.bot_api = BotApi(self.bot_session, coins_lock_container)
         self.current_coin = None
         self.capital_baseline = int(capital_baseline)
+        self.cycle_duration_in_seconds = cycle_duration_in_seconds
         self.profit_margin = profit_margin
         self.margin_ratio_percentage = margin_ratio_percentage
 
@@ -37,7 +38,9 @@ class ExecuteOperation:
             logger.info(f"{user_info.get('name')} has initiate session")
             return user_info.get("name")
         else:
-            send_msg(f"The user for schedule {schedule_name} could not be fetch, please take action.")
+            send_msg(
+                f"The user for schedule {schedule_name} could not be fetch, please take action."
+            )
 
     def user_can_operate(self, arbitrage_balance) -> bool:
         logger.info("Checking if user can operate base on arbitrage balance")
@@ -45,7 +48,7 @@ class ExecuteOperation:
             return True
 
     def decrease_profit_margin(self, backoff_event):
-        if backoff_event["tries"] >= 2:
+        if backoff_event["tries"] >= 4:
             coin_max_profit = self.current_coin.get("max_profit", 0)
             max_loss_accepted = (coin_max_profit * self.margin_ratio_percentage) / 100
             self.profit_margin = coin_max_profit - max_loss_accepted
@@ -59,7 +62,7 @@ class ExecuteOperation:
             Exception,
             on_backoff=self.decrease_profit_margin,
             interval=10,
-            max_tries=3,
+            max_tries=5,
             logger=logger,
             raise_on_giveup=False,
         )
@@ -97,9 +100,10 @@ class ExecuteOperation:
                 ):
                     self.bot_api.reduce_coin_lock()
                     event["coins_lock_container"] = self.bot_api.coins_lock_container
-                    next_execution = (datetime.now() + timedelta(
-                        seconds=ExecuteOperation.CYCLE_DURATION_IN_SECONDS
-                    )).strftime("%Y-%m-%dT%H:%M:%S")
+                    next_execution = (
+                        datetime.now()
+                        + timedelta(seconds=self.cycle_duration_in_seconds)
+                    ).strftime("%Y-%m-%dT%H:%M:%S")
                     update_schedule(
                         context.invoked_function_arn,
                         schedule_name,
@@ -160,9 +164,10 @@ def run_the_bot(event, context):
     schedule_name = event.get("schedule_name")
     capital_baseline = event.get("capital_baseline", 0)
     coins_lock_container = event.get("coins_lock_container", {})
+    cycle_duration_in_seconds = int(event.get("cycle_duration_in_seconds", 100 * 100))
     bot_session = session.bot_session()
     execute_order = ExecuteOperation(
-        bot_session, capital_baseline, coins_lock_container
+        bot_session, capital_baseline, coins_lock_container, cycle_duration_in_seconds
     )
     user_name = execute_order.user_name(schedule_name)
     if user_name:

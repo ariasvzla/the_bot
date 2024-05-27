@@ -19,7 +19,7 @@ class BotApi:
         response = self.bot_session.get(f"{HTTP_PROTOCOL}{bot_domain}/robot/getCoins")
         if 200 <= response.status_code < 300:
             return response.json()
-    
+
     @backoff.on_exception(
         backoff.expo, Exception, max_tries=10, logger=logger, raise_on_giveup=False
     )
@@ -28,12 +28,10 @@ class BotApi:
         logger.info(f"current coins in the lock container: {self.coins_lock_container}")
 
         filtered_coins = [
-                coin
-                for coin in coins
-                if not self.coins_lock_container.get(
-                    coin.get("abb", "no_coin_found"), 0
-                )
-            ]
+            coin
+            for coin in coins
+            if not self.coins_lock_container.get(coin.get("abb", "no_coin_found"), 0)
+        ]
         return filtered_coins
 
     @backoff.on_exception(

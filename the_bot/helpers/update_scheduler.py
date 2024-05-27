@@ -18,7 +18,7 @@ def create_schedule_params(
         "Target": {
             "Arn": lambda_target,
             "Input": json.dumps(schedule_input),
-            "RoleArn": "arn:aws:iam::992382411965:role/bot_role"
+            "RoleArn": "arn:aws:iam::992382411965:role/bot_role",
         },
     }
 
