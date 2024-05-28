@@ -147,12 +147,12 @@ class ExecuteOperation:
                 f"{user_name} balance is not enough to operate, arbitrage balance: {arbitrage_balance}"
             )
             logger.info(f"Updating schedule {schedule_name}")
-            next_execution = randrange(8, 15)
+            next_execution = (datetime.now() + timedelta(minutes=randrange(8, 15))).strftime("%Y-%m-%dT%H:%M:%S")
             update_schedule(
                 context.invoked_function_arn,
                 schedule_name,
                 event,
-                f"rate({next_execution} minutes)",
+                f"at({next_execution})",
             )
 
 
@@ -171,9 +171,10 @@ def run_the_bot(event, context):
     if user_name:
         execute_order.execute(user_name, context, event, schedule_name)
     else:
+        next_execution = (datetime.now() + timedelta(minutes=randrange(5, 8))).strftime("%Y-%m-%dT%H:%M:%S")
         update_schedule(
             context.invoked_function_arn,
             schedule_name,
             event,
-            "rate(5 minutes)",
+            f"at({next_execution})",
         )
