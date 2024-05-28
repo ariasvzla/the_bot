@@ -113,7 +113,7 @@ class BotApi:
         response = self.bot_session.get(
             f"{HTTP_PROTOCOL}{bot_domain}/wallet/getbalancesopman"
         )
-        return float(response.json().get("usdt", 0))
+        return int(response.json().get("usdt", 0))
 
     def add_coin_lock(self, coin):
         logger.info(f"Adding coin lock for {coin.get('abb')}")
