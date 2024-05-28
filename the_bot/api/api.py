@@ -74,7 +74,7 @@ class BotApi:
         return response.json()
 
     @backoff.on_exception(
-        backoff.expo, Exception, max_tries=3, logger=logger, raise_on_giveup=False
+        backoff.expo, Exception, max_tries=5, logger=logger, raise_on_giveup=False
     )
     def user_info(self) -> dict:
         response = self.bot_session.get(f"{HTTP_PROTOCOL}{bot_domain}/home/dataHome")
@@ -83,11 +83,10 @@ class BotApi:
                 return response.json()
             except Exception as e:
                 logger.error(f"Response is not a JSON response, actual response: {e}")
-                if re.search(r"Waiting Room", response.text):
-                    raise Exception("Waiting Room")
+                raise Exception("Returned content invalid.")
         if response.status_code == 403:
             logger.error(f"User info failed {response.status_code}, {response.reason}")
-            return "Access Denied"
+            return response.status_code
 
     @backoff.on_exception(
         backoff.expo, Exception, max_tries=5, logger=logger, raise_on_giveup=False
@@ -96,7 +95,10 @@ class BotApi:
         response = self.bot_session.get(
             f"{HTTP_PROTOCOL}{bot_domain}/robot/getBalanceInOperation"
         )
-        return float(response.json().get("balance", 0))
+        if 200 <= response.status_code < 300:
+            resp_to_json = response.json()
+            balance = resp_to_json.get("usdt", 0)
+            return float(balance.replace(",",""))
 
     @backoff.on_exception(
         backoff.expo, Exception, max_tries=5, logger=logger, raise_on_giveup=False
@@ -113,7 +115,10 @@ class BotApi:
         response = self.bot_session.get(
             f"{HTTP_PROTOCOL}{bot_domain}/wallet/getbalancesopman"
         )
-        return int(response.json().get("usdt", 0))
+        if 200 <= response.status_code < 300:
+            resp_to_json = response.json()
+            balance = resp_to_json.get("usdt", 0)
+            return float(balance.replace(",",""))
 
     def add_coin_lock(self, coin):
         logger.info(f"Adding coin lock for {coin.get('abb')}")

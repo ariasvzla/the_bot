@@ -37,7 +37,7 @@ class ExecuteOperation:
         if isinstance(user_info, dict):
             logger.info(f"{user_info.get('name')} has initiate session")
             return user_info.get("name")
-        if user_info == "Access Denied":
+        if user_info == 403:
             send_msg(f"The user schedule: {schedule_name}, needs new credentials!!!!")
 
     def user_can_operate(self, arbitrage_balance) -> bool:
