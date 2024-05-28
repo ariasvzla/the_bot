@@ -19,7 +19,7 @@ def create_schedule_params(
             "Arn": lambda_target,
             "Input": json.dumps(schedule_input),
             "RoleArn": "arn:aws:iam::992382411965:role/bot_role",
-            "RetryPolicy": {"MaximumEventAgeInSeconds": 60, "MaximumRetryAttempts": 1},
+            "RetryPolicy": {"MaximumRetryAttempts": 0},
         },
     }
 
