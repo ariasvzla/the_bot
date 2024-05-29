@@ -44,7 +44,7 @@ class ExecuteOperation:
     def user_can_operate(self, arbitrage_balance) -> bool:
         logger.info("Checking if user can operate base on arbitrage balance")
         balance_in_operation = self.bot_api.balance_in_operation()
-        if self.capital_baseline >= arbitrage_balance and balance_in_operation == 0:
+        if arbitrage_balance >= self.capital_baseline and balance_in_operation == 0:
             return True
 
     def decrease_profit_margin(self, backoff_event):
