@@ -84,7 +84,7 @@ class BotApi:
                 return response.json()
             except Exception as e:
                 logger.error(f"Response is not a JSON response, actual response: {e}")
-                if re.search("/login?ReturnUrl=", response.text):
+                if re.search("/login?ReturnUrl=", response.text) or "returnUrl" in response.text:
                     return 403
                 raise Exception(f"Returned content invalid. Content: {response.text}")
         if response.status_code == 403:
