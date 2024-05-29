@@ -84,7 +84,10 @@ class BotApi:
                 return response.json()
             except Exception as e:
                 logger.error(f"Response is not a JSON response, actual response: {e}")
-                if re.search("/login?ReturnUrl=", response.text) or "returnUrl" in response.text:
+                if (
+                    re.search("/login?ReturnUrl=", response.text)
+                    or "returnUrl" in response.text
+                ):
                     return 403
                 raise Exception(f"Returned content invalid. Content: {response.text}")
         if response.status_code == 403:
@@ -100,8 +103,8 @@ class BotApi:
         )
         if 200 <= response.status_code < 300:
             resp_to_json = response.json()
-            balance = resp_to_json.get("usdt", 0)
-            return float(balance.replace(",",""))
+            balance = resp_to_json.get("balance", 0)
+            return int(balance.replace(",", ""))
 
     @backoff.on_exception(
         backoff.expo, Exception, max_tries=5, logger=logger, raise_on_giveup=False
@@ -121,7 +124,7 @@ class BotApi:
         if 200 <= response.status_code < 300:
             resp_to_json = response.json()
             balance = resp_to_json.get("usdt", 0)
-            return float(balance.replace(",",""))
+            return float(balance.replace(",", ""))
 
     def add_coin_lock(self, coin):
         logger.info(f"Adding coin lock for {coin.get('abb')}")

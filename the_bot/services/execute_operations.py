@@ -43,7 +43,8 @@ class ExecuteOperation:
 
     def user_can_operate(self, arbitrage_balance) -> bool:
         logger.info("Checking if user can operate base on arbitrage balance")
-        if arbitrage_balance >= self.capital_baseline:
+        balance_in_operation = self.bot_api.balance_in_operation()
+        if self.capital_baseline >= arbitrage_balance and balance_in_operation == 0:
             return True
 
     def decrease_profit_margin(self, backoff_event):
@@ -148,7 +149,9 @@ class ExecuteOperation:
                 f"{user_name} balance is not enough to operate, arbitrage balance: {arbitrage_balance}"
             )
             logger.info(f"Updating schedule {schedule_name}")
-            next_execution = (datetime.now() + timedelta(minutes=randrange(8, 15))).strftime("%Y-%m-%dT%H:%M:%S")
+            next_execution = (
+                datetime.now() + timedelta(minutes=randrange(8, 15))
+            ).strftime("%Y-%m-%dT%H:%M:%S")
             update_schedule(
                 context.invoked_function_arn,
                 schedule_name,
@@ -172,7 +175,9 @@ def run_the_bot(event, context):
     if user_name:
         execute_order.execute(user_name, context, event, schedule_name)
     else:
-        next_execution = (datetime.now() + timedelta(minutes=randrange(5, 8))).strftime("%Y-%m-%dT%H:%M:%S")
+        next_execution = (datetime.now() + timedelta(minutes=randrange(5, 8))).strftime(
+            "%Y-%m-%dT%H:%M:%S"
+        )
         update_schedule(
             context.invoked_function_arn,
             schedule_name,
