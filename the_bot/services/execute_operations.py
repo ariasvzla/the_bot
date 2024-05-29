@@ -33,6 +33,7 @@ class ExecuteOperation:
         self.margin_ratio_percentage = margin_ratio_percentage
 
     def user_name(self, schedule_name):
+        logger.info(f"Checking if bot {schedule_name} can access user info.")
         user_info = self.bot_api.user_info()
         if isinstance(user_info, dict):
             logger.info(f"{user_info.get('name')} has initiate session")

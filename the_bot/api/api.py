@@ -3,6 +3,7 @@ import backoff
 import re
 import re
 from aws_lambda_powertools import Logger
+import re
 
 logger = Logger(service="Bot API")
 HTTP_PROTOCOL = "https://"
@@ -83,9 +84,9 @@ class BotApi:
                 return response.json()
             except Exception as e:
                 logger.error(f"Response is not a JSON response, actual response: {e}")
-                if "/login?ReturnUrl=" in response.text:
+                if re.search("/login?ReturnUrl=", response.text):
                     return 403
-                raise Exception("Returned content invalid.")
+                raise Exception(f"Returned content invalid. Content: {response.text}")
         if response.status_code == 403:
             logger.error(f"User info failed {response.status_code}, {response.reason}")
             return response.status_code
