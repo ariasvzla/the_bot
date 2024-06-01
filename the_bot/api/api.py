@@ -33,7 +33,7 @@ class BotApi:
                 {
                     "Amount": float(operation.get("Amount").replace(",", "")),
                     "Coin": operation.get("Coin"),
-                    "NetROI": float(operation.get("percentwin")),
+                    "NetROI": float(operation.get("percentwin").replace(",", ".")),
                 }
                 for operation in results
                 if operation.get("Situation") == "Pending"
