@@ -22,7 +22,7 @@ class ExecuteOperation:
         coins_lock_container={},
         cycle_duration_in_seconds=100 * 100,
         profit_margin=0,
-        margin_ratio_percentage=10,
+        margin_ratio_percentage=17,
     ) -> None:
         self.bot_session = bot_session
         self.bot_api = BotApi(self.bot_session, coins_lock_container)
