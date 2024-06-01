@@ -46,7 +46,7 @@ class TheBotInfraStack(Stack):
             code=_lambda.Code.from_asset(
                 "../the_bot/services"),
             handler="execute_operations.run_the_bot",
-            timeout=Duration.minutes(10),
+            timeout=Duration.minutes(15),
             layers=[the_bot_layer, powertools_layer],
             environment={
                 "DISCORD_WEBHOOK": discord_webhook

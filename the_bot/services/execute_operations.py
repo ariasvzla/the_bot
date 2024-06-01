@@ -22,7 +22,7 @@ class ExecuteOperation:
         coins_lock_container={},
         cycle_duration_in_seconds=100 * 100,
         profit_margin=0,
-        margin_ratio_percentage=15,
+        margin_ratio_percentage=10,
     ) -> None:
         self.bot_session = bot_session
         self.bot_api = BotApi(self.bot_session, coins_lock_container)
@@ -48,7 +48,7 @@ class ExecuteOperation:
             return True
 
     def decrease_profit_margin(self, backoff_event):
-        if backoff_event["tries"] >= 4:
+        if backoff_event["tries"] >= 15:
             coin_max_profit = self.current_coin.get("max_profit", 0)
             max_loss_accepted = (coin_max_profit * self.margin_ratio_percentage) / 100
             self.profit_margin = coin_max_profit - max_loss_accepted
@@ -61,8 +61,8 @@ class ExecuteOperation:
             backoff.constant,
             Exception,
             on_backoff=self.decrease_profit_margin,
-            interval=10,
-            max_tries=5,
+            interval=5,
+            max_tries=30,
             logger=logger,
             raise_on_giveup=False,
         )
@@ -92,7 +92,6 @@ class ExecuteOperation:
             logger.info(f"We has found {len(all_coins)} coins to invest.")
             i = 0
             while True:
-                time.sleep(randrange(5, 10))
                 arbitrage_balance = self.bot_api.arbitrage_balance()
                 if (
                     arbitrage_balance < ExecuteOperation.MINIMUN_INVESTMENT_PER_COIN
@@ -113,8 +112,15 @@ class ExecuteOperation:
                     logger.info(
                         f"End of the cycle for {user_name}, bot will go to sleep for {self.cycle_duration_in_seconds} seconds..."
                     )
+                    pending_ops = self.bot_api.pending_operations()
+                    estimated_return = sum(
+                        [
+                            operation.get("Amount") * operation.get("NetROI")
+                            for operation in pending_ops
+                        ]
+                    )
                     send_msg(
-                        f"The arbritage operation for user: {user_name} has finished, coins in operation: {self.bot_api.pending_operations()}"
+                        f"The arbritage operation for user: {user_name} has finished, coins in operation: {pending_ops},\n Estimated return on this operation is: {estimated_return}"
                     )
                     break
                 self.profit_margin = all_coins[i].get("max_profit", 0)

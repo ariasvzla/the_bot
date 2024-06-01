@@ -31,9 +31,9 @@ class BotApi:
             results = all_current_operations.get("result")
             return [
                 {
-                    "Amount": operation.get("Amount"),
+                    "Amount": float(operation.get("Amount").replace(",", "")),
                     "Coin": operation.get("Coin"),
-                    "NetROI": operation.get("percentwin"),
+                    "NetROI": float(operation.get("percentwin")),
                 }
                 for operation in results
                 if operation.get("Situation") == "Pending"
@@ -104,7 +104,7 @@ class BotApi:
         if 200 <= response.status_code < 300:
             resp_to_json = response.json()
             balance = resp_to_json.get("balance", 0)
-            return int(balance.replace(",", ""))
+            return int(balance)
 
     @backoff.on_exception(
         backoff.expo, Exception, max_tries=5, logger=logger, raise_on_giveup=False
