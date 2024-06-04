@@ -56,12 +56,13 @@ class BotApi:
         ]
         return filtered_coins
 
-    def all_coins(self) -> list:
+    def all_coins(self, user_strategy) -> list:
         bot_coins = self._bot_coins()
+        desired_coins_to_invest = user_strategy if user_strategy else self.known_coins
         for coin in bot_coins:
-            for known_coin in self.known_coins:
-                if coin.get("abb") == known_coin.get("abb"):
-                    coin.update(known_coin)
+            for desired_coin in desired_coins_to_invest:
+                if coin.get("abb") == desired_coin.get("abb"):
+                    coin.update(desired_coin)
         logger.info(f"Bot coins: {bot_coins}")
         return bot_coins
 

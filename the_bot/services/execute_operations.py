@@ -79,7 +79,7 @@ class ExecuteOperation:
 
         return calculate_coin_profit()
 
-    def execute(self, user_name, context, event, schedule_name):
+    def execute(self, user_name, context, event, schedule_name, user_strategy=None):
         arbitrage_balance = self.bot_api.arbitrage_balance()
         user_can_operate = self.user_can_operate(arbitrage_balance)
         if user_can_operate:
@@ -87,7 +87,7 @@ class ExecuteOperation:
                 f"{user_name} balance is enough to operate, arbitrage balance: {arbitrage_balance}"
             )
             send_msg(f"Starting arbritage operation for user: {user_name}.")
-            all_coins = self.bot_api.all_coins()
+            all_coins = self.bot_api.all_coins(user_strategy)
             all_coins = sorted(all_coins, key=lambda d: d["priority"])
             logger.info(f"We has found {len(all_coins)} coins to invest.")
             i = 0
@@ -172,6 +172,7 @@ def run_the_bot(event, context):
     schedule_name = event.get("schedule_name")
     capital_baseline = event.get("capital_baseline", 0)
     coins_lock_container = event.get("coins_lock_container", {})
+    user_strategy = event.get("user_strategy", [])
     cycle_duration_in_seconds = int(event.get("cycle_duration_in_seconds", 100 * 100))
     bot_session = session.bot_session()
     execute_order = ExecuteOperation(
@@ -179,7 +180,7 @@ def run_the_bot(event, context):
     )
     user_name = execute_order.user_name(schedule_name)
     if user_name:
-        execute_order.execute(user_name, context, event, schedule_name)
+        execute_order.execute(user_name, context, event, schedule_name, user_strategy)
     else:
         next_execution = (datetime.now() + timedelta(minutes=randrange(5, 8))).strftime(
             "%Y-%m-%dT%H:%M:%S"
