@@ -44,12 +44,13 @@ class ExecuteOperation:
     def user_can_operate(self, arbitrage_balance, user_strategy) -> bool:
         logger.info("Checking if user can operate base on arbitrage balance")
         balance_in_operation = self.bot_api.balance_in_operation()
-        if arbitrage_balance >= self.capital_baseline and balance_in_operation == 0:
-            return True
-        if user_strategy:
-            for strategy in user_strategy:
-                if strategy.get("abb") == "DOT":
-                    return True
+        if arbitrage_balance >= self.capital_baseline:
+            if balance_in_operation == 0:
+                return True
+            if user_strategy:
+                for strategy in user_strategy:
+                    if strategy.get("abb") == "DOT":
+                        return True
 
     def decrease_profit_margin(self, backoff_event):
         if backoff_event["tries"] >= 15:
