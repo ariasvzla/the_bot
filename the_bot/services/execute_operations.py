@@ -41,11 +41,15 @@ class ExecuteOperation:
         if user_info == 403:
             send_msg(f"The user schedule: {schedule_name}, needs new credentials!!!!")
 
-    def user_can_operate(self, arbitrage_balance) -> bool:
+    def user_can_operate(self, arbitrage_balance, user_strategy) -> bool:
         logger.info("Checking if user can operate base on arbitrage balance")
         balance_in_operation = self.bot_api.balance_in_operation()
         if arbitrage_balance >= self.capital_baseline and balance_in_operation == 0:
             return True
+        if user_strategy:
+            for strategy in user_strategy:
+                if strategy.get("abb") == "DOT":
+                    return True
 
     def decrease_profit_margin(self, backoff_event):
         if backoff_event["tries"] >= 15:
@@ -81,7 +85,7 @@ class ExecuteOperation:
 
     def execute(self, user_name, context, event, schedule_name, user_strategy=None):
         arbitrage_balance = self.bot_api.arbitrage_balance()
-        user_can_operate = self.user_can_operate(arbitrage_balance)
+        user_can_operate = self.user_can_operate(arbitrage_balance, user_strategy)
         if user_can_operate:
             logger.info(
                 f"{user_name} balance is enough to operate, arbitrage balance: {arbitrage_balance}"
