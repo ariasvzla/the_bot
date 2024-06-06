@@ -88,7 +88,9 @@ class ExecuteOperation:
             )
             send_msg(f"Starting arbritage operation for user: {user_name}.")
             all_coins = self.bot_api.all_coins(user_strategy)
-            all_coins = sorted(all_coins, key=lambda d: d["priority"])
+            all_coins = sorted(
+                all_coins, key=lambda d: d["priority"] if "priority" in d else None
+            )
             logger.info(f"We has found {len(all_coins)} coins to invest.")
             i = 0
             while True:

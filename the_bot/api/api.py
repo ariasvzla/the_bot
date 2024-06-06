@@ -59,12 +59,14 @@ class BotApi:
     def all_coins(self, user_strategy) -> list:
         bot_coins = self._bot_coins()
         desired_coins_to_invest = user_strategy if user_strategy else self.known_coins
-        for coin in bot_coins:
-            for desired_coin in desired_coins_to_invest:
-                if coin.get("abb") == desired_coin.get("abb"):
-                    coin.update(desired_coin)
-        logger.info(f"Bot coins: {bot_coins}")
-        return bot_coins
+        coins_to_invest = []
+        for desired_coin in desired_coins_to_invest:
+            for bot_coin in bot_coins:
+                if bot_coin.get("abb") == desired_coin.get("abb"):
+                    bot_coin.update(desired_coin)
+                    coins_to_invest.append(bot_coin)
+        logger.info(f"Bot coins: {coins_to_invest}")
+        return coins_to_invest
 
     @backoff.on_exception(
         backoff.expo, Exception, max_tries=5, logger=logger, raise_on_giveup=False
