@@ -1,13 +1,14 @@
 from the_bot.helpers.session import BotSession
 from the_bot.api.api import BotApi, InvestOperation
 from the_bot.helpers.update_scheduler import update_schedule
+from the_bot.helpers.read_parameters_for_users import get_user_credentials
 import backoff
 import os
-import time
 from random import randrange
 from datetime import datetime, timedelta
 from aws_lambda_powertools import Logger
 from the_bot.services.notification_services import send_msg
+from the_bot.helpers.browser_actions import BrowserActions
 
 logger = Logger(service="Execute oeprations")
 
@@ -32,14 +33,61 @@ class ExecuteOperation:
         self.profit_margin = profit_margin
         self.margin_ratio_percentage = margin_ratio_percentage
 
-    def user_name(self, schedule_name):
+    def transfer_from_spot_toarbitrage(self, schedule_name):
+        browser_actions = BrowserActions(self.bot_api)
+        amount_to_transfer = browser_actions.bot_api.get_amount_in_spot()
+        result = browser_actions.transfer_from_spot_to_arbritage(
+            amount_to_transfer, self.session.auth_cookie.get(".ASPXAUTH")
+        )
+        if result:
+            logger.info(
+                f"{amount_to_transfer} USDT were transfer from spot to arbitrage wallet succesfully, for user schedule: {schedule_name}"
+            )
+
+    def refresh_credentials(self, context, event, schedule_name):
+        browser_actions = BrowserActions(self.bot_api)
+        user_credentials = get_user_credentials(schedule_name)
+        auth_cookie = browser_actions.automatic_login(
+            user_credentials.get("username"), user_credentials.get("password")
+        )
+        if auth_cookie:
+            next_execution = (
+                datetime.now() + timedelta(minutes=randrange(3, 6))
+            ).strftime("%Y-%m-%dT%H:%M:%S")
+            event["ASPCOOKIE"] = auth_cookie
+
+            update_schedule(
+                context.invoked_function_arn,
+                schedule_name,
+                event,
+                f"at({next_execution})",
+            )
+            return True
+
+    def user_name(self, context, event, schedule_name):
         logger.info(f"Checking if bot {schedule_name} can access user info.")
         user_info = self.bot_api.user_info()
         if isinstance(user_info, dict):
             logger.info(f"{user_info.get('name')} has initiate session")
             return user_info.get("name")
         if user_info == 403:
-            send_msg(f"The user schedule: {schedule_name}, needs new credentials!!!!")
+            if event.get("auto_refresh_creds"):
+                send_msg(
+                    f"The user schedule: {schedule_name}, credentials has expired, we are renewing them, please wait..."
+                )
+                result = self.refresh_credentials(context, event, schedule_name)
+                if result:
+                    send_msg(
+                        f"Credentials were update for user schedule: {schedule_name}, let's gooo..."
+                    )
+                else:
+                    send_msg(
+                        f"Something went wrong while updating credentials for user schedule: {schedule_name}, please check the bot now!!!."
+                    )
+            else:
+                send_msg(
+                    f"The user schedule: {schedule_name}, credentials has expired, please refresh them now!!!!."
+                )
 
     def user_can_operate(self, arbitrage_balance, user_strategy) -> bool:
         logger.info("Checking if user can operate base on arbitrage balance")
@@ -185,8 +233,9 @@ def run_the_bot(event, context):
     execute_order = ExecuteOperation(
         bot_session, capital_baseline, coins_lock_container, cycle_duration_in_seconds
     )
-    user_name = execute_order.user_name(schedule_name)
+    user_name = execute_order.user_name(context, event, schedule_name)
     if user_name:
+        execute_order.transfer_from_spot_toarbitrage(schedule_name)
         execute_order.execute(user_name, context, event, schedule_name, user_strategy)
     else:
         next_execution = (datetime.now() + timedelta(minutes=randrange(5, 8))).strftime(
