@@ -51,17 +51,7 @@ class ExecuteOperation:
             user_credentials.get("username"), user_credentials.get("password")
         )
         if auth_cookie:
-            next_execution = (
-                datetime.now() + timedelta(minutes=randrange(3, 6))
-            ).strftime("%Y-%m-%dT%H:%M:%S")
             event["ASPCOOKIE"] = auth_cookie
-
-            update_schedule(
-                context.invoked_function_arn,
-                schedule_name,
-                event,
-                f"at({next_execution})",
-            )
             return True
 
     def user_name(self, context, event, schedule_name):
@@ -238,7 +228,7 @@ def run_the_bot(event, context):
         execute_order.transfer_from_spot_toarbitrage(schedule_name)
         execute_order.execute(user_name, context, event, schedule_name, user_strategy)
     else:
-        next_execution = (datetime.now() + timedelta(minutes=randrange(5, 8))).strftime(
+        next_execution = (datetime.now() + timedelta(minutes=randrange(3, 6))).strftime(
             "%Y-%m-%dT%H:%M:%S"
         )
         update_schedule(
