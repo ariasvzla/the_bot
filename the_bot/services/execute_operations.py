@@ -18,15 +18,15 @@ class ExecuteOperation:
 
     def __init__(
         self,
-        bot_session,
+        session,
         capital_baseline=os.environ.get("CAPITAL_BASELINE"),
         coins_lock_container={},
         cycle_duration_in_seconds=100 * 100,
         profit_margin=0,
         margin_ratio_percentage=17,
     ) -> None:
-        self.bot_session = bot_session
-        self.bot_api = BotApi(self.bot_session, coins_lock_container)
+        self.bot_session = session
+        self.bot_api = BotApi(self.bot_session.bot_session(), coins_lock_container)
         self.current_coin = None
         self.capital_baseline = int(capital_baseline)
         self.cycle_duration_in_seconds = cycle_duration_in_seconds
@@ -37,7 +37,7 @@ class ExecuteOperation:
         browser_actions = BrowserActions(self.bot_api)
         amount_to_transfer = browser_actions.bot_api.get_amount_in_spot()
         result = browser_actions.transfer_from_spot_to_arbritage(
-            amount_to_transfer, self.session.auth_cookie.get(".ASPXAUTH")
+            amount_to_transfer, self.bot_session.auth_cookie.get(".ASPXAUTH")
         )
         if result:
             logger.info(
@@ -201,7 +201,7 @@ class ExecuteOperation:
             )
             logger.info(f"Updating schedule {schedule_name}")
             next_execution = (
-                datetime.now() + timedelta(minutes=randrange(8, 15))
+                datetime.now() + timedelta(minutes=randrange(5, 10))
             ).strftime("%Y-%m-%dT%H:%M:%S")
             update_schedule(
                 context.invoked_function_arn,
@@ -219,9 +219,8 @@ def run_the_bot(event, context):
     coins_lock_container = event.get("coins_lock_container", {})
     user_strategy = event.get("user_strategy", [])
     cycle_duration_in_seconds = int(event.get("cycle_duration_in_seconds", 100 * 100))
-    bot_session = session.bot_session()
     execute_order = ExecuteOperation(
-        bot_session, capital_baseline, coins_lock_container, cycle_duration_in_seconds
+        session, capital_baseline, coins_lock_container, cycle_duration_in_seconds
     )
     user_name = execute_order.user_name(context, event, schedule_name)
     if user_name:
