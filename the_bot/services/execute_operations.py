@@ -41,7 +41,7 @@ class ExecuteOperation:
         )
         if result:
             logger.info(
-                f"{amount_to_transfer} USDT were transfer from spot to arbitrage wallet succesfully, for user schedule: {schedule_name}"
+                f"{amount_to_transfer} USDT were transfer from spot to arbitrage wallet successfully, for user schedule: {schedule_name}"
             )
 
     def refresh_credentials(self, context, event, schedule_name):
@@ -68,7 +68,7 @@ class ExecuteOperation:
                 result = self.refresh_credentials(context, event, schedule_name)
                 if result:
                     send_msg(
-                        f"Credentials were updated successfuly for user schedule: {schedule_name}, let's gooo... preciosos :D"
+                        f"Credentials were updated successfully for user schedule: {schedule_name}, let's gooo... preciosos :D"
                     )
                 else:
                     send_msg(
@@ -129,7 +129,7 @@ class ExecuteOperation:
             logger.info(
                 f"{user_name} balance is enough to operate, arbitrage balance: {arbitrage_balance}"
             )
-            send_msg(f"Starting arbritage operation for user: {user_name}.")
+            send_msg(f"Starting arbitrage operation for user: {user_name}.")
             all_coins = self.bot_api.all_coins(user_strategy)
             all_coins = sorted(
                 all_coins, key=lambda d: d["priority"] if "priority" in d else None
@@ -186,7 +186,7 @@ class ExecuteOperation:
                     )
                     if not response.get("haserror"):
                         logger.info(
-                            f"User {user_name} investment was successfull, adding coin to lock ..."
+                            f"User {user_name} investment was successful, adding coin to lock ..."
                         )
                         if all_coins[i].get("abb") != "DOT":
                             self.bot_api.add_coin_lock(all_coins[i])
