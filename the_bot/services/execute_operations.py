@@ -68,7 +68,7 @@ class ExecuteOperation:
                 result = self.refresh_credentials(context, event, schedule_name)
                 if result:
                     send_msg(
-                        f"Credentials were update for user schedule: {schedule_name}, let's gooo..."
+                        f"Credentials were updated successfuly for user schedule: {schedule_name}, let's gooo... preciosos :D"
                     )
                 else:
                     send_msg(
