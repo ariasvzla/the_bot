@@ -32,7 +32,8 @@ class ExecuteOperation:
         self.cycle_duration_in_seconds = cycle_duration_in_seconds
         self.profit_margin = profit_margin
         self.margin_ratio_percentage = margin_ratio_percentage
-
+    
+    @backoff.on_exception(backoff.expo, Exception, max_tries=10, logger=logger, raise_on_giveup=False)
     def transfer_from_spot_toarbitrage(self, schedule_name):
         browser_actions = BrowserActions(self.bot_api)
         amount_to_transfer = browser_actions.bot_api.get_amount_in_spot()
@@ -43,7 +44,8 @@ class ExecuteOperation:
             logger.info(
                 f"{amount_to_transfer} USDT were transfer from spot to arbitrage wallet successfully, for user schedule: {schedule_name}"
             )
-
+    
+    @backoff.on_exception(backoff.expo, Exception, max_tries=10, logger=logger, raise_on_giveup=False)
     def refresh_credentials(self, context, event, schedule_name):
         browser_actions = BrowserActions(self.bot_api)
         user_credentials = get_user_credentials(schedule_name)
@@ -236,3 +238,4 @@ def run_the_bot(event, context):
             event,
             f"at({next_execution})",
         )
+    execute_order.bot_api.bot_session.close()
