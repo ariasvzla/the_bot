@@ -1,8 +1,10 @@
 import mechanize
 from the_bot.api.api import BotApi
-from the_bot.helpers.session import BotSession
+import backoff
+from aws_lambda_powertools import Logger
 
 
+logger = Logger(service="Browser Actions")
 class BrowserActions:
     def __init__(self, bot_api: BotApi):
         self.browser = mechanize.Browser()
@@ -44,7 +46,8 @@ class BrowserActions:
 
     def _submit_form(self):
         return self.browser.submit()
-
+    
+    @backoff.on_exception(backoff.expo, Exception, max_tries=10, logger=logger, raise_on_giveup=False)
     def automatic_login(self, email, password):
         self.browser.open("https://bot.solesbot.ai/dashboard")
         self._set_form()
@@ -55,7 +58,8 @@ class BrowserActions:
             return self.browser.cookiejar._cookies["bot.solesbot.ai"]["/"][
                 ".ASPXAUTH"
             ].value
-
+     
+    @backoff.on_exception(backoff.expo, Exception, max_tries=10, logger=logger, raise_on_giveup=False)
     def transfer_from_spot_to_arbritage(self, amount_to_transfer, cookie_value):
         self._set_cookies(cookie_value)
         self.browser.open("https://bot.solesbot.ai/wallet/transfer")

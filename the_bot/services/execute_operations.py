@@ -33,19 +33,19 @@ class ExecuteOperation:
         self.profit_margin = profit_margin
         self.margin_ratio_percentage = margin_ratio_percentage
     
-    @backoff.on_exception(backoff.expo, Exception, max_tries=10, logger=logger, raise_on_giveup=False)
+    
     def transfer_from_spot_toarbitrage(self, schedule_name):
         browser_actions = BrowserActions(self.bot_api)
         amount_to_transfer = browser_actions.bot_api.get_amount_in_spot()
-        result = browser_actions.transfer_from_spot_to_arbritage(
-            amount_to_transfer, self.bot_session.auth_cookie.get(".ASPXAUTH")
-        )
-        if result:
-            logger.info(
-                f"{amount_to_transfer} USDT were transfer from spot to arbitrage wallet successfully, for user schedule: {schedule_name}"
+        if amount_to_transfer:
+            result = browser_actions.transfer_from_spot_to_arbritage(
+                amount_to_transfer, self.bot_session.auth_cookie.get(".ASPXAUTH")
             )
+            if result:
+                logger.info(
+                    f"{amount_to_transfer} USDT were transfer from spot to arbitrage wallet successfully, for user schedule: {schedule_name}"
+                )
     
-    @backoff.on_exception(backoff.expo, Exception, max_tries=10, logger=logger, raise_on_giveup=False)
     def refresh_credentials(self, context, event, schedule_name):
         browser_actions = BrowserActions(self.bot_api)
         user_credentials = get_user_credentials(schedule_name)
