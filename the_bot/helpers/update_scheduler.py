@@ -31,7 +31,7 @@ def update_schedule(
     schedule_execution_time,
 ) -> str | None:
 
-    schedule_client = boto3.client("scheduler", region_name="us-east-1")
+    schedule_client = boto3.client("scheduler")
     schedule_parameters = create_schedule_params(
         lambda_target, schedule_input, schedule_execution_time, schedule_name
     )

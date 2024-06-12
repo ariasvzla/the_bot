@@ -1,13 +1,13 @@
 from aws_cdk import (
-    # Duration,
     Stack,
     BundlingOptions,
-    # aws_sqs as sqs,
 )
 from constructs import Construct
 from aws_cdk import Stack, aws_lambda as _lambda
 from aws_cdk import Duration
 import aws_cdk.aws_ssm as ssm
+from aws_cdk.aws_iam import Role
+from os import environ
 
 class TheBotInfraStack(Stack):
 
@@ -20,7 +20,7 @@ class TheBotInfraStack(Stack):
         powertools_layer = _lambda.LayerVersion.from_layer_version_arn(
             self,
             id="lambda-powertools",
-            layer_version_arn=f"arn:aws:lambda:us-east-1:017000801446:layer:AWSLambdaPowertoolsPythonV2:71"
+            layer_version_arn=f"arn:aws:lambda:{environ.get("AWS_REGION", "us-east-1")}:017000801446:layer:AWSLambdaPowertoolsPythonV2:71"
         )
 
         the_bot_layer = _lambda.LayerVersion(
@@ -50,6 +50,7 @@ class TheBotInfraStack(Stack):
             layers=[the_bot_layer, powertools_layer],
             environment={
                 "DISCORD_WEBHOOK": discord_webhook
-            }
+            },
+            role=Role.from_role_arn(self, "Role", role_arn="arn:aws:iam::992382411965:role/bot_role", mutable=False),
         )
 

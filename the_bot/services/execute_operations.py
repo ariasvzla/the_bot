@@ -18,15 +18,15 @@ class ExecuteOperation:
 
     def __init__(
         self,
-        session,
+        bot_session,
         capital_baseline=os.environ.get("CAPITAL_BASELINE"),
         coins_lock_container={},
         cycle_duration_in_seconds=100 * 100,
         profit_margin=0,
         margin_ratio_percentage=17,
     ) -> None:
-        self.bot_session = session
-        self.bot_api = BotApi(self.bot_session.bot_session(), coins_lock_container)
+        self.bot_session = bot_session
+        self.bot_api = BotApi(self.bot_session, coins_lock_container)
         self.current_coin = None
         self.capital_baseline = int(capital_baseline)
         self.cycle_duration_in_seconds = cycle_duration_in_seconds
@@ -39,22 +39,12 @@ class ExecuteOperation:
         amount_to_transfer = browser_actions.bot_api.get_amount_in_spot()
         if amount_to_transfer:
             result = browser_actions.transfer_from_spot_to_arbritage(
-                amount_to_transfer, self.bot_session.auth_cookie.get(".ASPXAUTH")
+                amount_to_transfer, self.bot_session.cookies.jar
             )
             if result:
                 logger.info(
                     f"{amount_to_transfer} USDT were transfer from spot to arbitrage wallet successfully, for user schedule: {schedule_name}"
                 )
-    
-    def refresh_credentials(self, context, event, schedule_name):
-        browser_actions = BrowserActions(self.bot_api)
-        user_credentials = get_user_credentials(schedule_name)
-        auth_cookie = browser_actions.automatic_login(
-            user_credentials.get("username"), user_credentials.get("password")
-        )
-        if auth_cookie:
-            event["ASPCOOKIE"] = auth_cookie
-            return True
 
     def user_name(self, context, event, schedule_name):
         logger.info(f"Checking if bot {schedule_name} can access user info.")
@@ -62,24 +52,9 @@ class ExecuteOperation:
         if isinstance(user_info, dict):
             logger.info(f"{user_info.get('name')} has initiate session")
             return user_info.get("name")
-        if user_info == 403:
-            if event.get("auto_refresh_creds"):
-                send_msg(
-                    f"The user schedule: {schedule_name}, credentials has expired, we are renewing them, please wait..."
-                )
-                result = self.refresh_credentials(context, event, schedule_name)
-                if result:
-                    send_msg(
-                        f"Credentials were updated successfully for user schedule: {schedule_name}, let's gooo... preciosos :D"
-                    )
-                else:
-                    send_msg(
-                        f"Something went wrong while updating credentials for user schedule: {schedule_name}, please check the bot now!!!."
-                    )
-            else:
-                send_msg(
-                    f"The user schedule: {schedule_name}, credentials has expired, please refresh them now!!!!."
-                )
+        else:
+            logger.info(f"{schedule_name} cannot get user info, response: {user_info}")
+
 
     def user_can_operate(self, arbitrage_balance, user_strategy) -> bool:
         logger.info("Checking if user can operate base on arbitrage balance")
@@ -215,27 +190,27 @@ class ExecuteOperation:
 
 @logger.inject_lambda_context
 def run_the_bot(event, context):
-    session = BotSession(event.get("ASPCOOKIE"))
     schedule_name = event.get("schedule_name")
-    capital_baseline = event.get("capital_baseline", 0)
-    coins_lock_container = event.get("coins_lock_container", {})
-    user_strategy = event.get("user_strategy", [])
-    cycle_duration_in_seconds = int(event.get("cycle_duration_in_seconds", 100 * 100))
-    execute_order = ExecuteOperation(
-        session, capital_baseline, coins_lock_container, cycle_duration_in_seconds
-    )
-    user_name = execute_order.user_name(context, event, schedule_name)
-    if user_name:
-        execute_order.transfer_from_spot_toarbitrage(schedule_name)
-        execute_order.execute(user_name, context, event, schedule_name, user_strategy)
-    else:
-        next_execution = (datetime.now() + timedelta(minutes=randrange(3, 6))).strftime(
-            "%Y-%m-%dT%H:%M:%S"
+    session = BotSession(schedule_name)
+    bot_session = session.bot_session()
+    if bot_session:
+        capital_baseline = event.get("capital_baseline", 0)
+        coins_lock_container = event.get("coins_lock_container", {})
+        user_strategy = event.get("user_strategy", [])
+        cycle_duration_in_seconds = int(event.get("cycle_duration_in_seconds", 100 * 100))
+        execute_order = ExecuteOperation(
+            bot_session, capital_baseline, coins_lock_container, cycle_duration_in_seconds
         )
+        user_name = execute_order.user_name(context, event, schedule_name)
+        if user_name:
+            execute_order.transfer_from_spot_toarbitrage(schedule_name)
+            execute_order.execute(user_name, context, event, schedule_name, user_strategy)
+        bot_session.close()
+    if not bot_session or not user_name:
+        next_execution = (datetime.now() + timedelta(minutes=randrange(3, 6))).strftime("%Y-%m-%dT%H:%M:%S")
         update_schedule(
             context.invoked_function_arn,
             schedule_name,
             event,
             f"at({next_execution})",
-        )
-    execute_order.bot_api.bot_session.close()
+            )

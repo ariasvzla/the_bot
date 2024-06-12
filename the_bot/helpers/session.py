@@ -1,19 +1,22 @@
 from the_bot.constants import bot_domain
 from curl_cffi import requests
-
+from the_bot.helpers.browser_actions import BrowserActions
+from the_bot.helpers.read_parameters_for_users import get_user_credentials
 
 HTTP_PROTOCOL = "https://"
 
 
 class BotSession:
-    def __init__(self, auth_cookie=None) -> None:
-        self.auth_cookie = {".ASPXAUTH": auth_cookie}
+    def __init__(self, schedule_name = None) -> None:
+        self.schedule_name = schedule_name
 
     def bot_session(self):
-        my_cookies = {**self.auth_cookie}
-
-        session = requests.Session(cookies=my_cookies, impersonate="safari")
-        return session
+        act = BrowserActions(None)
+        user_credentials = get_user_credentials(self.schedule_name)
+        cookiejar = act.automatic_login(user_credentials.get("username"), user_credentials.get("password"))
+        if cookiejar:
+            session = requests.Session(cookies=cookiejar, impersonate="chrome")
+            return session
 
     def send_msg_to_webhook(self, url, data):
         result = requests.post(url, json=data)
